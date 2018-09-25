@@ -1,0 +1,32 @@
+version: '3'
+services:
+  application:
+    restart: always
+    build: ./application
+    command: gunicorn -w 4 --bind :5000 wsgi:application
+    # links:
+      # - db
+    expose:
+     - "5000"
+    ports:
+      - "5000:5000"
+  # db:
+  #   restart: always
+  #   image: postgres:9.6.1-alpine
+  #   ports:
+  #     - "5432:5432"
+  #   environment:
+  #     - POSTGRES_USER=d
+  #     - POSTGRES_PASSWORD=d
+  #     - POSTGRES_DB=d
+  #   volumes:
+  #     - ./postgres:/var/lib/postgresql
+  nginx:
+    restart: always
+    build: ./nginx
+    links:
+      - application
+    expose:
+      - 8080
+    ports:
+      - "8080:8080"
