@@ -3,13 +3,16 @@ import session from './modules/session'
 
 const createStore = () => {
   return new Vuex.Store({
-    modules: {session},
+    modules: {
+      session
+    },
     state: {
-      counter: 0
+      landed: false,
+      fullScreen: true
     },
     mutations: {
-      increment(state) {
-        state.counter++
+      setLanded(state) {
+        state.landed = true
       }
     }
   })

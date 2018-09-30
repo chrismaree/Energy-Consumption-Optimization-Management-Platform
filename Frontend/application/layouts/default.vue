@@ -6,15 +6,11 @@
       v-model="drawer"
       fixed
       app
-    >
+      v-if="!$store.state.fullScreen">
       <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :to="item.to"
-          :key="i"
-          router
-          exact
-        >
+        <!-- vue itterates through all the routers
+        defined by dynamic routing and creates a list element for each nuxt type -->
+        <v-list-tile v-for="(item, i) in items" :to="item.to" :key="i" router exact>
           <v-list-tile-action>
             <v-icon v-html="item.icon" />
           </v-list-tile-action>
@@ -30,7 +26,8 @@
       app>
       <v-btn 
         icon 
-        @click.stop="miniVariant = !miniVariant">
+        @click.stop="miniVariant = !miniVariant"
+        v-if="!$store.state.fullScreen">
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
       </v-btn>
     </v-toolbar>
@@ -42,6 +39,7 @@
     <v-footer
       :fixed="fixed"
       app
+    v-if="!$store.state.fullScreen"
     >
       <span> &copy; Energy Consumption Optimization platform</span>
       
