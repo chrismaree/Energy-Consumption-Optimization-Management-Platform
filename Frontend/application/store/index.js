@@ -11,8 +11,11 @@ const createStore = () => {
       fullScreen: true
     },
     mutations: {
-      setLanded(state) {
-        state.landed = true
+      fullScreenOn(state) {
+        state.fullScreen = true
+      },
+      fullScreenOff(state) {
+        state.fullScreen = false
       }
     }
   })

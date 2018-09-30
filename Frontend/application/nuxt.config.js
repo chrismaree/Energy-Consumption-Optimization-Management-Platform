@@ -49,7 +49,10 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/vuetify',
+    {
+      src: '~/plugins/vuetify',
+      ssr: false
+    },
     {
       src: '~/plugins/localStorage.js',
       ssr: false //only run on client side
@@ -78,7 +81,7 @@ module.exports = {
    ** Router Configuration
    */
   router: {
-    middleware: 'ensureLand'
+    // middleware: 'ensureLand'
   },
 
   /*

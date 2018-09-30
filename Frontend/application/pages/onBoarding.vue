@@ -1,7 +1,7 @@
 <template>
-    <v-app id="landingPage">
-        <h1> land user</h1>
-        <v-btn to="/onBoarding">Continue</v-btn>
+    <v-app id="onBoarding">
+        <h1> Onboard User</h1>
+        <v-btn to="/MainMap">Continue</v-btn>
     </v-app>
 </template>
 

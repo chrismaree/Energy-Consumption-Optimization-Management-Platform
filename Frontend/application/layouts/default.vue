@@ -23,7 +23,8 @@
     <v-toolbar
       :clipped-left="clipped"
       fixed
-      app>
+      app
+      v-if="!$store.state.fullScreen">
       <v-btn 
         icon 
         @click.stop="miniVariant = !miniVariant"
@@ -39,8 +40,7 @@
     <v-footer
       :fixed="fixed"
       app
-    v-if="!$store.state.fullScreen"
-    >
+    v-if="!$store.state.fullScreen">
       <span> &copy; Energy Consumption Optimization platform</span>
       
     </v-footer>
@@ -55,7 +55,7 @@ export default {
       drawer: true,
       fixed: false,
       items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
+        { icon: 'map', title: 'Main Map', to: '/MainMap' },
         { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
       ],
       miniVariant: false,
