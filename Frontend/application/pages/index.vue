@@ -46,6 +46,8 @@
             flat
             nuxt
             to="/inspire">Continue</v-btn>
+              <v-btn @click="$store.commit('increment')">{{ $store.state.counter }}</v-btn>
+
         </v-card-actions>
       </v-card>
     </v-flex>
