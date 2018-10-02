@@ -50,7 +50,7 @@ module.exports = {
    */
   plugins: [{
       src: '~/plugins/vuetify',
-      ssr: false
+      ssr: true
     },
     {
       src: '~/plugins/localStorage.js',
@@ -85,10 +85,17 @@ module.exports = {
   },
 
   /*
+   ** Include application CSS
+   */
+  css: ['~/assets/style/app.styl'],
+
+  /*
    ** Build configuration
    */
   build: {
-    vendor: ['vue-notifications']
+    vendor: ['vue-notifications'],
+    extractCSS: true
+
 
     /*
      ** You can extend webpack config here
