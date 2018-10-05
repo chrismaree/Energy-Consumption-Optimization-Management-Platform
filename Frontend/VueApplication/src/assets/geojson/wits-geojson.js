@@ -4,15 +4,16 @@ export default {
         "features": [{
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#E0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#E0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -32,15 +33,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': '4',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -56,15 +58,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': '5',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#D0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -80,15 +83,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -110,15 +114,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -154,15 +159,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -184,15 +190,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -210,15 +217,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -236,15 +244,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -266,15 +275,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -306,15 +316,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -330,15 +341,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -358,15 +370,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -395,15 +408,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -437,15 +451,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -465,15 +480,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -489,15 +505,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -513,15 +530,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -540,15 +558,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -564,15 +583,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -590,15 +610,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -618,15 +639,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -642,15 +664,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -666,15 +689,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -694,15 +718,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -720,15 +745,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -759,15 +785,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -783,15 +810,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -807,15 +835,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -837,15 +866,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -877,15 +907,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -901,15 +932,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -925,15 +957,16 @@ export default {
         }, {
             "type": "Feature",
             'properties': {
-            'popupContent': 'This is the Auraria West Campus',
-            'style': {
-                weight: 2,
-                color: '#999',
-                opacity: 1,
-                fillColor: '#B0DE5C',
-                fillOpacity: 0.8
-            }
-        },
+                'id': 'SOME BUILDING',
+                'popupContent': 'This is the Auraria West Campus',
+                'style': {
+                    weight: 2,
+                    color: '#999',
+                    opacity: 1,
+                    fillColor: '#B0DE5C',
+                    fillOpacity: 0.7
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [

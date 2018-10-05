@@ -14,7 +14,9 @@
           :options="bus.options"/> -->
         <l-geo-json
           :geojson="campusData.geojson"
-          :options="campusData.options"/>
+          :options="campusData.options"
+          
+          />
       </l-map>
     </div>
   </div>
@@ -36,7 +38,8 @@ function onEachFeature(feature, layer) {
   let popup = new PopupCont({
     propsData: {
       type: feature.geometry.type,
-      text: feature.properties.popupContent
+      text: feature.properties.popupContent,
+      id: feature.properties.id
     }
   });
   layer.bindPopup(popup.$mount().$el);
