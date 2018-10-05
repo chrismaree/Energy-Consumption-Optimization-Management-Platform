@@ -22,7 +22,6 @@
 
 <script>
 import Vue from "vue";
-import L from "wrld.js"
 import { LMap, LTileLayer, LGeoJson } from "vue2-leaflet";
 import PopupContent from "./GeoJsonPopup";
 import { default as data } from "../assets/geojson/wits-geojson.js";
@@ -55,11 +54,13 @@ export default {
     }
   },
   data() {
+    // 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=
     return {
       zoom: 16.5,
       center: [-26.1913, 28.0266],
-      url:
-        "https://api.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2hyaXNtYXJlZSIsImEiOiJjam1sdW5tMHAwOHlxM2tudWJtMGVnOXltIn0.FdRDSOeZfQ2cQEeEzHwyvw",
+      url
+      :
+        "https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2hyaXNtYXJlZSIsImEiOiJjam1sdW5tMHAwOHlxM2tudWJtMGVnOXltIn0.FdRDSOeZfQ2cQEeEzHwyvw",
       attribution:
         'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +

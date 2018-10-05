@@ -59,6 +59,7 @@
 
     <CommitChart/>
 
+
   </div>
 </template>
 
@@ -70,7 +71,7 @@ export default {
   bodyClass: "landing-page",
   components:{
     MainMap,
-    CommitChart
+    CommitChart,
   },
   props: {
     header: {
@@ -105,5 +106,4 @@ export default {
 .md-has-textarea + .md-layout {
   margin-top: 15px;
 }
-
 </style>
