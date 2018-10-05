@@ -5,7 +5,7 @@
       <l-map
         :zoom="zoom"
         :center="center"
-        style="height: 700px; width: 100%">
+        style="height: 800px; width: 100%">
         <l-tile-layer
           :url="url"
           :attribution="attribution"/>
@@ -13,11 +13,8 @@
           :geojson="bus.geojson"
           :options="bus.options"/> -->
         <l-geo-json
-          :geojson="bicycleAndCampus.geojson"
-          :options="bicycleAndCampus.options"/>
-        <!-- <l-geo-json
-          :geojson="coors.geojson"
-          :options="coors.options"/> -->
+          :geojson="campusData.geojson"
+          :options="campusData.options"/>
       </l-map>
     </div>
   </div>
@@ -25,9 +22,10 @@
 
 <script>
 import Vue from "vue";
+import L from "wrld.js"
 import { LMap, LTileLayer, LGeoJson } from "vue2-leaflet";
 import PopupContent from "./GeoJsonPopup";
-import { default as data } from "../assets/geojson/sample-geojson.js";
+import { default as data } from "../assets/geojson/wits-geojson.js";
 // var baseballIcon = L.icon({
 //   iconUrl: 'static/images/baseball-marker.png',
 //   iconSize: [32, 37],
@@ -58,10 +56,10 @@ export default {
   },
   data() {
     return {
-      zoom: 13,
-      center: [39.74739, -105],
+      zoom: 16.5,
+      center: [-26.1913, 28.0266],
       url:
-        "https://api.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWJvdWNoYXVkIiwiYSI6ImNpdTA5bWw1azAyZDIyeXBqOWkxOGJ1dnkifQ.qha33VjEDTqcHQbibgHw3w",
+        "https://api.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2hyaXNtYXJlZSIsImEiOiJjam1sdW5tMHAwOHlxM2tudWJtMGVnOXltIn0.FdRDSOeZfQ2cQEeEzHwyvw",
       attribution:
         'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -89,23 +87,13 @@ export default {
       //     onEachFeature: onEachFeature
       //   }
       // },
-      bicycleAndCampus: {
-        geojson: [data.bicycleRental, data.campus],
+      campusData: {
+        geojson: [data.campus],
         options: {
           style: function(feature) {
             return feature.properties && feature.properties.style;
           },
           onEachFeature: onEachFeature,
-          pointToLayer: function(feature, latlng) {
-            return L.circleMarker(latlng, {
-              radius: 8,
-              fillColor: "#ff7800",
-              color: "#000",
-              weight: 1,
-              opacity: 1,
-              fillOpacity: 0.8
-            });
-          }
         }
       }
     };

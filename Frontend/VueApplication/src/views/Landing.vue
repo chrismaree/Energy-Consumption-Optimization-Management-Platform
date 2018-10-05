@@ -105,4 +105,5 @@ export default {
 .md-has-textarea + .md-layout {
   margin-top: 15px;
 }
+
 </style>

@@ -25,7 +25,8 @@
     "vue-router": "3.0.1",
     "vue2-leaflet": "^1.0.2",
     "vuex": "^3.0.1",
-    "vuex-persistedstate": "^2.5.4"
+    "vuex-persistedstate": "^2.5.4",
+    "wrld.js": "^0.1.1853"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.0.1",
