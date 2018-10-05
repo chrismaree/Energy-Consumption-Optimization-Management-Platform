@@ -61,6 +61,12 @@
 <script>
 export default {
   bodyClass: "landing-page",
+  props: {
+    header: {
+      type: String,
+      default: require("@/assets/img/landingImage.jpg")
+      },
+  },
   
   data() {
     return {
@@ -69,7 +75,7 @@ export default {
   computed: {
     headerStyle() {
       return {
-        backgroundImage: `url(https://pixabay.com/get/ea30b20a2cf7043ed1534705fb0938c9bd22ffd41cb2194696f2c47cae/light-bulb-3535435_1920.jpg)`
+        backgroundImage: `url(${this.header})`
       };
     }
   }
