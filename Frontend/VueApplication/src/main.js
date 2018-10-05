@@ -3,6 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import store from './store/index.js'
 import Vue2Leaflet from "vue2-leaflet";
+import {
+  Bar,
+  Line
+} from 'vue-chartjs'
 
 import MaterialKit from "./plugins/material-kit";
 

@@ -55,22 +55,22 @@
         </div>
       </div>
     </div>
-    <!-- <MainMap/> -->
+    <MainMap/>
 
-    <component
-      id="full_div"
-      :is="'MainMap'"/>
+    <CommitChart/>
 
   </div>
 </template>
 
 <script>
 import MainMap from '../components/MainMap'
+import CommitChart from '../components/CommitChart'
 
 export default {
   bodyClass: "landing-page",
   components:{
-    MainMap
+    MainMap,
+    CommitChart
   },
   props: {
     header: {
