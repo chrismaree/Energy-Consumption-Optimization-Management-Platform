@@ -55,12 +55,23 @@
         </div>
       </div>
     </div>
+    <!-- <MainMap/> -->
+
+    <component
+      id="full_div"
+      :is="'MainMap'"/>
+
   </div>
 </template>
 
 <script>
+import MainMap from '../components/MainMap'
+
 export default {
   bodyClass: "landing-page",
+  components:{
+    MainMap
+  },
   props: {
     header: {
       type: String,

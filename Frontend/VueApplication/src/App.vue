@@ -9,3 +9,8 @@
     </div>
   </div>
 </template>
+
+<style>
+@import "../node_modules/leaflet/dist/leaflet.css";
+
+</style>
