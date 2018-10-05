@@ -5,7 +5,7 @@
       <l-map
         :zoom="zoom"
         :center="center"
-        style="height: 700px; width: 1000px">
+        style="height: 700px; width: 100%">
         <l-tile-layer
           :url="url"
           :attribution="attribution"/>
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     Resize() {
-      map.invalidateSize();
+      console.log(this.$refs)
     }
   },
   data() {
