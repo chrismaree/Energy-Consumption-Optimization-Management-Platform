@@ -43,7 +43,6 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/style/app.styl'],
 
   /*
    ** Plugins to load before mounting the App
@@ -52,14 +51,14 @@ module.exports = {
       src: '~/plugins/vuetify',
       ssr: true
     },
-    {
-      src: '~/plugins/localStorage.js',
-      ssr: false //only run on client side
-    },
-    {
-      src: '~/plugins/vue-notifications',
-      ssr: false
-    }
+    // {
+    //   src: '~/plugins/localStorage.js',
+    //   ssr: false //only run on client side
+    // },
+    // {
+    //   src: '~/plugins/vue-notifications',
+    //   ssr: true
+    // }
   ],
 
   /*
