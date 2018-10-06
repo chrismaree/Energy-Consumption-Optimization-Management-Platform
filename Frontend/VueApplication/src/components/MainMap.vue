@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <md-button @click="Resize" class="md-primary">Regular</md-button>
+      <md-button @click="Resize" class="md-primary">CLICKED</md-button>
       <l-map
         :zoom="zoom"
         :center="center"
@@ -26,7 +26,6 @@
 import Vue from "vue";
 import { LMap, LTileLayer, LGeoJson } from "vue2-leaflet";
 import PopupContent from "./GeoJsonPopup";
-import { default as data } from "../assets/geojson/wits-geojson.js";
 // var baseballIcon = L.icon({
 //   iconUrl: 'static/images/baseball-marker.png',
 //   iconSize: [32, 37],
@@ -53,7 +52,8 @@ export default {
   },
   methods: {
     Resize() {
-      this.$store.dispatch('loadMapGeoJson')
+      console.log("Button clicked");
+      this.$store.dispatch("loadMapGeoJson");
     }
   },
   data() {
@@ -61,13 +61,12 @@ export default {
     return {
       zoom: 16.5,
       center: [-26.1913, 28.0266],
-      url
-      :
+      url:
         "https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2hyaXNtYXJlZSIsImEiOiJjam1sdW5tMHAwOHlxM2tudWJtMGVnOXltIn0.FdRDSOeZfQ2cQEeEzHwyvw",
       attribution:
         'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>'
       // bus: {
       //   geojson: data.freeBus,
       //   options: {
@@ -91,16 +90,20 @@ export default {
       //     onEachFeature: onEachFeature
       //   }
       // },
-      campusData: {
-        geojson: [data.campus],
+    };
+  },
+  computed: {
+    campusData() {
+      return {
+        geojson: [this.$store.state.databaseStore.mapGeoJson],
         options: {
           style: function(feature) {
             return feature.properties && feature.properties.style;
           },
-          onEachFeature: onEachFeature,
+          onEachFeature: onEachFeature
         }
-      }
-    };
+      };
+    }
   }
 };
 </script>

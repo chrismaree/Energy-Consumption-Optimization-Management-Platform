@@ -3,7 +3,7 @@
 import jwt_decode from 'jwt-decode';
 import DatabaseAccessor from '../../../../utils/databaseAccessor'
 
-
+const databaseAccessor = new DatabaseAccessor()
 // const auth = new Authenticator()
 
 const state = {
@@ -33,7 +33,11 @@ const actions = {
             someString: 15
         })
         console.log("SET")
-        DatabaseAccessor.getGeoJson()
+        console.log(databaseAccessor)
+        databaseAccessor.getGeoJson().then(geoJson => {
+            console.log(geoJson)
+          commit('setMapGeoJson', geoJson[0])
+        })
 
 
     }
