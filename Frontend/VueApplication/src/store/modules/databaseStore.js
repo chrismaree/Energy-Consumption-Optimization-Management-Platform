@@ -1,6 +1,8 @@
 // import Authenticator from '../../../utils/Authenticator';
 
 import jwt_decode from 'jwt-decode';
+import DatabaseAccessor from '../../../../utils/databaseAccessor'
+
 
 // const auth = new Authenticator()
 
@@ -31,6 +33,8 @@ const actions = {
             someString: 15
         })
         console.log("SET")
+        DatabaseAccessor.getGeoJson()
+
 
     }
 }
