@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     Resize() {
-      console.log(this.$refs)
+      this.$store.dispatch('loadMapGeoJson')
     }
   },
   data() {

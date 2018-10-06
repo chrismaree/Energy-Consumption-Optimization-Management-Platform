@@ -59,7 +59,7 @@
 
     <CommitChart/>
 
-
+  
   </div>
 </template>
 

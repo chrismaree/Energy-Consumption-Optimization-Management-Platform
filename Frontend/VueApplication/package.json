@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "chart.js": "^2.7.2",
+    "energy_consumption_optimization_mapagement_platform": "file:../APIClient/javascript-client",
     "jwt-decode": "^2.2.0",
     "nouislider": "11.1.0",
     "v-tooltip": "2.0.0-rc.33",
