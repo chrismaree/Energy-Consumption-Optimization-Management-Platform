@@ -1,0 +1,38 @@
+version: '2.1'
+services:
+  ecomp_db_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # ports:
+      # - "8080:8000"
+    environment:
+      AUTH0_DOMAIN: "registree.eu.auth0.com"
+      API_IDENTIFIER: "https://registree.rocks/apis"
+      ALGORITHMS: "['RS256']"
+    depends_on:
+      - mongodb
+    networks:
+      - backbone
+
+  mongodb:
+    image: mongo:3.6
+    command: mongod
+    networks:
+      - backbone
+
+  nginx:
+    restart: always
+    build: ./nginx
+    links:
+      - ecomp_db_api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ~/cert:/etc/cert
+    networks:
+      - backbone
+      
+networks: 
+  backbone:
+    driver: bridge
