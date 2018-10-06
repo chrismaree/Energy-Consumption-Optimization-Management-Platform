@@ -20,7 +20,9 @@ services:
     command: mongod
     networks:
       - backbone
-
+    #This port should NOT be open in production!
+    ports:
+      - "27017:27017"
   nginx:
     restart: always
     build: ./nginx
