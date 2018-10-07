@@ -1,0 +1,13 @@
+{
+    "name": "Main campus",
+    "center": [
+        "28.0240, -26.18701"
+    ],
+    "numberOfStudents": 25000,
+    "averageWeekChart":{},
+    "piDistribution":{},
+    "sunburstDistribution": {},
+    "streamGraph": {},
+
+    "totalSensors": 2000
+}
