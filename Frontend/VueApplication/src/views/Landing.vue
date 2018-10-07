@@ -59,6 +59,8 @@
 
     <CommitChart/>
 
+    <RelativeBuildingBarChart/>
+
   
   </div>
 </template>
@@ -66,12 +68,14 @@
 <script>
 import MainMap from '../components/MainMap'
 import CommitChart from '../components/CommitChart'
+import RelativeBuildingBarChart from '../components/RelativeBuildingBarChart'
 
 export default {
   bodyClass: "landing-page",
   components:{
     MainMap,
     CommitChart,
+    RelativeBuildingBarChart
   },
   props: {
     header: {

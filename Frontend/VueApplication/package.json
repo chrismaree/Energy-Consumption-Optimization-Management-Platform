@@ -12,10 +12,12 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
+    "@statnett/vue-plotly": "^0.2.0",
     "axios": "^0.18.0",
     "chart.js": "^2.7.2",
     "jwt-decode": "^2.2.0",
     "nouislider": "11.1.0",
+    "plotly.js": "^1.41.3",
     "v-tooltip": "2.0.0-rc.33",
     "vue": "2.5.17",
     "vue-axios": "^2.1.4",
