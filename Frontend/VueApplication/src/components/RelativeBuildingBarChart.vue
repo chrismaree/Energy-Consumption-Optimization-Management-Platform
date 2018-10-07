@@ -14,9 +14,14 @@ export default {
       data: [{ x: [1, 3], y: [2, 4] }],
       layout: {
         title: "Responsive to window's size!",
-        font: { size: 18 }
+        font: { size: 18 },
+        showLink: false,
+        displayModeBar: false
       },
-      options: { responsive: true }
+      options: {
+        responsive: true,
+        showLink: false
+      }
     };
   }
 };
