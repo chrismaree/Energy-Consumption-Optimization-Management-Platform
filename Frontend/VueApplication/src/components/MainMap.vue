@@ -40,7 +40,7 @@ function onEachFeature(feature, layer) {
       studentCount: feature.properties.studentCount
     }
   });
-  layer.bindPopup(popup.$mount().$el,{maxWidth: 1000});
+  layer.bindPopup(popup.$mount().$el,{maxWidth: 1700, maxHeight: 1000, autoPan: true});
 }
 export default {
   name: "Example",

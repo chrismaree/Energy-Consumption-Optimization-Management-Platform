@@ -1,6 +1,7 @@
 <template>
-    <Load Profi
-    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+    <div>
+    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="false"/>
+    </div>
 </template>
 
 <script>
@@ -69,6 +70,14 @@ export default {
       ],
 
       layout: {
+        margin: {
+          l: 20,
+          r: 20,
+          b: 50,
+          t: 50,
+          pad: 5
+        },
+        title: "Yearly Consumption Vs Normalized Average",
         xaxis: {
           tickangle: -45
         },
