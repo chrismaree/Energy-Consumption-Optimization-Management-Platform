@@ -3,7 +3,7 @@ import Router from "vue-router";
 
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
-import Dashboard from "./views/Dashboard.vue"
+import CampusOverview from "./views/CampusOverview.vue"
 
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
@@ -46,16 +46,16 @@ export default new Router({
       }
     },
     {
-      path: "/dashboard",
-      name: "dashboard",
+      path: "/CampusOverview",
+      name: "CampusOverview",
       components: {
-        default: Dashboard,
+        default: CampusOverview,
         header: MainNavbar,
         footer: MainFooter
       },
       props: {
         header: {
-          colorOnScroll: 400
+          colorOnScroll: 0
         },
         footer: {
           backgroundColor: "black"
