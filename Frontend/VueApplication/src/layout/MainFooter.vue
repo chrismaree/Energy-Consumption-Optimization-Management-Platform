@@ -6,30 +6,20 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
+                        <a href="https://www.wits.ac.za/eie/studies/courses/elen4000-electrical-engineering-design-ii/">
+                            Wits University
                         </a>
                     </li>
                     <li>
-                        <a href="https:///presentation.creative-tim.com">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https:///blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/license">
-                            Licenses
+                        <a href="https://www.wits.ac.za/eie/studies/courses/elen4000-electrical-engineering-design-ii/">
+                            ELEN4000 Electrical Engineering Design II
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="copyright">
-                &copy; {{year}}, made with <md-icon>favorite</md-icon> by
-                <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
+                &copy; {{year}}, under an <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>  licence.
+                <a href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">Github</a> 
             </div>
         </div>
     </footer>
