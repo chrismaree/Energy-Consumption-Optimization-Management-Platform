@@ -1,17 +1,6 @@
 <template>
   <div class="wrapper">
-    <parallax class="section page-header header-filter" :style="headerStyle">
-      <div class="container">
-        <div class="md-layout">
-    			<div class="md-layout-item md-size-100 md-small-size-70 md-xsmall-size-100">
-    				<h1 class="title">Wits University Energy Usage Vizualization</h1>
-              <h4>Visualize energy usage on campus to gain insight into behaviour, identify trends and reduce consumption</h4>
-              <br>
-              <md-button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="md-success md-lg" target="_blank"><i class="fas fa-play"></i> Watch video</md-button>
-    			</div>
-        </div>
-      </div>
-    </parallax>
+    
     <div class="main main-raised">
       <div class="section">
         <div class="container">
@@ -54,64 +43,17 @@
           </div>
         </div>
       </div>
-    </div>
-    <MainMap/>
-
-    <CommitChart/>
-
-    <RelativeBuildingBarChart/>
-
-    <Dashboard/>
-
-  
+    </div>  
   </div>
 </template>
 
 <script>
-import MainMap from '../components/MainMap'
-import CommitChart from '../components/CommitChart'
-import RelativeBuildingBarChart from '../components/RelativeBuildingBarChart'
-import Dashboard from './Dashboard'
-
 export default {
-  bodyClass: "landing-page",
-  components:{
-    MainMap,
-    CommitChart,
-    RelativeBuildingBarChart,
-    Dashboard
-  },
-  props: {
-    header: {
-      type: String,
-      default: require("@/assets/img/landingImage.jpg")
-      },
-  },
-  
-  data() {
-    return {
-    };
-  },
-  computed: {
-    headerStyle() {
-      return {
-        backgroundImage: `url(${this.header})`
-      };
-    }
-  }
-};
+    
+}
 </script>
 
-<style lang="scss" scoped>
-.md-card-actions.text-center {
-  display: flex;
-  justify-content: center !important;
-}
-.contact-form {
-  margin-top: 30px;
-}
+<style>
 
-.md-has-textarea + .md-layout {
-  margin-top: 15px;
-}
 </style>
+
