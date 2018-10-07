@@ -1,5 +1,5 @@
 <template>
-    <vue-plotly :data="data" :layout="layout" :options="options"/>
+    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
 </template>
 
 <script>
@@ -11,16 +11,74 @@ export default {
   },
   data: function() {
     return {
-      data: [{ x: [1, 3], y: [2, 4] }],
-      layout: {
-        title: "Responsive to window's size!",
-        font: { size: 18 },
+      //   data: [{ x: [1, 3], y: [2, 4] }],
+      //   layout: {
+      //     title: "Responsive to window's size!",
+      //     font: { size: 18 },
+      //     showLink: false,
+      //     displayModeBar: false
+      //   },
+      options: {
+        responsive: true,
         showLink: false,
         displayModeBar: false
       },
-      options: {
-        responsive: true,
-        showLink: false
+      data: [
+        {
+          x: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          y: [20, 14, 25, 16, 18, 22, 19, 15, 12, 16, 14, 17],
+          type: "bar",
+          name: "Primary Product",
+          marker: {
+            color: "rgb(49,130,189)",
+            opacity: 0.7
+          }
+        },
+
+        {
+          x: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          y: [19, 14, 22, 14, 16, 19, 15, 14, 10, 12, 12, 16],
+          type: "bar",
+          name: "Secondary Product",
+          marker: {
+            color: "rgb(204,204,204)",
+            opacity: 0.5
+          }
+        }
+      ],
+
+      layout: {
+        title: "2013 Sales Report",
+        xaxis: {
+          tickangle: -45
+        },
+        barmode: "group"
       }
     };
   }
