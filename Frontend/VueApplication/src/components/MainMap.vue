@@ -36,12 +36,11 @@ function onEachFeature(feature, layer) {
   let PopupCont = Vue.extend(PopupContent);
   let popup = new PopupCont({
     propsData: {
-      type: feature.geometry.type,
-      text: feature.properties.popupContent,
-      id: feature.properties.id
+      buildingName: feature.properties.buildingName,
+      studentCount: feature.properties.studentCount
     }
   });
-  layer.bindPopup(popup.$mount().$el);
+  layer.bindPopup(popup.$mount().$el,{maxWidth: 1000});
 }
 export default {
   name: "Example",

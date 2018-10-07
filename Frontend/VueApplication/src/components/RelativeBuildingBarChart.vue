@@ -7,6 +7,7 @@
 import VuePlotly from "@statnett/vue-plotly";
 
 export default {
+  name: "RelativeBuildingBarChart",
   components: {
     VuePlotly
   },

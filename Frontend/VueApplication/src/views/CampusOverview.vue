@@ -9,15 +9,9 @@
           </div>
           <!-- <basic-elements></basic-elements> -->
           
-          <div class="md-layout">
-            <div class="md-layout-item md-size-30">
-              Some charts
-            </div>
-        
-            <div class="md-layout-item md-size-70">
+          
               <MainMap/>
-            </div>
-          </div>
+          
           
       
       <!-- </div> -->

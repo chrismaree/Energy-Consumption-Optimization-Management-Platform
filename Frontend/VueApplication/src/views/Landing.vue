@@ -56,13 +56,11 @@
         </div>
       </div>
     </div>
-    <MainMap/>
-
-    <CommitChart/>
-
-    <RelativeBuildingBarChart/>
-
+    <div class="section">
+      <md-card class="pl-30">
     <CampusOverview/>
+      </md-card>
+    </div>
 
   
   </div>
