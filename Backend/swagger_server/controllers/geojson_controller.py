@@ -19,7 +19,6 @@ def get_geo_json_by_id(campusId):  # noqa: E501
     """
     return _stringify_object_id(ECOMP_DB.geojson.find({}))
 
-
 def _stringify_object_id(result):
     stringified_result = []
     for element in result:
