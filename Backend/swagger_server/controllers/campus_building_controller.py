@@ -3,8 +3,8 @@ import six
 
 from .global_vars import ECOMP_DB
 
-from swagger_server.models.building_information import BuildingInformation  # noqa: E501
-from swagger_server.models.campus import Campus  # noqa: E501
+# from swagger_server.models.building_information import BuildingInformation  # noqa: E501
+# from swagger_server.models.campus import Campus  # noqa: E501
 from swagger_server import util
 
 
@@ -18,7 +18,8 @@ def get_building_info_by_id(buildingId):  # noqa: E501
 
     :rtype: BuildingInformation
     """
-    return 'do some magic!'
+
+    return _stringify_object_id(ECOMP_DB.buildingInformation.find({"buildingId": str(buildingId)}))
 
 
 def get_campus_information():  # noqa: E501
@@ -28,6 +29,7 @@ def get_campus_information():  # noqa: E501
 
     :rtype: Campus
     """
+
     return _stringify_object_id(ECOMP_DB.campusInfo.find({}))
 
 

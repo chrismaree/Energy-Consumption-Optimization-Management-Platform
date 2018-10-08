@@ -7,6 +7,8 @@
 <script>
 import VuePlotly from "@statnett/vue-plotly";
 
+import store from "./../store/";
+
 export default {
   name: "RelativeBuildingBarChartMonth",
   components: {
@@ -16,7 +18,7 @@ export default {
     normalizeChart: {
       type: Boolean,
       deafault: true
-    },
+    }
   },
   data: function() {
     return {
@@ -68,7 +70,9 @@ export default {
             "Friday",
             "Saturday"
           ],
-          y: [20, 14, 25, 16, 18, 22, 19],
+          y:
+            store.state.databaseStore.buildingInformation[0].weekInformation
+              .LastWeek,
           type: "bar",
           name: "Last Week",
           marker: {
@@ -87,7 +91,9 @@ export default {
             "Friday",
             "Saturday"
           ],
-          y: [19, 14, 22, 14, 16, 19, 15],
+          y:
+            store.state.databaseStore.buildingInformation[0].weekInformation
+              .AverageWeek,
           type: "bar",
           name: "Average Week",
           marker: {
@@ -105,7 +111,9 @@ export default {
             "Friday",
             "Saturday"
           ],
-          y: [28, 22, 30, 28, 28, 31, 22],
+          y:
+            store.state.databaseStore.buildingInformation[0].weekInformation
+              .CampusAverageWeek,
           type: "line",
           mode: "lines",
           name: "Campus Average",
@@ -125,7 +133,9 @@ export default {
             "Friday",
             "Saturday"
           ],
-          y: [25, 19, 25, 26, 26, 28, 18],
+          y:
+            store.state.databaseStore.buildingInformation[0].weekInformation
+              .CampusAverageWeekNormalized,
           type: "line",
           mode: "lines",
           name: "Normalized Campus Average",
@@ -138,12 +148,11 @@ export default {
       ];
       console.log(this.normalizeChart);
       if (this.normalizeChart) {
-        charData[2].visible=false
-        charData[3].visible=true
-        this.$emit('myEvent')
-
+        charData[2].visible = false;
+        charData[3].visible = true;
+        this.$emit("myEvent");
       }
-      return charData
+      return charData;
     }
   }
 };

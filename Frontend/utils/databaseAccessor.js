@@ -19,4 +19,17 @@ export default class DatabaseAccessor {
             return response.data;
         });
     }
+
+    getBuildingInformation(building_id) {
+        let url = `${this.BASE_URL}/buildingInformation/${building_id}`
+        return axios.get(url, {
+            // headers: {
+            //     Authorization: "Bearer " + access_token
+            // }
+        }).then(response => {
+            console.log("getBuildingInformation Responce")
+            console.log(response.data)
+            return response.data;
+        });
+    }
 }

@@ -9,20 +9,16 @@ import databaseStore from './modules/databaseStore'
 Vue.use(Vuex)
 
 
-const createStore = () => {
-    return new Vuex.Store({
-        modules: {
-            session,
-            databaseStore
-        },
-        state: {
-            storeVal: 5
-        },
-        mutations: {
+export default new Vuex.Store({
+    modules: {
+        session,
+        databaseStore
+    },
+    state: {
+        storeVal: 5
+    },
+    mutations: {
 
-        },
-        plugins: [createPersistedState()]
-    })
-}
-
-export default createStore
+    },
+    plugins: [createPersistedState()]
+})

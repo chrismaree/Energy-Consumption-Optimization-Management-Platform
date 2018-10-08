@@ -7,45 +7,48 @@ const databaseAccessor = new DatabaseAccessor()
 // const auth = new Authenticator()
 
 const state = {
-    mapGeoJson: {}
-}
-
-const getters = {
-    getMapGeoJson(state) {
-        return state.mapGeoJson
-    },
+    mapGeoJson: {},
+    buildingInformation: {}
 }
 
 const mutations = {
     setMapGeoJson(state, mapGeoJson) {
         state.mapGeoJson = mapGeoJson
-    }
+    },
 
+    setBuildingInformation(state, buildingInformation) {
+        state.buildingInformation = buildingInformation;
+        console.log(state.buildingInformation)
+    }
 }
 
 const actions = {
 
     loadMapGeoJson({
-        dispatch,
         commit
     }) {
-        commit('setMapGeoJson', {
-            someString: 15
-        })
-        console.log("SET")
-        console.log(databaseAccessor)
         databaseAccessor.getGeoJson().then(geoJson => {
             console.log(geoJson)
-          commit('setMapGeoJson', geoJson[0])
+            commit('setMapGeoJson', geoJson[0])
         })
+    },
 
-
+    loadBuildingInformation({
+        commit,
+        rootState
+    }, buildingId) {
+        console.log("VUEX")
+        console.log(commit)
+        console.log(buildingId)
+        databaseAccessor.getBuildingInformation(buildingId).then(buildingInformation => {
+            console.log(buildingInformation)
+            commit('setBuildingInformation', buildingInformation)
+        })
     }
 }
 
 export default {
     state,
-    getters,
     mutations,
     actions
 }

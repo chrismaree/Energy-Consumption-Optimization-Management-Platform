@@ -37,7 +37,8 @@
 
     <relative-building-histogram v-if="mode=='histogram'" style="padding-top:-30px; margin-top:0px;"/>
         
-      <div v-observe-visibility="visibilityChanged"></div>
+    <div v-observe-visibility="visibilityChanged"></div>
+
   </div>
 </template>
 
@@ -46,6 +47,9 @@ import RelativeBuildingLineChartDay from "./RelativeBuildingLineChartDay";
 import RelativeBuildingBarChartWeek from "./RelativeBuildingBarChartWeek";
 import RelativeBuildingBarChartYear from "./RelativeBuildingBarChartYear";
 import RelativeBuildingHistogram from "./RelativeBuildingHistogram";
+
+import store from './../store/'
+import Vue from "vue"
 
 export default {
   name: "GeoJson2Popup",
@@ -64,15 +68,11 @@ export default {
     };
   },
   props: {
-    id: {
+    buildingId: {
       type: String,
       default: ""
     },
     buildingName: {
-      type: String,
-      default: ""
-    },
-    studentCount: {
       type: String,
       default: ""
     }
@@ -80,9 +80,13 @@ export default {
   methods: {
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
+      if(this.isVisible==true){
+        store.dispatch("loadBuildingInformation", this.buildingId)
+      }
     }
   },
-  mounted() {
+  mounted() {},
+  computed: {
   }
 };
 </script>

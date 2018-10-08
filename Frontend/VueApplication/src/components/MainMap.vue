@@ -35,8 +35,8 @@ function onEachFeature(feature, layer) {
   let PopupCont = Vue.extend(PopupContent);
   let popup = new PopupCont({
     propsData: {
-      buildingName: feature.properties.buildingName,
-      studentCount: feature.properties.studentCount
+      buildingId: feature.properties.id,
+      buildingName: feature.properties.buildingName
     }
   });
   layer.bindPopup(popup.$mount().$el,{maxWidth: "auto", maxHeight: 1000, autoPan: true});
