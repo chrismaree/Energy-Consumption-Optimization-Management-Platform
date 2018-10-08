@@ -1,0 +1,27 @@
+{
+    "buildingId": "0",
+    "dayInformation": {
+        "LastDay": [20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 21, 23, 24],
+        "AverageDay": [20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 21, 23, 24],
+        "CampusAverageDay": [20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 21, 23, 24],
+        "CampusAverageDayNormalized": [20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 20, 14, 25, 16, 18, 22, 19, 21, 23, 24]
+
+    },
+    "weekInformation": {
+        "LastWeek": [20, 14, 25, 16, 18, 22, 19],
+        "AverageWeek": [19, 14, 22, 14, 16, 19, 15],
+        "CampusAverageWeek": [28, 22, 30, 28, 28, 31, 22],
+        "CampusAverageWeekNormalized": [25, 19, 25, 26, 26, 28, 18]
+    },
+
+    "yearInformation": {
+        "LastYear": [20, 14, 25, 16, 18, 22, 19],
+        "AverageYear": [19, 14, 22, 14, 16, 19, 15],
+        "CampusAverageYear": [28, 22, 30, 28, 28, 31, 22],
+        "CampusAverageYearNormalized": [25, 19, 25, 26, 26, 28, 18]
+    },
+
+    "histogramInformation": {
+
+    }
+}

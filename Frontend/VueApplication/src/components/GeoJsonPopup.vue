@@ -78,18 +78,11 @@ export default {
     }
   },
   methods: {
-    printScreen() {
-      console.log("CLICKED");
-      console.log(this.id);
-      console.log("CLICKED1");
-    },
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
-      console.log(entry);
     }
   },
   mounted() {
-    console.log("MOUNTED");
   }
 };
 </script>
