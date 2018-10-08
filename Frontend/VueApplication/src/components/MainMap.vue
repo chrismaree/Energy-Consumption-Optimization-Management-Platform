@@ -54,6 +54,9 @@ export default {
       this.$store.dispatch("loadMapGeoJson");
     }
   },
+  mounted(){
+    this.$store.dispatch("loadMapGeoJson");
+  },
   data() {
     // 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=
     return {
