@@ -9,10 +9,11 @@ import {
 } from 'vue-chartjs'
 
 import MaterialKit from "./plugins/material-kit";
+import VueObserveVisibility from 'vue-observe-visibility'
 
+Vue.use(VueObserveVisibility)
 
 Vue.config.productionTip = false;
-
 
 Vue.component('v-map', Vue2Leaflet.Map);
 Vue.component('v-tilelayer', Vue2Leaflet.TileLayer);

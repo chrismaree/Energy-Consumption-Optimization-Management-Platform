@@ -17,14 +17,18 @@
         <md-checkbox v-model="mode" value="day">Day</md-checkbox>
         <md-checkbox v-model="mode" value="week">Week</md-checkbox>  
         <md-checkbox v-model="mode" value="year">Year</md-checkbox>  
+        <md-checkbox v-model="mode" value="histogram">Histogram</md-checkbox>  
         </div>
         <div class="md-layout-item md-size-50 md-alignment-top-right">
-          <md-switch v-model="boolean" class="md-primary">Primary</md-switch>
+          <md-switch v-model="addSetToCompare" class="md-primary">Primary</md-switch>
         </div>
     </div >
 
         
     <!-- <relative-building-bar-chart/> -->
+
+      <div ref="test" v-observe-visibility="visibilityChanged">Hello world!</div>
+
   </div>
 </template>
 
@@ -38,7 +42,9 @@ export default {
   },
   data: function() {
     return {
-      mode: "year"
+      mode: "year",
+      addSetToCompare: false,
+      isVisible: false
     };
   },
   props: {
@@ -60,7 +66,14 @@ export default {
       console.log("CLICKED");
       console.log(this.id);
       console.log("CLICKED1");
+    },
+    visibilityChanged(isVisible, entry) {
+      this.isVisible = isVisible;
+      console.log(entry);
     }
+  },
+  mounted() {
+    console.log("MOUNTED");
   }
 };
 </script>
