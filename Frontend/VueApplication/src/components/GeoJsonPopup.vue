@@ -22,9 +22,14 @@
         <md-switch v-model="addSetToCompare" style="float:right;" class="md-primary md-alignment-center-right">Compare</md-switch>
       </div>
     </div >
-  <relative-building-bar-chart-year v-if="mode=='year'" style="padding-top:-30px; margin-top:0px;"/>
   
-  <relative-building-bar-chart-day v-if="mode=='day'" style="padding-top:-30px; margin-top:0px;"/>
+    <relative-building-line-chart-day v-if="mode=='day'" style="padding-top:-30px; margin-top:0px;"/>
+
+<relative-building-bar-chart-week v-if="mode=='week'" style="padding-top:-30px; margin-top:0px;"/>    
+  
+  <relative-building-bar-chart-year v-if="mode=='year'" style="padding-top:-30px; margin-top:0px;"/>
+
+<relative-building-histogram v-if="mode=='histogram'" style="padding-top:-30px; margin-top:0px;"/>
         
       <div v-observe-visibility="visibilityChanged"></div>
 
@@ -32,14 +37,18 @@
 </template>
 
 <script>
+import RelativeBuildingLineChartDay from "./RelativeBuildingLineChartDay";
+import RelativeBuildingBarChartWeek from "./RelativeBuildingBarChartWeek";
 import RelativeBuildingBarChartYear from "./RelativeBuildingBarChartYear";
-import RelativeBuildingBarChartDay from "./RelativeBuildingBarChartDay";
+import RelativeBuildingHistogram from "./RelativeBuildingHistogram";
 
 export default {
   name: "GeoJson2Popup",
   components: {
+    RelativeBuildingLineChartDay,
+    RelativeBuildingBarChartWeek,
     RelativeBuildingBarChartYear,
-    RelativeBuildingBarChartDay
+    RelativeBuildingHistogram
   },
   data: function() {
     return {
