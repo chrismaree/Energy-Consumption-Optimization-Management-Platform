@@ -5,15 +5,10 @@
       <!-- <div class="section">
         <div class="container">     -->
           <div class="title">
-            <h2>Basic Elements</h2>
+          
           </div>
           <!-- <basic-elements></basic-elements> -->
-          
-          
-              <MainMap/>
-          
-          
-      
+            <MainMap/>
       <!-- </div> -->
       <!-- building analisis section -->
       <div class="section section-navbars">

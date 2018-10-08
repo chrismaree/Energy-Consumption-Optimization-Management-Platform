@@ -8,7 +8,7 @@
 import VuePlotly from "@statnett/vue-plotly";
 
 export default {
-  name: "RelativeBuildingBarChart",
+  name: "RelativeBuildingBarChartMonth",
   components: {
     VuePlotly
   },
@@ -70,6 +70,16 @@ export default {
       ],
 
       layout: {
+        legend: {
+          x: 0,
+          y: 1,
+          traceorder: "normal",
+          font: {
+            family: "sans-serif",
+            size: 12,
+            color: "#000"
+          }
+        },
         margin: {
           l: 20,
           r: 20,

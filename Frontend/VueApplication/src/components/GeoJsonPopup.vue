@@ -5,40 +5,41 @@
         <div class="md-title"><h2 style="padding-top:0px; margin-top:0px;">Chamber of Mines</h2></div>
         </div>
         <div class="md-layout-item md-size-50 md-alignment-top-right">
-          <p style="padding-top:0px; margin-top:0px; float:right;">Average Number of students: 10 <br>
+          <p style="padding-top:0px; margin-top:10px; float:right;">Average Number of students: 10 <br>
             This is the 5th biggest Consumer</p>
         </div>
     </div >
-  
-        <relative-building-bar-chart style="padding-top:-50px; margin-top:0px;"/>
-        
-        <div class="md-layout">
-      <div class="md-layout-item md-size-50 md-alignment-top-right">
-        <md-checkbox v-model="mode" value="day">Day</md-checkbox>
-        <md-checkbox v-model="mode" value="week">Week</md-checkbox>  
-        <md-checkbox v-model="mode" value="year">Year</md-checkbox>  
-        <md-checkbox v-model="mode" value="histogram">Histogram</md-checkbox>  
-        </div>
-        <div class="md-layout-item md-size-50 md-alignment-top-right">
-          <md-switch v-model="addSetToCompare" class="md-primary">Primary</md-switch>
-        </div>
+   
+    <div class="md-layout">
+      <div class="md-layout-item md-size-70 md-alignment-top-right">
+        <md-radio v-model="mode" value="day" style="margin-top:0px">Day</md-radio>
+        <md-radio v-model="mode" value="week" style="margin-top:0px">Week</md-radio>  
+        <md-radio v-model="mode" value="year" style="margin-top:0px">Year</md-radio>  
+        <md-radio v-model="mode" value="histogram" style="margin-top:0px">Histogram</md-radio>  
+      </div>
+      <div class="md-layout-item md-size-30 md-alignment-top-right">
+        <md-tooltip md-direction="top">Add building to comparison</md-tooltip>
+        <md-switch v-model="addSetToCompare" style="float:right;" class="md-primary md-alignment-center-right">Compare</md-switch>
+      </div>
     </div >
-
+  <relative-building-bar-chart-year v-if="mode=='year'" style="padding-top:-30px; margin-top:0px;"/>
+  
+  <relative-building-bar-chart-day v-if="mode=='day'" style="padding-top:-30px; margin-top:0px;"/>
         
-    <!-- <relative-building-bar-chart/> -->
-
-      <div ref="test" v-observe-visibility="visibilityChanged">Hello world!</div>
+      <div v-observe-visibility="visibilityChanged"></div>
 
   </div>
 </template>
 
 <script>
-import RelativeBuildingBarChart from "./RelativeBuildingBarChart";
+import RelativeBuildingBarChartYear from "./RelativeBuildingBarChartYear";
+import RelativeBuildingBarChartDay from "./RelativeBuildingBarChartDay";
 
 export default {
   name: "GeoJson2Popup",
   components: {
-    RelativeBuildingBarChart
+    RelativeBuildingBarChartYear,
+    RelativeBuildingBarChartDay
   },
   data: function() {
     return {

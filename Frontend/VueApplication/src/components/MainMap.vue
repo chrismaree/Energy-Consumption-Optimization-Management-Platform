@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      <md-button @click="Resize" class="md-primary">CLICKED</md-button>
       <l-map
         :zoom="zoom"
         :center="center"

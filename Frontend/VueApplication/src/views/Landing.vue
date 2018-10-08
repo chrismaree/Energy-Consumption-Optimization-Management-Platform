@@ -69,7 +69,6 @@
 <script>
 import MainMap from '../components/MainMap'
 import CommitChart from '../components/CommitChart'
-import RelativeBuildingBarChart from '../components/RelativeBuildingBarChart'
 import CampusOverview from './CampusOverview'
 
 export default {
@@ -77,7 +76,6 @@ export default {
   components:{
     MainMap,
     CommitChart,
-    RelativeBuildingBarChart,
     CampusOverview
   },
   props: {
