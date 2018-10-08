@@ -23,8 +23,20 @@ export default {
         {
           x: [1, 2, 3, 4, 5],
           y: [1, 3, 2, 3, 1],
+          type: "bar",
           mode: "lines",
-          name: "Solid",
+          name: "Building Average",
+          line: {
+            dash: "solid",
+            width: 4
+          }
+        },
+        {
+          x: [1, 2, 3, 4, 5],
+          y: [1, 3, 2, 3, 1],
+          type: "bar",
+          mode: "lines",
+          name: "Building Today",
           line: {
             dash: "solid",
             width: 4
@@ -34,8 +46,20 @@ export default {
         {
           x: [1, 2, 3, 4, 5],
           y: [6, 8, 7, 8, 6],
+          type: "line",
           mode: "lines",
-          name: "dashdot",
+          name: "Campus Average",
+          line: {
+            dash: "dashdot",
+            width: 4
+          }
+        },
+        {
+          x: [1, 2, 3, 4, 5],
+          y: [1.5, 2.5, 2.1, 2.5, 0.8],
+          type: "line",
+          mode: "lines",
+          name: "Normalized Campus Average",
           line: {
             dash: "dashdot",
             width: 4
