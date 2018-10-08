@@ -1,6 +1,6 @@
 <template>
     <div>
-    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="false"/>
+    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
     </div>
 </template>
 
@@ -8,9 +8,15 @@
 import VuePlotly from "@statnett/vue-plotly";
 
 export default {
-  name: "RelativeBuildingBarChartMonth",
+  name: "RelativeBuildingBarChartDay",
   components: {
     VuePlotly
+  },
+  props: {
+    normalizeChart: {
+      type: Boolean,
+      deafault: true
+    },
   },
   data: function() {
     return {
@@ -19,73 +25,126 @@ export default {
         showLink: false,
         displayModeBar: false
       },
-      data: [
-        {
-          x: [1, 2, 3, 4, 5],
-          y: [1, 3, 2, 3, 1],
-          type: "bar",
-          mode: "lines",
-          name: "Building Average",
-          line: {
-            dash: "solid",
-            width: 4
+      // data:
+
+      layout: {
+        legend: {
+          x: 0,
+          y: 0,
+          traceorder: "normal",
+          font: {
+            family: "sans-serif",
+            size: 12,
+            color: "#000"
           }
         },
+        margin: {
+          l: 45,
+          r: 0,
+          b: 60,
+          t: 50,
+          pad: 5
+        },
+        title: "Week Consumption Vs Normalized Average",
+        // xaxis: { title: "Week Day" },
+        yaxis: { title: "Energy Consumed (kW)" },
+        xaxis: {
+          tickangle: -45
+        },
+        barmode: "group"
+      }
+    };
+  },
+  computed: {
+    data() {
+      let charData = [
         {
-          x: [1, 2, 3, 4, 5],
-          y: [1, 3, 2, 3, 1],
+          x: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          y: [20, 14, 25, 16, 18, 22, 19],
           type: "bar",
-          mode: "lines",
-          name: "Building Today",
-          line: {
-            dash: "solid",
-            width: 4
+          name: "Last Week",
+          marker: {
+            color: "rgb(49,130,189)",
+            opacity: 0.7
           }
         },
 
         {
-          x: [1, 2, 3, 4, 5],
-          y: [6, 8, 7, 8, 6],
+          x: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          y: [19, 14, 22, 14, 16, 19, 15],
+          type: "bar",
+          name: "Average Week",
+          marker: {
+            color: "rgb(204,204,204)",
+            opacity: 0.5
+          }
+        },
+        {
+          x: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          y: [28, 22, 30, 28, 28, 31, 22],
           type: "line",
           mode: "lines",
           name: "Campus Average",
+          visible: true,
           line: {
             dash: "dashdot",
             width: 4
           }
         },
         {
-          x: [1, 2, 3, 4, 5],
-          y: [1.5, 2.5, 2.1, 2.5, 0.8],
+          x: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          y: [25, 19, 25, 26, 26, 28, 18],
           type: "line",
           mode: "lines",
           name: "Normalized Campus Average",
+          visible: false,
           line: {
             dash: "dashdot",
             width: 4
           }
         }
-      ],
+      ];
+      console.log(this.normalizeChart);
+      if (this.normalizeChart) {
+        charData[2].visible=false
+        charData[3].visible=true
+        this.$emit('myEvent')
 
-      layout: {
-        title: "Line Dash",
-        xaxis: {
-          range: [0.75, 5.25],
-          autorange: false
-        },
-        yaxis: {
-          range: [0, 18.5],
-          autorange: false
-        },
-        legend: {
-          y: 0.5,
-          traceorder: "reversed",
-          font: {
-            size: 16
-          }
-        }
       }
-    };
+      return charData
+    }
   }
 };
 </script>

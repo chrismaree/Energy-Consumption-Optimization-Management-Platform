@@ -1,9 +1,11 @@
 {
     "buildingID": 0,
-    "buildingName": 200,
+    "buildingName": "NOT Chamber Of mines",
     "numberOfStudentsAvg": 1000,
     "numberOfSensors": 42,
-    "averageDayDraw"
-    "averageWeek": {}
+    "dayPlotData": {},
+    "weekPlotData": {},
+    "yearPlotData": {},
+    "histogramPlotData": {}
 }
 

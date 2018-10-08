@@ -44,12 +44,11 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "0",
+                "buildingName": "NOT Chamber Of Mines",
                 "style": {
                     "color": "#999",
-                    "fillColor": "#E0DE5C",
+                    "fillColor": "#E04E5C",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
@@ -86,11 +85,11 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "4",
-                "popupContent": "This is the Auraria West Campus",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
-                    "fillColor": "#B0DE5C",
+                    "fillColor": "#D0DE5C",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
@@ -127,8 +126,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "5",
-                "popupContent": "This is the Auraria West Campus",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#D0DE5C",
@@ -192,9 +191,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -314,9 +312,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -380,9 +377,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -430,9 +426,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -480,9 +475,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -546,9 +540,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -652,9 +645,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -694,9 +686,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -752,9 +743,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -846,9 +836,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -960,9 +949,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1018,9 +1006,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1060,9 +1047,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1102,9 +1088,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1156,9 +1141,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1198,9 +1182,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1248,9 +1231,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1306,9 +1288,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1348,9 +1329,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1390,9 +1370,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1448,9 +1427,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1498,9 +1476,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1600,9 +1577,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1642,9 +1618,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1684,9 +1659,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1750,9 +1724,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1856,9 +1829,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1898,9 +1870,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1940,9 +1911,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",
@@ -1982,9 +1952,8 @@
                 "type": "Polygon"
             },
             "properties": {
-                "id": "SOME BUILDING",
-                "buildingName": "ChamberOfMines",
-                "StudentCount": "1000",
+                "id": "1",
+                "buildingName": "Chamber Of Mines",
                 "style": {
                     "color": "#999",
                     "fillColor": "#B0DE5C",

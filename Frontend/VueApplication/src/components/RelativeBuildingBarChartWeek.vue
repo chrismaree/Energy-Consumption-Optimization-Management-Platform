@@ -1,6 +1,6 @@
 <template>
     <div>
-    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="false"/>
+    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
     </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
     normalizeChart: {
       type: Boolean,
       deafault: true
-    }
+    },
   },
   data: function() {
     return {
@@ -45,7 +45,7 @@ export default {
           t: 50,
           pad: 5
         },
-        title: "Yearly Consumption Vs Normalized Average",
+        title: "Week Consumption Vs Normalized Average",
         // xaxis: { title: "Week Day" },
         yaxis: { title: "Energy Consumed (kW)" },
         xaxis: {

@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div style="width:800px; height: 600px">
     <div class="md-layout">
-      <div class="md-layout-item md-size-50 md-alignment-top-right">
-        <div class="md-title"><h2 style="padding-top:0px; margin-top:0px;">Chamber of Mines</h2></div>
+      <div class="md-layout-item md-size-65 md-alignment-top-right">
+        <div class="md-title"><h2 style="padding-top:0px; margin-top:0px;">{{buildingName}}</h2></div>
         </div>
-        <div class="md-layout-item md-size-50 md-alignment-top-right">
+        <div class="md-layout-item md-size-35 md-alignment-top-right">
           <p style="padding-top:0px; margin-top:10px; float:right;">Average Number of students: 10 <br>
             This is the 5th biggest Consumer</p>
         </div>
@@ -29,16 +29,15 @@
       </div>
     </div >
   
-    <relative-building-line-chart-day v-if="mode=='day'" style="padding-top:-30px; margin-top:0px;"/>
+    <relative-building-line-chart-day :normalizeChart="normalized" v-if="mode=='day' && isVisible" style="padding-top:-30px; margin-top:0px;"/>
 
-<relative-building-bar-chart-week :normalizeChart="normalized" v-if="mode=='week'" style="padding-top:-30px; margin-top:0px;"/>    
+    <relative-building-bar-chart-week :normalizeChart="normalized" v-if="mode=='week' && isVisible" style="padding-top:-30px; margin-top:0px;"/>    
   
-  <relative-building-bar-chart-year v-if="mode=='year'" style="padding-top:-30px; margin-top:0px;"/>
+    <relative-building-bar-chart-year :normalizeChart="normalized" v-if="mode=='year' && isVisible" style="padding-top:-30px; margin-top:0px;"/>
 
-<relative-building-histogram v-if="mode=='histogram'" style="padding-top:-30px; margin-top:0px;"/>
+    <relative-building-histogram v-if="mode=='histogram'" style="padding-top:-30px; margin-top:0px;"/>
         
       <div v-observe-visibility="visibilityChanged"></div>
-
   </div>
 </template>
 
@@ -58,7 +57,7 @@ export default {
   },
   data: function() {
     return {
-      mode: "year",
+      mode: "week",
       addSetToCompare: false,
       isVisible: false,
       normalized: false
