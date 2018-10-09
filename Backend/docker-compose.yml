@@ -34,6 +34,15 @@ services:
       - ~/cert:/etc/cert
     networks:
       - backbone
+  influxDB:
+    image: influxdb
+    networks: 
+      - backbone
+    ports: 
+      - 8086:8086
+    volumes:
+      - ./influxDB:/var/lib/influxdb
+
       
 networks: 
   backbone:

@@ -3,9 +3,12 @@
     "buildingName": "NOT Chamber Of mines",
     "numberOfStudentsAvg": 1000,
     "numberOfSensors": 42,
-    "dayPlotData": {},
-    "weekPlotData": {},
-    "yearPlotData": {},
-    "histogramPlotData": {}
+    "chartInformation": {},
+    "sensors": {
+        "SomeAddressHash": {
+            "sensorLocation": "Chamber of mines, ground floor",
+            "sensorGPSCoords": [24, 19]
+        }
+    },
+    "category": "Mixed"
 }
-

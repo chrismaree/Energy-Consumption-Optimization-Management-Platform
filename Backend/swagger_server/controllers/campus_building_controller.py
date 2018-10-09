@@ -3,7 +3,7 @@ import six
 
 from .global_vars import ECOMP_DB
 
-# from swagger_server.models.building_information import BuildingInformation  # noqa: E501
+from swagger_server.models.building_information import BuildingInformation  # noqa: E501
 # from swagger_server.models.campus import Campus  # noqa: E501
 from swagger_server import util
 

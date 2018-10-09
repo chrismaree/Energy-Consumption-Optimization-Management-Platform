@@ -1,6 +1,17 @@
 {
+    "type": "FeatureCollection",
     "features": [{
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Chamber of Mines"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -40,24 +51,21 @@
                             -26.19134352734578
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "0",
-                "buildingName": "NOT Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#E04E5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Flower Hall"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -81,24 +89,21 @@
                             -26.19151200416024
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#D0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Ithemba Labs High Voltage"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -122,89 +127,21 @@
                             -26.19152644501871
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#D0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02561342716217,
-                            -26.191213559350995
-                        ],
-                        [
-                            28.025650978088375,
-                            -26.191468681574094
-                        ],
-                        [
-                            28.0263215303421,
-                            -26.191396477228018
-                        ],
-                        [
-                            28.026278614997864,
-                            -26.191189491187913
-                        ],
-                        [
-                            28.026214241981506,
-                            -26.191189491187913
-                        ],
-                        [
-                            28.026198148727417,
-                            -26.191150982116604
-                        ],
-                        [
-                            28.025978207588196,
-                            -26.191170236653846
-                        ],
-                        [
-                            28.025988936424252,
-                            -26.191213559350995
-                        ],
-                        [
-                            28.025903105735775,
-                            -26.191228000246475
-                        ],
-                        [
-                            28.02589237689972,
-                            -26.191184677554684
-                        ],
-                        [
-                            28.02561342716217,
-                            -26.191213559350995
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Wits Science Stadium"
             },
-            "type": "Feature"
-        },
-        {
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -308,24 +245,21 @@
                             -26.190924741065615
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Mathematical Science Building"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -373,24 +307,21 @@
                             -26.190737008796116
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Zesti Lemonz"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -422,138 +353,21 @@
                             -26.190380798017202
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.026938438415527,
-                            -26.18987536193457
-                        ],
-                        [
-                            28.026949167251587,
-                            -26.190005331422416
-                        ],
-                        [
-                            28.02711009979248,
-                            -26.190043840872455
-                        ],
-                        [
-                            28.027217388153073,
-                            -26.190024586149022
-                        ],
-                        [
-                            28.027201294898987,
-                            -26.18987536193457
-                        ],
-                        [
-                            28.027169108390808,
-                            -26.189841666117758
-                        ],
-                        [
-                            28.026938438415527,
-                            -26.18987536193457
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "FNB Building"
             },
-            "type": "Feature"
-        },
-        {
             "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02656292915344,
-                            -26.19093918199691
-                        ],
-                        [
-                            28.026573657989502,
-                            -26.191054709382666
-                        ],
-                        [
-                            28.02709937095642,
-                            -26.190982504779996
-                        ],
-                        [
-                            28.0270779132843,
-                            -26.190866977322614
-                        ],
-                        [
-                            28.027238845825195,
-                            -26.190842909087916
-                        ],
-                        [
-                            28.027195930480957,
-                            -26.190582971836204
-                        ],
-                        [
-                            28.027029633522034,
-                            -26.190602226467337
-                        ],
-                        [
-                            28.02705645561218,
-                            -26.19077070435395
-                        ],
-                        [
-                            28.026777505874634,
-                            -26.190804399902042
-                        ],
-                        [
-                            28.026782870292664,
-                            -26.190915113777123
-                        ],
-                        [
-                            28.02656292915344,
-                            -26.19093918199691
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -641,426 +455,21 @@
                             -26.18969244166899
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02563488483429,
-                            -26.189971635643204
-                        ],
-                        [
-                            28.025656342506405,
-                            -26.19012085973433
-                        ],
-                        [
-                            28.02616059780121,
-                            -26.19005828191293
-                        ],
-                        [
-                            28.02613377571106,
-                            -26.189909057741644
-                        ],
-                        [
-                            28.02563488483429,
-                            -26.189971635643204
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "PEC PIMD Office Block"
             },
-            "type": "Feature"
-        },
-        {
             "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02589237689972,
-                            -26.189552844430967
-                        ],
-                        [
-                            28.025811910629272,
-                            -26.189605795127147
-                        ],
-                        [
-                            28.025795817375183,
-                            -26.18968281427864
-                        ],
-                        [
-                            28.02584946155548,
-                            -26.189745392301724
-                        ],
-                        [
-                            28.025940656661987,
-                            -26.18976946076319
-                        ],
-                        [
-                            28.026021122932434,
-                            -26.189711696447308
-                        ],
-                        [
-                            28.026042580604553,
-                            -26.18962986361746
-                        ],
-                        [
-                            28.025988936424252,
-                            -26.189567285532306
-                        ],
-                        [
-                            28.02589237689972,
-                            -26.189552844430967
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.025903105735775,
-                            -26.188378295527585
-                        ],
-                        [
-                            28.025962114334106,
-                            -26.18885485573159
-                        ],
-                        [
-                            28.02616596221924,
-                            -26.18883560081165
-                        ],
-                        [
-                            28.026257157325745,
-                            -26.188955944009102
-                        ],
-                        [
-                            28.026471734046936,
-                            -26.188994453806025
-                        ],
-                        [
-                            28.02663266658783,
-                            -26.18889336556195
-                        ],
-                        [
-                            28.026675581932068,
-                            -26.188792277230128
-                        ],
-                        [
-                            28.02686870098114,
-                            -26.18875376736638
-                        ],
-                        [
-                            28.02680432796478,
-                            -26.188267579241515
-                        ],
-                        [
-                            28.02663266658783,
-                            -26.188291648008306
-                        ],
-                        [
-                            28.026648759841915,
-                            -26.188407178019677
-                        ],
-                        [
-                            28.026450276374817,
-                            -26.188431246757627
-                        ],
-                        [
-                            28.026428818702698,
-                            -26.188262765487565
-                        ],
-                        [
-                            28.026273250579834,
-                            -26.188277206748833
-                        ],
-                        [
-                            28.026294708251953,
-                            -26.1884505017444
-                        ],
-                        [
-                            28.02607476711273,
-                            -26.188469756728004
-                        ],
-                        [
-                            28.026058673858643,
-                            -26.188359040528866
-                        ],
-                        [
-                            28.025903105735775,
-                            -26.188378295527585
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02490532398224,
-                            -26.18915812030096
-                        ],
-                        [
-                            28.025017976760864,
-                            -26.18914849286645
-                        ],
-                        [
-                            28.025017976760864,
-                            -26.189119610558134
-                        ],
-                        [
-                            28.025195002555847,
-                            -26.189085914522718
-                        ],
-                        [
-                            28.02515208721161,
-                            -26.18878264976538
-                        ],
-                        [
-                            28.025275468826294,
-                            -26.18876820856678
-                        ],
-                        [
-                            28.025280833244324,
-                            -26.18879709096221
-                        ],
-                        [
-                            28.0253666639328,
-                            -26.18880190469409
-                        ],
-                        [
-                            28.02559733390808,
-                            -26.189042591034298
-                        ],
-                        [
-                            28.02574217319488,
-                            -26.188758581100036
-                        ],
-                        [
-                            28.025720715522766,
-                            -26.188585286562738
-                        ],
-                        [
-                            28.025468587875366,
-                            -26.188609355263896
-                        ],
-                        [
-                            28.025436401367188,
-                            -26.188532335402705
-                        ],
-                        [
-                            28.02537739276886,
-                            -26.188498639197437
-                        ],
-                        [
-                            28.025313019752502,
-                            -26.188479384218603
-                        ],
-                        [
-                            28.025318384170532,
-                            -26.18842643301043
-                        ],
-                        [
-                            28.02489459514618,
-                            -26.188306089266
-                        ],
-                        [
-                            28.024824857711792,
-                            -26.188537149145525
-                        ],
-                        [
-                            28.024835586547848,
-                            -26.188671933863613
-                        ],
-                        [
-                            28.02490532398224,
-                            -26.188691188810616
-                        ],
-                        [
-                            28.024932146072388,
-                            -26.188955944009102
-                        ],
-                        [
-                            28.02487850189209,
-                            -26.188960757734414
-                        ],
-                        [
-                            28.02490532398224,
-                            -26.18915812030096
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.024964332580566,
-                            -26.189312159144958
-                        ],
-                        [
-                            28.0250072479248,
-                            -26.189600981428487
-                        ],
-                        [
-                            28.025790452957153,
-                            -26.189495080007667
-                        ],
-                        [
-                            28.025752902030945,
-                            -26.189220698605904
-                        ],
-                        [
-                            28.025484681129456,
-                            -26.189254394602337
-                        ],
-                        [
-                            28.025473952293396,
-                            -26.189206257461592
-                        ],
-                        [
-                            28.025232553482056,
-                            -26.189235139748423
-                        ],
-                        [
-                            28.02524864673614,
-                            -26.189273649453057
-                        ],
-                        [
-                            28.024964332580566,
-                            -26.189312159144958
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.025951385498047,
-                            -26.18925920831531
-                        ],
-                        [
-                            28.025988936424252,
-                            -26.18947101148952
-                        ],
-                        [
-                            28.026949167251587,
-                            -26.18936029624194
-                        ],
-                        [
-                            28.026922345161438,
-                            -26.18914849286645
-                        ],
-                        [
-                            28.025951385498047,
-                            -26.18925920831531
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1084,24 +493,21 @@
                             -26.188455315490604
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "DJ Du Plesis"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1137,24 +543,21 @@
                             -26.18813279405561
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "West Campus Village"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1178,24 +581,21 @@
                             -26.187415541693507
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Convocation Dining Hall"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1227,24 +627,21 @@
                             -26.187015996516397
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Barnato Residence"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1284,24 +681,21 @@
                             -26.186780119804766
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "David Webster Hall"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1325,65 +719,21 @@
                             -26.186780119804766
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02558660507202,
-                            -26.186375758616645
-                        ],
-                        [
-                            28.02561342716217,
-                            -26.186606822324553
-                        ],
-                        [
-                            28.02659511566162,
-                            -26.18650091818198
-                        ],
-                        [
-                            28.02655756473541,
-                            -26.18627466810033
-                        ],
-                        [
-                            28.02558660507202,
-                            -26.186375758616645
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "The Barns"
             },
-            "type": "Feature"
-        },
-        {
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1423,24 +773,21 @@
                             -26.186168763655836
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Olives and Plates"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1472,24 +819,21 @@
                             -26.18572588948133
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Johannesburg Planetarium"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1573,65 +917,21 @@
                             -26.188378295527585
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.02913784980774,
-                            -26.19055890354282
-                        ],
-                        [
-                            28.029186129570004,
-                            -26.19087179096896
-                        ],
-                        [
-                            28.029604554176327,
-                            -26.1908284681447
-                        ],
-                        [
-                            28.029550909996033,
-                            -26.190505953279867
-                        ],
-                        [
-                            28.02913784980774,
-                            -26.19055890354282
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Wartenweilier Library"
             },
-            "type": "Feature"
-        },
-        {
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1655,24 +955,21 @@
                             -26.19089104555235
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Origins Centre"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1720,129 +1017,21 @@
                             -26.19291275909642
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            28.029947876930237,
-                            -26.19243621549324
-                        ],
-                        [
-                            28.030039072036743,
-                            -26.193061979419795
-                        ],
-                        [
-                            28.030167818069458,
-                            -26.193042725195262
-                        ],
-                        [
-                            28.03014636039734,
-                            -26.19292719978122
-                        ],
-                        [
-                            28.03025901317596,
-                            -26.192917572658217
-                        ],
-                        [
-                            28.030275106430054,
-                            -26.193018657410132
-                        ],
-                        [
-                            28.030784726142883,
-                            -26.192965708265312
-                        ],
-                        [
-                            28.030763268470764,
-                            -26.192879064158234
-                        ],
-                        [
-                            28.03082764148712,
-                            -26.192864623467443
-                        ],
-                        [
-                            28.03084909915924,
-                            -26.192956081145486
-                        ],
-                        [
-                            28.030972480773926,
-                            -26.192946454024863
-                        ],
-                        [
-                            28.03087592124939,
-                            -26.192330316649983
-                        ],
-                        [
-                            28.03075790405273,
-                            -26.192344757407007
-                        ],
-                        [
-                            28.030779361724854,
-                            -26.192498792037174
-                        ],
-                        [
-                            28.030677437782284,
-                            -26.192513232773308
-                        ],
-                        [
-                            28.030672073364254,
-                            -26.192421774747555
-                        ],
-                        [
-                            28.030178546905514,
-                            -26.19246991055954
-                        ],
-                        [
-                            28.030200004577637,
-                            -26.19257580927587
-                        ],
-                        [
-                            28.030103445053097,
-                            -26.19259025000246
-                        ],
-                        [
-                            28.03007662296295,
-                            -26.192421774747555
-                        ],
-                        [
-                            28.029947876930237,
-                            -26.19243621549324
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Chemistry Building"
             },
-            "type": "Feature"
-        },
-        {
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1866,24 +1055,21 @@
                             -26.19197411074337
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Physics Building"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1907,24 +1093,21 @@
                             -26.191531258637806
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
-            },
-            "type": "Feature"
+                ]
+            }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Central Block"
+            },
             "geometry": {
+                "type": "Polygon",
                 "coordinates": [
                     [
                         [
@@ -1948,22 +1131,254 @@
                             -26.191796007381587
                         ]
                     ]
-                ],
-                "type": "Polygon"
-            },
+                ]
+            }
+        },
+        {
+            "type": "Feature",
             "properties": {
-                "id": "1",
-                "buildingName": "Chamber Of Mines",
-                "style": {
-                    "color": "#999",
-                    "fillColor": "#B0DE5C",
-                    "fillOpacity": 0.7,
-                    "opacity": 1,
-                    "weight": 2
-                }
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "William Cullen Library"
             },
-            "type": "Feature"
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            28.02913248538971,
+                            -26.190568530860766
+                        ],
+                        [
+                            28.029191493988034,
+                            -26.19089104555235
+                        ],
+                        [
+                            28.029599189758297,
+                            -26.190823654496576
+                        ],
+                        [
+                            28.02952408790588,
+                            -26.19051558060219
+                        ],
+                        [
+                            28.02913248538971,
+                            -26.190568530860766
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Gate House"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            28.032179474830627,
+                            -26.191897093106828
+                        ],
+                        [
+                            28.031702041625977,
+                            -26.191916347520742
+                        ],
+                        [
+                            28.031702041625977,
+                            -26.192080009910473
+                        ],
+                        [
+                            28.032206296920776,
+                            -26.19207519631405
+                        ],
+                        [
+                            28.032179474830627,
+                            -26.191897093106828
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Strurrock Park"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            28.02336573600769,
+                            -26.192883877721417
+                        ],
+                        [
+                            28.02314579486847,
+                            -26.19295126758527
+                        ],
+                        [
+                            28.02312970161438,
+                            -26.192864623467443
+                        ],
+                        [
+                            28.02341401576996,
+                            -26.19243140191155
+                        ],
+                        [
+                            28.023312091827393,
+                            -26.192397706834104
+                        ],
+                        [
+                            28.023000955581665,
+                            -26.192874250594823
+                        ],
+                        [
+                            28.023054599761963,
+                            -26.192989776061385
+                        ],
+                        [
+                            28.02289366722107,
+                            -26.193037911638633
+                        ],
+                        [
+                            28.022952675819397,
+                            -26.1931630640464
+                        ],
+                        [
+                            28.02308678627014,
+                            -26.19312455562756
+                        ],
+                        [
+                            28.02315652370453,
+                            -26.193317097594402
+                        ],
+                        [
+                            28.023462295532227,
+                            -26.193220826650762
+                        ],
+                        [
+                            28.02336573600769,
+                            -26.192883877721417
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Gym and Squash courts"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            28.026739954948425,
+                            -26.18618320517666
+                        ],
+                        [
+                            28.026798963546753,
+                            -26.18649610435503
+                        ],
+                        [
+                            28.02715301513672,
+                            -26.186428710756847
+                        ],
+                        [
+                            28.02708864212036,
+                            -26.186130252924873
+                        ],
+                        [
+                            28.026739954948425,
+                            -26.18618320517666
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 2,
+                "stroke-opacity": 1,
+                "fill": "#555555",
+                "fill-opacity": 0.5,
+                "buildingName": "Genmin Lab"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            28.026283979415894,
+                            -26.191194304820915
+                        ],
+                        [
+                            28.026198148727417,
+                            -26.191194304820915
+                        ],
+                        [
+                            28.026198148727417,
+                            -26.191146168481794
+                        ],
+                        [
+                            28.025978207588196,
+                            -26.191179863921274
+                        ],
+                        [
+                            28.025994300842285,
+                            -26.191228000246475
+                        ],
+                        [
+                            28.025903105735775,
+                            -26.1912328138779
+                        ],
+                        [
+                            28.02588164806366,
+                            -26.191179863921274
+                        ],
+                        [
+                            28.02561342716217,
+                            -26.19122318661485
+                        ],
+                        [
+                            28.02564561367035,
+                            -26.191463867952415
+                        ],
+                        [
+                            28.02631616592407,
+                            -26.191391663603362
+                        ],
+                        [
+                            28.026283979415894,
+                            -26.191194304820915
+                        ]
+                    ]
+                ]
+            }
         }
-    ],
-    "type": "FeatureCollection"
+    ]
 }
