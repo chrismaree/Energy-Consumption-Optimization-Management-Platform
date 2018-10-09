@@ -19,7 +19,7 @@ def get_building_info_by_id(buildingId):  # noqa: E501
     :rtype: BuildingInformation
     """
 
-    return _stringify_object_id(ECOMP_DB.buildingInformation.find({"buildingId": str(buildingId)}))
+    return _stringify_object_id(ECOMP_DB.buildingInformation.find({"buildingId": buildingId}))
 
 
 def get_campus_information():  # noqa: E501
