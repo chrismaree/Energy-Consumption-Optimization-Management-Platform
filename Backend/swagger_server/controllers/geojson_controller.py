@@ -3,7 +3,7 @@ import six
 
 from .global_vars import ECOMP_DB
 
-from swagger_server.models.geojson import Geojson  # noqa: E501
+# from swagger_server.models.geojson import Geojson  # noqa: E501
 from swagger_server import util
 
 

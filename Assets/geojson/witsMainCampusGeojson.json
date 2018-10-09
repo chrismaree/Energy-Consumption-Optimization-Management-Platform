@@ -3,12 +3,15 @@
     "features": [{
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Chamber of Mines"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Chamber of Mines",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -57,12 +60,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Flower Hall"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Flower Hall",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -95,12 +101,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Ithemba Labs High Voltage"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Ithemba Labs High Voltage",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -133,12 +142,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Wits Science Stadium"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Wits Science Stadium",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -251,12 +263,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Mathematical Science Building"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Mathematical Science Building",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -313,12 +328,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Zesti Lemonz"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Zesti Lemonz",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -359,12 +377,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "FNB Building"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "FNB Building",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -461,12 +482,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "PEC PIMD Office Block"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "PEC PIMD Office Block",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -499,12 +523,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "DJ Du Plesis"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "DJ Du Plesis",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -549,12 +576,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "West Campus Village"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "West Campus Village",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -587,12 +617,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Convocation Dining Hall"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Convocation Dining Hall",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -633,12 +666,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Barnato Residence"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Barnato Residence",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -687,12 +723,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "David Webster Hall"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "David Webster Hall",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -725,12 +764,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "The Barns"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "The Barns",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -779,12 +821,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Olives and Plates"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Olives and Plates",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -825,12 +870,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Johannesburg Planetarium"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Johannesburg Planetarium",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -923,12 +971,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Wartenweilier Library"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Wartenweilier Library",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -961,12 +1012,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Origins Centre"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Origins Centre",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1023,12 +1077,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Chemistry Building"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Chemistry Building",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1061,12 +1118,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Physics Building"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Physics Building",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1099,12 +1159,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Central Block"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Central Block",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1137,12 +1200,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "William Cullen Library"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "William Cullen Library",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1175,12 +1241,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Gate House"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Gate House",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1213,12 +1282,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Strurrock Park"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Strurrock Park",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1283,12 +1355,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Gym and Squash courts"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Gym and Squash courts",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -1321,12 +1396,15 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#555555",
-                "stroke-width": 2,
-                "stroke-opacity": 1,
-                "fill": "#555555",
-                "fill-opacity": 0.5,
-                "buildingName": "Genmin Lab"
+                "style": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "buildingName": "Genmin Lab",
+                "buildingId": 0
             },
             "geometry": {
                 "type": "Polygon",
