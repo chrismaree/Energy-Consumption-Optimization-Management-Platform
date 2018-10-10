@@ -35,11 +35,15 @@ function onEachFeature(feature, layer) {
   let PopupCont = Vue.extend(PopupContent);
   let popup = new PopupCont({
     propsData: {
-      buildingId: feature.properties.id,
+      buildingId: feature.properties.buildingId,
       buildingName: feature.properties.buildingName
     }
   });
-  layer.bindPopup(popup.$mount().$el,{maxWidth: "auto", maxHeight: 1000, autoPan: true});
+  layer.bindPopup(popup.$mount().$el, {
+    maxWidth: "auto",
+    maxHeight: 1000,
+    autoPan: true
+  });
 }
 export default {
   name: "Example",
@@ -48,13 +52,8 @@ export default {
     LTileLayer,
     LGeoJson
   },
-  methods: {
-    Resize() {
-      console.log("Button clicked");
-      this.$store.dispatch("loadMapGeoJson");
-    }
-  },
-  mounted(){
+  methods: {},
+  mounted() {
     this.$store.dispatch("loadMapGeoJson");
   },
   data() {

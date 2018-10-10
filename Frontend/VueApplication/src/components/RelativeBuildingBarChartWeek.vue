@@ -59,20 +59,22 @@ export default {
   },
   computed: {
     data() {
+      console.log(
+        Object.keys(
+          store.state.databaseStore.buildingInformation.ChartInformation
+            .WeekInformation.AverageWeek
+        )
+      );
       let charData = [
         {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y:
-            store.state.databaseStore.buildingInformation[0].weekInformation
-              .LastWeek,
+          x: Object.keys(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .WeekInformation.LastWeek
+          ),
+          y: Object.values(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .WeekInformation.LastWeek
+          ),
           type: "bar",
           name: "Last Week",
           marker: {
@@ -82,69 +84,61 @@ export default {
         },
 
         {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y:
-            store.state.databaseStore.buildingInformation[0].weekInformation
-              .AverageWeek,
+          x: Object.keys(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .WeekInformation.AverageWeek
+          ),
+          y: Object.values(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .WeekInformation.AverageWeek
+          ),
           type: "bar",
           name: "Average Week",
           marker: {
             color: "rgb(204,204,204)",
             opacity: 0.5
           }
-        },
-        {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y:
-            store.state.databaseStore.buildingInformation[0].weekInformation
-              .CampusAverageWeek,
-          type: "line",
-          mode: "lines",
-          name: "Campus Average",
-          visible: true,
-          line: {
-            dash: "dashdot",
-            width: 4
-          }
-        },
-        {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y:
-            store.state.databaseStore.buildingInformation[0].weekInformation
-              .CampusAverageWeekNormalized,
-          type: "line",
-          mode: "lines",
-          name: "Normalized Campus Average",
-          visible: false,
-          line: {
-            dash: "dashdot",
-            width: 4
-          }
         }
+        // {
+        //   x: [
+        //     "Sunday",
+        //     "Monday",
+        //     "Tuesday",
+        //     "Wednesday",
+        //     "Thursday",
+        //     "Friday",
+        //     "Saturday"
+        //   ],
+        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.WeekInformation.CampusAverageWeek),
+        //   type: "line",
+        //   mode: "lines",
+        //   name: "Campus Average",
+        //   visible: true,
+        //   line: {
+        //     dash: "dashdot",
+        //     width: 4
+        //   }
+        // },
+        // {
+        //   x: [
+        //     "Sunday",
+        //     "Monday",
+        //     "Tuesday",
+        //     "Wednesday",
+        //     "Thursday",
+        //     "Friday",
+        //     "Saturday"
+        //   ],
+        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.WeekInformation.CampusAverageWeekNormalized),
+        //   type: "line",
+        //   mode: "lines",
+        //   name: "Normalized Campus Average",
+        //   visible: false,
+        //   line: {
+        //     dash: "dashdot",
+        //     width: 4
+        //   }
+        // }
       ];
       console.log(this.normalizeChart);
       if (this.normalizeChart) {

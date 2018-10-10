@@ -7,6 +7,8 @@
 <script>
 import VuePlotly from "@statnett/vue-plotly";
 
+import store from "./../store/";
+
 export default {
   name: "RelativeBuildingBarChartYear",
   components: {
@@ -16,7 +18,7 @@ export default {
     normalizeChart: {
       type: Boolean,
       deafault: true
-    },
+    }
   },
   data: function() {
     return {
@@ -45,8 +47,8 @@ export default {
           t: 50,
           pad: 5
         },
-        title: "Week Consumption Vs Normalized Average",
-        // xaxis: { title: "Week Day" },
+        title: "Year Consumption Vs Normalized Average",
+        // xaxis: { title: "Year Day" },
         yaxis: { title: "Energy Consumed (kW)" },
         xaxis: {
           tickangle: -45
@@ -57,20 +59,24 @@ export default {
   },
   computed: {
     data() {
+      console.log(
+        Object.keys(
+          store.state.databaseStore.buildingInformation.ChartInformation
+            .YearInformation.AverageYear
+        )
+      );
       let charData = [
         {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y: [20, 14, 25, 16, 18, 22, 19],
+          x: Object.keys(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .YearInformation.LastYear
+          ),
+          y: Object.values(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .YearInformation.LastYear
+          ),
           type: "bar",
-          name: "Last Week",
+          name: "Last Year",
           marker: {
             color: "rgb(49,130,189)",
             opacity: 0.7
@@ -78,72 +84,69 @@ export default {
         },
 
         {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y: [19, 14, 22, 14, 16, 19, 15],
+          x: Object.keys(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .YearInformation.AverageYear
+          ),
+          y: Object.values(
+            store.state.databaseStore.buildingInformation.ChartInformation
+              .YearInformation.AverageYear
+          ),
           type: "bar",
-          name: "Average Week",
+          name: "Average Year",
           marker: {
             color: "rgb(204,204,204)",
             opacity: 0.5
           }
-        },
-        {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y: [28, 22, 30, 28, 28, 31, 22],
-          type: "line",
-          mode: "lines",
-          name: "Campus Average",
-          visible: true,
-          line: {
-            dash: "dashdot",
-            width: 4
-          }
-        },
-        {
-          x: [
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          y: [25, 19, 25, 26, 26, 28, 18],
-          type: "line",
-          mode: "lines",
-          name: "Normalized Campus Average",
-          visible: false,
-          line: {
-            dash: "dashdot",
-            width: 4
-          }
         }
+        // {
+        //   x: [
+        //     "Sunday",
+        //     "Monday",
+        //     "Tuesday",
+        //     "Wednesday",
+        //     "Thursday",
+        //     "Friday",
+        //     "Saturday"
+        //   ],
+        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.YearInformation.CampusAverageYear),
+        //   type: "line",
+        //   mode: "lines",
+        //   name: "Campus Average",
+        //   visible: true,
+        //   line: {
+        //     dash: "dashdot",
+        //     width: 4
+        //   }
+        // },
+        // {
+        //   x: [
+        //     "Sunday",
+        //     "Monday",
+        //     "Tuesday",
+        //     "Wednesday",
+        //     "Thursday",
+        //     "Friday",
+        //     "Saturday"
+        //   ],
+        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.YearInformation.CampusAverageYearNormalized),
+        //   type: "line",
+        //   mode: "lines",
+        //   name: "Normalized Campus Average",
+        //   visible: false,
+        //   line: {
+        //     dash: "dashdot",
+        //     width: 4
+        //   }
+        // }
       ];
       console.log(this.normalizeChart);
       if (this.normalizeChart) {
-        charData[2].visible=false
-        charData[3].visible=true
-        this.$emit('myEvent')
-
+        charData[2].visible = false;
+        charData[3].visible = true;
+        this.$emit("myEvent");
       }
-      return charData
+      return charData;
     }
   }
 };

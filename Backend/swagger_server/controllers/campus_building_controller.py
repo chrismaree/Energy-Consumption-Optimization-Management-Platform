@@ -20,7 +20,7 @@ def get_building_info_by_id(buildingId):  # noqa: E501
     """
     print("HIT BOI")
     print(buildingId)
-    return _stringify_object_id(ECOMP_DB.buildingInformation.find({"buildingId": buildingId}))
+    return _stringify_object_id(ECOMP_DB.buildingInformation.find({"BuildingId": buildingId}))
 
 
 def get_campus_information():  # noqa: E501

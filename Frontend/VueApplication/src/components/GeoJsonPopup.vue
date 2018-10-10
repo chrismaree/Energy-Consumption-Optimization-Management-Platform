@@ -69,8 +69,8 @@ export default {
   },
   props: {
     buildingId: {
-      type: String,
-      default: ""
+      type: Number,
+      default: 0
     },
     buildingName: {
       type: String,

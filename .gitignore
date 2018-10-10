@@ -1,4 +1,8 @@
-/influxDB/*
+**/influxDB
+influxDB
+Backend/influxDB
+Backend/influxDB/
+Backend/influxDB/*
 
 ### Node ###
 # Logs

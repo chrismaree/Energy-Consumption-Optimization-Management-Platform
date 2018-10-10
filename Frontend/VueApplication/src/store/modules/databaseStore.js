@@ -37,12 +37,10 @@ const actions = {
         commit,
         rootState
     }, buildingId) {
-        console.log("VUEX")
-        console.log(commit)
-        console.log(buildingId)
         databaseAccessor.getBuildingInformation(buildingId).then(buildingInformation => {
+            console.log("LOADED INFORMATION")
             console.log(buildingInformation)
-            commit('setBuildingInformation', buildingInformation)
+            commit('setBuildingInformation', buildingInformation[0])
         })
     }
 }

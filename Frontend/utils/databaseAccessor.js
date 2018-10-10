@@ -21,7 +21,10 @@ export default class DatabaseAccessor {
     }
 
     getBuildingInformation(building_id) {
+        console.log("URL")
+        console.log(building_id)
         let url = `${this.BASE_URL}/buildingInformation/${building_id}`
+        
         return axios.get(url, {
             // headers: {
             //     Authorization: "Bearer " + access_token
