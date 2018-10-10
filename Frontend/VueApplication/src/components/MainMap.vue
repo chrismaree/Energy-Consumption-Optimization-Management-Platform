@@ -1,10 +1,17 @@
 <template>
   <div>
-    <div>
+      <div class="md-layout" style="padding-top:0px; margin-top:0px; padding-left:20px">
+      <div class="md-layout-item md-size-50">
+        <md-radio v-model="mode" value="Day" style="margin-top:0px">Day</md-radio>
+        <md-radio v-model="mode" value="Week" style="margin-top:0px">Week</md-radio>  
+        <md-radio v-model="mode" value="Year" style="margin-top:0px">Year</md-radio>  
+        <md-radio v-model="mode" value="Histogram" style="margin-top:0px">Histogram</md-radio>
+      </div>
+      </div>
       <l-map
         :zoom="zoom"
         :center="center"
-        style="height: 800px; width: 100%">
+        style="height: 900px; width: 100%">
         <l-tile-layer
           :url="url"
           :attribution="attribution"/>
@@ -18,7 +25,6 @@
           />
       </l-map>
     </div>
-  </div>
 </template>
 
 <script>
@@ -59,6 +65,7 @@ export default {
   data() {
     // 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=
     return {
+      mode: "Week",
       zoom: 16.5,
       center: [-26.1913, 28.0266],
       url:
@@ -94,11 +101,13 @@ export default {
   },
   computed: {
     campusData() {
+      console.log(this.mode)
+      let chartMode = this.mode+"Style"
       return {
         geojson: [this.$store.state.databaseStore.mapGeoJson],
         options: {
           style: function(feature) {
-            return feature.properties && feature.properties.style;
+            return feature.properties && feature.properties[chartMode];
           },
           onEachFeature: onEachFeature
         }
