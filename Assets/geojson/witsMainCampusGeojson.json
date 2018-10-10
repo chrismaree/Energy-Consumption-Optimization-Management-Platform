@@ -3,7 +3,21 @@
     "features": [{
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -60,7 +74,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -101,7 +129,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -142,7 +184,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -263,7 +319,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -328,7 +398,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -377,7 +461,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -482,7 +580,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -523,7 +635,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -576,7 +702,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -617,7 +757,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -666,7 +820,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -723,7 +891,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -764,7 +946,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -821,7 +1017,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -870,7 +1080,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -971,7 +1195,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1012,7 +1250,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1077,7 +1329,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1118,7 +1384,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1159,7 +1439,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1200,7 +1494,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1241,7 +1549,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1282,7 +1604,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1355,7 +1691,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1396,7 +1746,21 @@
         {
             "type": "Feature",
             "properties": {
-                "style": {
+                "DayStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
