@@ -1,11 +1,18 @@
 <template>
   <div>
       <div class="md-layout" style="padding-top:0px; margin-top:0px; padding-left:20px">
-      <div class="md-layout-item md-size-50">
-        <md-radio v-model="mode" value="Day" style="margin-top:0px">Day</md-radio>
+      <div class="md-layout-item md-size-30">
+        <p>Heatmap Period
+        <md-radio v-model="mode" value="Day" style="padding-left:20px; margin-top:0px">Day</md-radio>
         <md-radio v-model="mode" value="Week" style="margin-top:0px">Week</md-radio>  
         <md-radio v-model="mode" value="Year" style="margin-top:0px">Year</md-radio>  
-        <md-radio v-model="mode" value="Histogram" style="margin-top:0px">Histogram</md-radio>
+        </p>
+      </div>
+      <div class="md-layout-item md-size-30">
+        <p>Plotted Values
+        <md-radio v-model="range" value="Average" style="padding-left:20px; margin-top:0px">Average</md-radio>
+        <md-radio v-model="range" value="Maximum" style="margin-top:0px">Maximum</md-radio>  
+        </p>
       </div>
       </div>
       <l-map
@@ -65,6 +72,7 @@ export default {
   data() {
     // 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=
     return {
+      range:"Average",
       mode: "Week",
       zoom: 16.5,
       center: [-26.1913, 28.0266],
@@ -101,8 +109,9 @@ export default {
   },
   computed: {
     campusData() {
-      console.log(this.mode)
-      let chartMode = this.mode+"Style"
+      // console.log(this.mode)
+      let chartMode = this.mode+"Style_"+this.range
+      console.log(chartMode)
       return {
         geojson: [this.$store.state.databaseStore.mapGeoJson],
         options: {
