@@ -3,21 +3,42 @@
     "features": [{
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -74,21 +95,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -129,21 +171,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -184,21 +247,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -319,21 +403,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -398,21 +503,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -461,21 +587,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -580,21 +727,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -635,21 +803,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -702,21 +891,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -757,21 +967,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -820,21 +1051,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -891,21 +1143,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -946,21 +1219,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1017,21 +1311,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1080,21 +1395,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1195,21 +1531,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1250,21 +1607,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1329,21 +1707,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1384,21 +1783,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1439,21 +1859,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1494,21 +1935,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1549,21 +2011,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1604,21 +2087,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1691,21 +2195,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
@@ -1746,21 +2271,42 @@
         {
             "type": "Feature",
             "properties": {
-                "DayStyle": {
+                "DayStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "WeekStyle": {
+                "WeekStyle_Maximum": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
                     "opacity": 1,
                     "weight": 2
                 },
-                "YearStyle": {
+                "YearStyle_Maximum": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "DayStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "WeekStyle_Average": {
+                    "color": "#999",
+                    "fillColor": "#999",
+                    "fillOpacity": 0.7,
+                    "opacity": 1,
+                    "weight": 2
+                },
+                "YearStyle_Average": {
                     "color": "#999",
                     "fillColor": "#999",
                     "fillOpacity": 0.7,
