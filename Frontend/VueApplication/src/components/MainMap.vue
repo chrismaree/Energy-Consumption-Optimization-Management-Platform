@@ -18,7 +18,8 @@
       <l-map
         :zoom="zoom"
         :center="center"
-        style="height: 900px; width: 100%">
+        style="height: 900px; width: 100%"
+        :options="options">
         <l-tile-layer
           :url="url"
           :attribution="attribution"/>
@@ -75,13 +76,18 @@ export default {
       range:"Average",
       mode: "Week",
       zoom: 16.5,
-      center: [-26.1913, 28.0266],
+      center: [-26.1893, 28.0266],
       url:
         "https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2hyaXNtYXJlZSIsImEiOiJjam1sdW5tMHAwOHlxM2tudWJtMGVnOXltIn0.FdRDSOeZfQ2cQEeEzHwyvw",
       attribution:
         'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Imagery © <a href="http://mapbox.com">Mapbox</a>'
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      options: {
+        zoomControl: false,
+        scrollWheelZoom:false,
+        attributionControl: false
+      }
       // bus: {
       //   geojson: data.freeBus,
       //   options: {
