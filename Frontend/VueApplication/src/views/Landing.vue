@@ -13,7 +13,7 @@
       </div>
     </parallax>
     <div class="main main-raised">
-      <div class="section">
+      <div class="section" style="padding-top:50px">
         <div class="container">
           <div class="md-layout">
             <div class="md-layout-item md-size-50 md-xsmall-size-100 mx-auto text-center">
@@ -56,9 +56,9 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <md-card class="pl-30">
-    <CampusOverview/>
+    <div class="main main-raised" style="margin-top:50px">
+      <md-card class="md-elevation-24">
+        <CampusOverview/>
       </md-card>
     </div>
 
@@ -67,9 +67,9 @@
 </template>
 
 <script>
-import MainMap from '../components/MainMap'
-import CommitChart from '../components/CommitChart'
-import CampusOverview from './CampusOverview'
+import MainMap from '@/components/MainMap'
+import CommitChart from '@/components/CommitChart'
+import CampusOverview from '@/views/sections/CampusOverview'
 
 export default {
   bodyClass: "landing-page",

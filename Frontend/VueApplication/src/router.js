@@ -3,7 +3,6 @@ import Router from "vue-router";
 
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
-import CampusOverview from "./views/CampusOverview.vue"
 
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
@@ -39,23 +38,6 @@ export default new Router({
       props: {
         header: {
           colorOnScroll: 400
-        },
-        footer: {
-          backgroundColor: "black"
-        }
-      }
-    },
-    {
-      path: "/CampusOverview",
-      name: "CampusOverview",
-      components: {
-        default: CampusOverview,
-        header: MainNavbar,
-        footer: MainFooter
-      },
-      props: {
-        header: {
-          colorOnScroll: 0
         },
         footer: {
           backgroundColor: "black"
