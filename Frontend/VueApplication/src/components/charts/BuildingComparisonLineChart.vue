@@ -1,4 +1,5 @@
 <template>
+    <div>
     <div class="md-layout">
       <div class="md-layout-item md-size-33 md-alignment-top-right">
       <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
@@ -9,6 +10,15 @@
       <div class="md-layout-item md-size-33 md-alignment-top-right">
       <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
       </div>
+    </div>
+    <div class="md-layout">
+      <div class="md-layout-item md-size-33 md-alignment-top-right">
+    
+    
+    {{chartRange}}{{chartType}}
+    
+    </div>
+    </div>
     </div>
 </template>
 
@@ -23,9 +33,13 @@ export default {
     VuePlotly
   },
   props: {
-    normalizeChart: {
-      type: Boolean,
-      deafault: true
+    chartRange: {
+      type: String,
+      deafault: "week"
+    },
+    chartType: {
+      type: String,
+      deafault: "Area"
     }
   },
   data: function() {
