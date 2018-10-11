@@ -12,9 +12,9 @@
    
     <div class="md-layout">
       <div class="md-layout-item md-size-50 md-alignment-top-right">
-        <md-radio v-model="mode" value="day" style="margin-top:0px">Day</md-radio>
-        <md-radio v-model="mode" value="week" style="margin-top:0px">Week</md-radio>  
-        <md-radio v-model="mode" value="year" style="margin-top:0px">Year</md-radio>  
+        <md-radio v-model="mode" value="Day" style="margin-top:0px">Day</md-radio>
+        <md-radio v-model="mode" value="Week" style="margin-top:0px">Week</md-radio>  
+        <md-radio v-model="mode" value="Year" style="margin-top:0px">Year</md-radio>  
       </div>
 
       <div class="md-layout-item md-size-50 md-alignment-top-right">
@@ -23,11 +23,13 @@
       </div>
     </div >
   
-    <relative-building-line-chart-day :normalizeChart="normalized" v-if="mode=='day' && isVisible" style="padding-top:-30px; margin-top:0px;"/>
+    <!-- <relative-building-line-chart-day :normalizeChart="normalized" v-if="mode=='day' && isVisible" style="padding-top:-30px; margin-top:0px;"/>
 
     <relative-building-bar-chart-week :normalizeChart="normalized" v-if="mode=='week' && isVisible" style="padding-top:-30px; margin-top:0px;"/>    
 
-    <relative-building-bar-chart-year :normalizeChart="normalized" v-if="mode=='year' && isVisible" style="padding-top:-30px; margin-top:0px;"/>
+    <relative-building-bar-chart-year :normalizeChart="normalized" v-if="mode=='year' && isVisible" style="padding-top:-30px; margin-top:0px;"/> -->
+
+    <relative-building-bar-chart :chartRange="mode" v-if="isVisible"/>
         
     <div v-observe-visibility="visibilityChanged"></div>
 
@@ -39,6 +41,8 @@ import RelativeBuildingLineChartDay from "./charts/RelativeBuildingLineChartDay"
 import RelativeBuildingBarChartWeek from "./charts/RelativeBuildingBarChartWeek";
 import RelativeBuildingBarChartYear from "./charts/RelativeBuildingBarChartYear";
 
+import RelativeBuildingBarChart from "./charts/RelativeBuildingBarChart";
+
 import store from './../store/'
 import Vue from "vue"
 
@@ -48,10 +52,11 @@ export default {
     RelativeBuildingLineChartDay,
     RelativeBuildingBarChartWeek,
     RelativeBuildingBarChartYear,
+    RelativeBuildingBarChart
   },
   data: function() {
     return {
-      mode: "week",
+      mode: "Week",
       addSetToCompare: false,
       isVisible: false,
       normalized: false
