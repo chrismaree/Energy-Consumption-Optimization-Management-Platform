@@ -1,6 +1,14 @@
 <template>
-    <div>
-    <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+    <div class="md-layout">
+      <div class="md-layout-item md-size-33 md-alignment-top-right">
+      <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+      </div>
+      <div class="md-layout-item md-size-33 md-alignment-top-right">
+      <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+      </div>
+      <div class="md-layout-item md-size-33 md-alignment-top-right">
+      <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+      </div>
     </div>
 </template>
 
@@ -10,7 +18,7 @@ import VuePlotly from "@statnett/vue-plotly";
 import store from "@/store/";
 
 export default {
-  name: "RelativeBuildingBarChartYear",
+  name: "BuildingComparisonLineChart",
   components: {
     VuePlotly
   },
@@ -27,6 +35,8 @@ export default {
         showLink: false,
         displayModeBar: false
       },
+      // data:
+
       layout: {
         legend: {
           x: 0,
@@ -45,8 +55,8 @@ export default {
           t: 50,
           pad: 5
         },
-        title: "Year Consumption Vs Normalized Average",
-        // xaxis: { title: "Year Day" },
+        title: "Week Consumption Vs Normalized Average",
+        // xaxis: { title: "Week Day" },
         yaxis: { title: "Energy Consumed (kW)" },
         xaxis: {
           tickangle: -45
@@ -60,21 +70,21 @@ export default {
       console.log(
         Object.keys(
           store.state.databaseStore.buildingInformation.ChartInformation
-            .YearInformation.AverageYear
+            .WeekInformation.AverageWeek
         )
       );
       let charData = [
         {
           x: Object.keys(
             store.state.databaseStore.buildingInformation.ChartInformation
-              .YearInformation.LastYear
+              .WeekInformation.LastWeek
           ),
           y: Object.values(
             store.state.databaseStore.buildingInformation.ChartInformation
-              .YearInformation.LastYear
+              .WeekInformation.LastWeek
           ),
           type: "bar",
-          name: "Last Year",
+          name: "Last Week",
           marker: {
             color: "rgb(49,130,189)",
             opacity: 0.7
@@ -84,25 +94,23 @@ export default {
         {
           x: Object.keys(
             store.state.databaseStore.buildingInformation.ChartInformation
-              .YearInformation.AverageYear
+              .WeekInformation.AverageWeek
           ),
           y: Object.values(
             store.state.databaseStore.buildingInformation.ChartInformation
-              .YearInformation.AverageYear
+              .WeekInformation.AverageWeek
           ),
           type: "bar",
-          name: "Average Year",
+          name: "Average Week",
           marker: {
             color: "rgb(204,204,204)",
             opacity: 0.5
           }
         },
         {
-          x: Object.keys(
-            store.state.databaseStore.campusInfo.AveragePastYear
-          ),
+          x: Object.keys(store.state.databaseStore.campusInfo.AveragePastWeek),
           y: Object.values(
-            store.state.databaseStore.campusInfo.AveragePastYear
+            store.state.databaseStore.campusInfo.AveragePastWeek
           ),
           type: "line",
           mode: "lines",

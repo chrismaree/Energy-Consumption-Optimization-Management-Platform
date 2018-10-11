@@ -115,26 +115,6 @@ export default {
             width: 4
           }
         }
-        // {
-        //   x: [
-        //     "Sunday",
-        //     "Monday",
-        //     "Tuesday",
-        //     "Wednesday",
-        //     "Thursday",
-        //     "Friday",
-        //     "Saturday"
-        //   ],
-        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.WeekInformation.CampusAverageWeekNormalized),
-        //   type: "line",
-        //   mode: "lines",
-        //   name: "Normalized Campus Average",
-        //   visible: false,
-        //   line: {
-        //     dash: "dashdot",
-        //     width: 4
-        //   }
-        // }
       ];
       console.log(this.normalizeChart);
       if (this.normalizeChart) {

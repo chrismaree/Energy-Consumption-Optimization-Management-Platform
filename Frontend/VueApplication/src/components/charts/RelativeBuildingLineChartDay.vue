@@ -3,7 +3,6 @@
     <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
     </div>
 </template>
-
 <script>
 import VuePlotly from "@statnett/vue-plotly";
 
@@ -82,7 +81,6 @@ export default {
             opacity: 0.7
           }
         },
-
         {
           x: Object.keys(
             store.state.databaseStore.buildingInformation.ChartInformation
@@ -100,12 +98,8 @@ export default {
           }
         },
         {
-          x: Object.keys(
-            store.state.databaseStore.campusInfo.AveragePastDay
-          ),
-          y: Object.values(
-            store.state.databaseStore.campusInfo.AveragePastDay
-          ),
+          x: Object.keys(store.state.databaseStore.campusInfo.AveragePastDay),
+          y: Object.values(store.state.databaseStore.campusInfo.AveragePastDay),
           type: "line",
           mode: "lines",
           name: "Campus Average",

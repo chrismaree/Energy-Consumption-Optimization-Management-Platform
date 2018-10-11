@@ -4,7 +4,7 @@
       <div class="md-layout-item md-size-25">
         <p>Plotted Values
         <md-radio v-model="range" value="Average" style="padding-left:20px; margin-top:0px">
-          <md-tooltip md-direction="top">Most recent day/week/year</md-tooltip>Last</md-radio>
+          <md-tooltip md-direction="top">Average day/week/year</md-tooltip>Average</md-radio>
         <md-radio v-model="range" value="Maximum" style="margin-top:0px"><md-tooltip md-direction="top">
           Highest past day/week/year</md-tooltip>Maximum</md-radio>  
         </p>
@@ -68,7 +68,7 @@ export default {
   components: {
     LMap,
     LTileLayer,
-    LGeoJson
+    LGeoJson,
   },
   methods: {},
   mounted() {
@@ -77,7 +77,8 @@ export default {
   data() {
     // 'https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=
     return {
-      range:"Average",
+      campus: "MainCampus",
+      range: "Average",
       mode: "Week",
       zoom: 16.5,
       center: [-26.1893, 28.0266],
@@ -89,7 +90,7 @@ export default {
         'Imagery © <a href="http://mapbox.com">Mapbox</a>',
       options: {
         zoomControl: false,
-        scrollWheelZoom:false,
+        scrollWheelZoom: false,
         attributionControl: false
       }
       // bus: {
@@ -120,8 +121,8 @@ export default {
   computed: {
     campusData() {
       // console.log(this.mode)
-      let chartMode = this.mode+"Style_"+this.range
-      console.log(chartMode)
+      let chartMode = this.mode + "Style_" + this.range;
+      console.log(chartMode);
       return {
         geojson: [this.$store.state.databaseStore.mapGeoJson],
         options: {
