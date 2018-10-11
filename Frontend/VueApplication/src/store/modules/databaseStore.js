@@ -10,8 +10,8 @@ const state = {
     mapGeoJson: {},
     campusInfo: {},
     buildingInformation: [],
-    selectedBuildingInformation: {},
-    comparisonArray:[]
+    selectedBuildingInformation: [],
+    comparisonArray: []
 }
 
 const mutations = {
@@ -19,7 +19,7 @@ const mutations = {
         state.mapGeoJson = mapGeoJson
     },
 
-    setCampusInfo(state,campusInfo){
+    setCampusInfo(state, campusInfo) {
         state.campusInfo = campusInfo
     },
 
@@ -31,13 +31,13 @@ const mutations = {
         state.selectedBuildingInformation = buildingInformation
         // console.log(state.buildingInformation)
     },
-    addComparisonBuilding(state,buildingId){
+    addComparisonBuilding(state, buildingId) {
         state.comparisonArray.push(buildingId)
     },
-    removeComparisionBuilding(state,buildingId){
+    removeComparisonBuilding(state, buildingId) {
         var index = state.comparisonArray.indexOf(buildingId);
         if (index > -1) {
-            state.comparisonArray = state.comparisonArray.array.splice(index, 1);
+            state.comparisonArray.splice(index, 1);
         }
     }
 }
@@ -60,14 +60,25 @@ const actions = {
 
     loadBuildingInformation({
         commit,
-        rootState
     }, buildingId) {
         databaseAccessor.getBuildingInformation(buildingId).then(buildingInformation => {
             console.log("LOADED INFORMATION")
             console.log(buildingInformation)
             commit('setBuildingInformation', buildingInformation[0])
         })
-    }
+    },
+
+    addComparisonBuilding({
+        commit,
+    }, buildingId) {
+        commit('addComparisonBuilding', buildingId)
+    },
+    
+    removeComparisonBuilding({
+        commit,
+    }, buildingId) {
+        commit('removeComparisonBuilding', buildingId)
+    },
 }
 
 export default {

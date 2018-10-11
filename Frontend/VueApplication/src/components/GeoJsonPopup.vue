@@ -68,9 +68,19 @@ export default {
     },
     compareBuilding(){
       console.log("I SWITCHED")
+      if (this.addSetToCompare){
+        store.dispatch("addComparisonBuilding", this.buildingId)
+      }
+      else{
+        store.dispatch("removeComparisonBuilding", this.buildingId)
+      }
     }
   },
-  mounted() {},
+  mounted() {
+    if (store.state.databaseStore.comparisonArray.included(this.buildingId)){
+    this.addSetToCompare = true
+    }
+  },
   computed: {
   }
 };
