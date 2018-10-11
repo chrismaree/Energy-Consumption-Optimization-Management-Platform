@@ -1,5 +1,5 @@
 <template>
-  <div style="width:800px; height: 600px">
+  <div style="width:800px; height: 550px">
     <div class="md-layout">
       <div class="md-layout-item md-size-65 md-alignment-top-right">
         <div class="md-title"><h2 style="padding-top:0px; margin-top:0px;">{{buildingName}}</h2></div>

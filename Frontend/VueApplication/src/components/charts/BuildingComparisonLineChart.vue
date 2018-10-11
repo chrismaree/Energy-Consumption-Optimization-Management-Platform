@@ -2,13 +2,13 @@
     <div>
     <div class="md-layout">
       <div class="md-layout-item md-size-33 md-alignment-top-right">
-      <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+      <vue-plotly :data="data2['Day']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
       <div class="md-layout-item md-size-33 md-alignment-top-right">
-      <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+      <vue-plotly :data="data2['Week']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
       <div class="md-layout-item md-size-33 md-alignment-top-right">
-      <vue-plotly :data="data" :layout="layout" :options="options" :autoResize="true"/>
+      <vue-plotly :data="data2['Year']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
     </div>
     <div class="md-layout">
@@ -80,14 +80,12 @@ export default {
     };
   },
   computed: {
-    data() {
-      console.log(
-        Object.keys(
-          store.state.databaseStore.buildingInformation.ChartInformation
-            .WeekInformation.AverageWeek
-        )
-      );
-      let charData = [
+    data2() {
+      // let plotsToDraw = ["Day", "Week", "Year"];
+      let returnedPlots = {"Day":{},"Week":{},"Year":{}}
+      Object.keys(returnedPlots).forEach(function(plotType){
+        console.log(plotType)
+        returnedPlots[plotType]= [
         {
           x: Object.keys(
             store.state.databaseStore.buildingInformation.ChartInformation
@@ -136,13 +134,13 @@ export default {
           }
         }
       ];
-      console.log(this.normalizeChart);
-      if (this.normalizeChart) {
-        charData[2].visible = false;
-        charData[3].visible = true;
-        this.$emit("myEvent");
-      }
-      return charData;
+        
+      })
+      return returnedPlots
+    },
+    data() {
+      // let charData = 
+      // return { Day: charData };
     }
   }
 };
