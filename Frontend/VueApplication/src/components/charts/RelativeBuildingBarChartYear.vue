@@ -7,7 +7,7 @@
 <script>
 import VuePlotly from "@statnett/vue-plotly";
 
-import store from "./../store/";
+import store from "@/store/";
 
 export default {
   name: "RelativeBuildingBarChartYear",
