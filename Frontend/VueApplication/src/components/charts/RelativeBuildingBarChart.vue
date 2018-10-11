@@ -20,11 +20,11 @@ export default {
       deafault: "Week"
     },
     buildingId: {
-        type: Number,
-        default: 0
+      type: Number,
+      default: 0
     }
   },
-    data: function() {
+  data: function() {
     return {
       options: {
         responsive: true,
@@ -62,23 +62,23 @@ export default {
     };
   },
   computed: {
-        data() {
-      // let plotsToDraw = ["Day", "Week", "Year"];
+    data() {
       let returnedPlots = { Day: [], Week: [], Year: [] };
-      let buildingId = this.buildingId
+      let buildingId = this.buildingId;
+      let buildingInformation =
+        store.state.databaseStore.selectedBuildingInformation;
       Object.keys(returnedPlots).forEach(function(plotType) {
-        console.log(plotType);
-        console.log(store.state)
-        console.log(returnedPlots)
         returnedPlots[plotType] = [
           {
             x: Object.keys(
-              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
-                [plotType+"Information"]["Last"+plotType]
+              buildingInformation.ChartInformation[plotType + "Information"][
+                "Last" + plotType
+              ]
             ),
             y: Object.values(
-              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
-                [plotType+"Information"]["Last"+plotType]
+              buildingInformation.ChartInformation[plotType + "Information"][
+                "Last" + plotType
+              ]
             ),
             type: "bar",
             name: "Last Week",
@@ -89,12 +89,14 @@ export default {
           },
           {
             x: Object.keys(
-              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
-                [plotType+"Information"]["Average"+plotType]
+              buildingInformation.ChartInformation[plotType + "Information"][
+                "Average" + plotType
+              ]
             ),
             y: Object.values(
-              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
-                [plotType+"Information"]["Average"+plotType]
+              buildingInformation.ChartInformation[plotType + "Information"][
+                "Average" + plotType
+              ]
             ),
             type: "bar",
             name: "Average Week",
@@ -105,10 +107,10 @@ export default {
           },
           {
             x: Object.keys(
-              store.state.databaseStore.campusInfo["AveragePast"+plotType]
+              store.state.databaseStore.campusInfo["AveragePast" + plotType]
             ),
             y: Object.values(
-              store.state.databaseStore.campusInfo["AveragePast"+plotType]
+              store.state.databaseStore.campusInfo["AveragePast" + plotType]
             ),
             type: "line",
             mode: "lines",
@@ -122,7 +124,7 @@ export default {
         ];
       });
       return returnedPlots;
-    },
+    }
   }
 };
 </script>

@@ -9,7 +9,8 @@ const databaseAccessor = new DatabaseAccessor()
 const state = {
     mapGeoJson: {},
     campusInfo: {},
-    buildingInformation: {},
+    buildingInformation: [],
+    selectedBuildingInformation: {},
     comparisonArray:[]
 }
 
@@ -24,9 +25,10 @@ const mutations = {
 
     setBuildingInformation(state, buildingInformation) {
         console.log("INBUILDING")
-        console.log(buildingInformation)
-        console.log(buildingInformation["BuildingId"])
+        // console.log(buildingInformation)
+        // console.log(buildingInformation["BuildingId"])
         state.buildingInformation[buildingInformation["BuildingId"]] = buildingInformation;
+        state.selectedBuildingInformation = buildingInformation
         // console.log(state.buildingInformation)
     },
     addComparisonBuilding(state,buildingId){

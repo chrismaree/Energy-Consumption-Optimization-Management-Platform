@@ -19,7 +19,7 @@
 
       <div class="md-layout-item md-size-50 md-alignment-top-right">
         <md-tooltip md-direction="top">Add building to comparison</md-tooltip>
-        <md-switch v-model="addSetToCompare" style="float:right;" class="md-primary md-alignment-center-right">Compare Building</md-switch>
+        <md-switch @change="compareBuilding" v-model="addSetToCompare" style="float:right;" class="md-primary md-alignment-center-right">Compare Building</md-switch>
       </div>
     </div >
 
@@ -65,6 +65,9 @@ export default {
       if(this.isVisible==true){
         store.dispatch("loadBuildingInformation", this.buildingId)
       }
+    },
+    compareBuilding(){
+      console.log("I SWITCHED")
     }
   },
   mounted() {},
