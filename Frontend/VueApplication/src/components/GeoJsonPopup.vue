@@ -23,7 +23,7 @@
       </div>
     </div >
 
-    <relative-building-bar-chart :chartRange="mode" v-if="isVisible"/>
+    <relative-building-bar-chart :buildingId="buildingId" :chartRange="mode" v-if="isVisible"/>
         
     <div v-observe-visibility="visibilityChanged"></div>
 

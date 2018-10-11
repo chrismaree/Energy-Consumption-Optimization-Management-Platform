@@ -10,6 +10,7 @@ const state = {
     mapGeoJson: {},
     campusInfo: {},
     buildingInformation: {},
+    comparisonArray:[]
 }
 
 const mutations = {
@@ -22,8 +23,20 @@ const mutations = {
     },
 
     setBuildingInformation(state, buildingInformation) {
-        state.buildingInformation = buildingInformation;
-        console.log(state.buildingInformation)
+        console.log("INBUILDING")
+        console.log(buildingInformation)
+        console.log(buildingInformation["BuildingId"])
+        state.buildingInformation[buildingInformation["BuildingId"]] = buildingInformation;
+        // console.log(state.buildingInformation)
+    },
+    addComparisonBuilding(state,buildingId){
+        state.comparisonArray.push(buildingId)
+    },
+    removeComparisionBuilding(state,buildingId){
+        var index = state.comparisonArray.indexOf(buildingId);
+        if (index > -1) {
+            state.comparisonArray = state.comparisonArray.array.splice(index, 1);
+        }
     }
 }
 

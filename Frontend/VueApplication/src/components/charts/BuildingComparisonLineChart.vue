@@ -138,10 +138,66 @@ export default {
       })
       return returnedPlots
     },
-    data() {
-      // let charData = 
-      // return { Day: charData };
-    }
+        data() {
+      // let plotsToDraw = ["Day", "Week", "Year"];
+      let returnedPlots = { Day: [], Week: [], Year: [] };
+      Object.keys(returnedPlots).forEach(function(plotType) {
+        console.log(plotType);
+        console.log(store.state)
+        console.log(returnedPlots)
+        returnedPlots[plotType] = [
+          {
+            x: Object.keys(
+              store.state.databaseStore.buildingInformation.ChartInformation
+                [plotType+"Information"]["Last"+plotType]
+            ),
+            y: Object.values(
+              store.state.databaseStore.buildingInformation.ChartInformation
+                [plotType+"Information"]["Last"+plotType]
+            ),
+            type: "bar",
+            name: "Last Week",
+            marker: {
+              color: "rgb(49,130,189)",
+              opacity: 0.7
+            }
+          },
+          {
+            x: Object.keys(
+              store.state.databaseStore.buildingInformation.ChartInformation
+                [plotType+"Information"]["Average"+plotType]
+            ),
+            y: Object.values(
+              store.state.databaseStore.buildingInformation.ChartInformation
+                [plotType+"Information"]["Average"+plotType]
+            ),
+            type: "bar",
+            name: "Average Week",
+            marker: {
+              color: "rgb(204,204,204)",
+              opacity: 0.5
+            }
+          },
+          {
+            x: Object.keys(
+              store.state.databaseStore.campusInfo["AveragePast"+plotType]
+            ),
+            y: Object.values(
+              store.state.databaseStore.campusInfo["AveragePast"+plotType]
+            ),
+            type: "line",
+            mode: "lines",
+            name: "Campus Average",
+            visible: true,
+            line: {
+              dash: "dashdot",
+              width: 4
+            }
+          }
+        ];
+      });
+      return returnedPlots;
+    },
   }
 };
 </script>

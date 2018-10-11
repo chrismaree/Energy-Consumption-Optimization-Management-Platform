@@ -18,6 +18,10 @@ export default {
     chartRange: {
       type: String,
       deafault: "Week"
+    },
+    buildingId: {
+        type: Number,
+        default: 0
     }
   },
     data: function() {
@@ -58,9 +62,10 @@ export default {
     };
   },
   computed: {
-    data() {
+        data() {
       // let plotsToDraw = ["Day", "Week", "Year"];
       let returnedPlots = { Day: [], Week: [], Year: [] };
+      let buildingId = this.buildingId
       Object.keys(returnedPlots).forEach(function(plotType) {
         console.log(plotType);
         console.log(store.state)
@@ -68,11 +73,11 @@ export default {
         returnedPlots[plotType] = [
           {
             x: Object.keys(
-              store.state.databaseStore.buildingInformation.ChartInformation
+              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
                 [plotType+"Information"]["Last"+plotType]
             ),
             y: Object.values(
-              store.state.databaseStore.buildingInformation.ChartInformation
+              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
                 [plotType+"Information"]["Last"+plotType]
             ),
             type: "bar",
@@ -84,11 +89,11 @@ export default {
           },
           {
             x: Object.keys(
-              store.state.databaseStore.buildingInformation.ChartInformation
+              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
                 [plotType+"Information"]["Average"+plotType]
             ),
             y: Object.values(
-              store.state.databaseStore.buildingInformation.ChartInformation
+              store.state.databaseStore.buildingInformation[buildingId].ChartInformation
                 [plotType+"Information"]["Average"+plotType]
             ),
             type: "bar",
