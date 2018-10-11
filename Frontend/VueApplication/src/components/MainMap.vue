@@ -1,6 +1,12 @@
 <template>
   <div>
       <div class="md-layout" style="padding-top:0px; margin-top:0px; padding-left:20px">
+      <div class="md-layout-item md-size-25">
+        <p>Plotted Values
+        <md-radio v-model="range" value="Average" style="padding-left:20px; margin-top:0px">Last</md-radio>
+        <md-radio v-model="range" value="Maximum" style="margin-top:0px">Maximum</md-radio>  
+        </p>
+      </div>
       <div class="md-layout-item md-size-30">
         <p>Heatmap Period
         <md-radio v-model="mode" value="Day" style="padding-left:20px; margin-top:0px">Day</md-radio>
@@ -8,12 +14,7 @@
         <md-radio v-model="mode" value="Year" style="margin-top:0px">Year</md-radio>  
         </p>
       </div>
-      <div class="md-layout-item md-size-30">
-        <p>Plotted Values
-        <md-radio v-model="range" value="Average" style="padding-left:20px; margin-top:0px">Average</md-radio>
-        <md-radio v-model="range" value="Maximum" style="margin-top:0px">Maximum</md-radio>  
-        </p>
-      </div>
+  
       </div>
       <l-map
         :zoom="zoom"

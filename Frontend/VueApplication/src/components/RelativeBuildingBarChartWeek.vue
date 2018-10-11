@@ -98,27 +98,23 @@ export default {
             color: "rgb(204,204,204)",
             opacity: 0.5
           }
+        },
+        {
+          x: Object.keys(
+            store.state.databaseStore.campusInfo.AveragePastWeek
+          ),
+          y: Object.values(
+            store.state.databaseStore.campusInfo.AveragePastWeek
+          ),
+          type: "line",
+          mode: "lines",
+          name: "Campus Average",
+          visible: true,
+          line: {
+            dash: "dashdot",
+            width: 4
+          }
         }
-        // {
-        //   x: [
-        //     "Sunday",
-        //     "Monday",
-        //     "Tuesday",
-        //     "Wednesday",
-        //     "Thursday",
-        //     "Friday",
-        //     "Saturday"
-        //   ],
-        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.WeekInformation.CampusAverageWeek),
-        //   type: "line",
-        //   mode: "lines",
-        //   name: "Campus Average",
-        //   visible: true,
-        //   line: {
-        //     dash: "dashdot",
-        //     width: 4
-        //   }
-        // },
         // {
         //   x: [
         //     "Sunday",

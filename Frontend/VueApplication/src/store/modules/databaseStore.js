@@ -8,12 +8,17 @@ const databaseAccessor = new DatabaseAccessor()
 
 const state = {
     mapGeoJson: {},
-    buildingInformation: {}
+    campusInfo: {},
+    buildingInformation: {},
 }
 
 const mutations = {
     setMapGeoJson(state, mapGeoJson) {
         state.mapGeoJson = mapGeoJson
+    },
+
+    setCampusInfo(state,campusInfo){
+        state.campusInfo = campusInfo
     },
 
     setBuildingInformation(state, buildingInformation) {
@@ -30,6 +35,11 @@ const actions = {
         databaseAccessor.getGeoJson().then(geoJson => {
             console.log(geoJson)
             commit('setMapGeoJson', geoJson[0])
+        })
+
+        databaseAccessor.getCampusInfo().then(campusInfo => {
+            console.log(campusInfo)
+            commit("setCampusInfo", campusInfo[0])
         })
     },
 

@@ -98,47 +98,23 @@ export default {
             color: "rgb(204,204,204)",
             opacity: 0.5
           }
+        },
+        {
+          x: Object.keys(
+            store.state.databaseStore.campusInfo.AveragePastYear
+          ),
+          y: Object.values(
+            store.state.databaseStore.campusInfo.AveragePastYear
+          ),
+          type: "line",
+          mode: "lines",
+          name: "Campus Average",
+          visible: true,
+          line: {
+            dash: "dashdot",
+            width: 4
+          }
         }
-        // {
-        //   x: [
-        //     "Sunday",
-        //     "Monday",
-        //     "Tuesday",
-        //     "Wednesday",
-        //     "Thursday",
-        //     "Friday",
-        //     "Saturday"
-        //   ],
-        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.YearInformation.CampusAverageYear),
-        //   type: "line",
-        //   mode: "lines",
-        //   name: "Campus Average",
-        //   visible: true,
-        //   line: {
-        //     dash: "dashdot",
-        //     width: 4
-        //   }
-        // },
-        // {
-        //   x: [
-        //     "Sunday",
-        //     "Monday",
-        //     "Tuesday",
-        //     "Wednesday",
-        //     "Thursday",
-        //     "Friday",
-        //     "Saturday"
-        //   ],
-        //   y: Object.values(store.state.databaseStore.buildingInformation.ChartInformation.YearInformation.CampusAverageYearNormalized),
-        //   type: "line",
-        //   mode: "lines",
-        //   name: "Normalized Campus Average",
-        //   visible: false,
-        //   line: {
-        //     dash: "dashdot",
-        //     width: 4
-        //   }
-        // }
       ];
       console.log(this.normalizeChart);
       if (this.normalizeChart) {
