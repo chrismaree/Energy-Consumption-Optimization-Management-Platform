@@ -22,12 +22,6 @@
         <md-switch v-model="addSetToCompare" style="float:right;" class="md-primary md-alignment-center-right">Compare Building</md-switch>
       </div>
     </div >
-  
-    <!-- <relative-building-line-chart-day :normalizeChart="normalized" v-if="mode=='day' && isVisible" style="padding-top:-30px; margin-top:0px;"/>
-
-    <relative-building-bar-chart-week :normalizeChart="normalized" v-if="mode=='week' && isVisible" style="padding-top:-30px; margin-top:0px;"/>    
-
-    <relative-building-bar-chart-year :normalizeChart="normalized" v-if="mode=='year' && isVisible" style="padding-top:-30px; margin-top:0px;"/> -->
 
     <relative-building-bar-chart :chartRange="mode" v-if="isVisible"/>
         
@@ -37,10 +31,6 @@
 </template>
 
 <script>
-import RelativeBuildingLineChartDay from "./charts/RelativeBuildingLineChartDay";
-import RelativeBuildingBarChartWeek from "./charts/RelativeBuildingBarChartWeek";
-import RelativeBuildingBarChartYear from "./charts/RelativeBuildingBarChartYear";
-
 import RelativeBuildingBarChart from "./charts/RelativeBuildingBarChart";
 
 import store from './../store/'
@@ -49,9 +39,6 @@ import Vue from "vue"
 export default {
   name: "GeoJson2Popup",
   components: {
-    RelativeBuildingLineChartDay,
-    RelativeBuildingBarChartWeek,
-    RelativeBuildingBarChartYear,
     RelativeBuildingBarChart
   },
   data: function() {
