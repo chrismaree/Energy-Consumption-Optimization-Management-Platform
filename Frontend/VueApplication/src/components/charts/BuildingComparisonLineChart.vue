@@ -1,19 +1,18 @@
 <template>
     <div>
-    <div class="md-layout">
-      <div class="md-layout-item md-size-33 md-alignment-top-right">
+    <div class="md-layout">c
+      <div class="md-layout-item md-size-32 md-alignment-top-right">
       <vue-plotly :data="data2['Day']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
-      <div class="md-layout-item md-size-33 md-alignment-top-right">
+      <div class="md-layout-item md-size-32 md-alignment-top-right">
       <vue-plotly :data="data2['Week']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
-      <div class="md-layout-item md-size-33 md-alignment-top-right">
+      <div class="md-layout-item md-size-32 md-alignment-top-right">
       <vue-plotly :data="data2['Year']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
     </div>
     <div class="md-layout">
       <div class="md-layout-item md-size-33 md-alignment-top-right">
-    
     
     {{chartRange}}{{chartType}}
     
@@ -82,78 +81,57 @@ export default {
   computed: {
     data2() {
       // let plotsToDraw = ["Day", "Week", "Year"];
-      let returnedPlots = {"Day":{},"Week":{},"Year":{}}
-      Object.keys(returnedPlots).forEach(function(plotType){
-        console.log(plotType)
-        returnedPlots[plotType]= [
-        {
-          x: Object.keys(
-            store.state.databaseStore.buildingInformation.ChartInformation
-              .WeekInformation.LastWeek
-          ),
-          y: Object.values(
-            store.state.databaseStore.buildingInformation.ChartInformation
-              .WeekInformation.LastWeek
-          ),
-          type: "bar",
-          name: "Last Week",
-          marker: {
-            color: "rgb(49,130,189)",
-            opacity: 0.7
-          }
-        },
+      let returnedPlots = { Day: [], Week: [], Year: [] };
+      Object.keys(returnedPlots).forEach(function(plotType) {
+        store.state.databaseStore.comparisonArray.forEach(function(
+          buildingIndex
+        ) {
+          console.log(plotType);
+          console.log(buildingIndex);
 
-        {
-          x: Object.keys(
-            store.state.databaseStore.buildingInformation.ChartInformation
-              .WeekInformation.AverageWeek
-          ),
-          y: Object.values(
-            store.state.databaseStore.buildingInformation.ChartInformation
-              .WeekInformation.AverageWeek
-          ),
-          type: "bar",
-          name: "Average Week",
-          marker: {
-            color: "rgb(204,204,204)",
-            opacity: 0.5
-          }
-        },
-        {
-          x: Object.keys(store.state.databaseStore.campusInfo.AveragePastWeek),
-          y: Object.values(
-            store.state.databaseStore.campusInfo.AveragePastWeek
-          ),
-          type: "line",
-          mode: "lines",
-          name: "Campus Average",
-          visible: true,
-          line: {
-            dash: "dashdot",
-            width: 4
-          }
-        }
-      ];
-        
-      })
-      return returnedPlots
+          console.log(plotType);
+          console.log()
+          let baseChartEntity = {
+            x: Object.keys(
+              store.state.databaseStore.buildingInformation[buildingIndex]
+                .ChartInformation[plotType + "Information"]["Last" + plotType]
+            ),
+            y: Object.values(
+              store.state.databaseStore.buildingInformation[buildingIndex]
+                .ChartInformation[plotType + "Information"]["Last" + plotType]
+            ),
+            type: "line",
+            name: store.state.databaseStore.buildingInformation[buildingIndex]["BuildingName"],
+            marker: {
+              color: "rgb(49,130,189)",
+              opacity: 0.7
+            }
+          };
+          console.log(baseChartEntity)
+          returnedPlots[plotType].push(baseChartEntity);
+        });
+      });
+      return returnedPlots;
     },
-        data() {
+    data() {
+      return 5
       // let plotsToDraw = ["Day", "Week", "Year"];
       let returnedPlots = { Day: [], Week: [], Year: [] };
       Object.keys(returnedPlots).forEach(function(plotType) {
         console.log(plotType);
-        console.log(store.state)
-        console.log(returnedPlots)
+        console.log(store.state);
+        console.log(returnedPlots);
         returnedPlots[plotType] = [
           {
             x: Object.keys(
-              store.state.databaseStore.buildingInformation.ChartInformation
-                [plotType+"Information"]["Last"+plotType]
+              store.state.databaseStore.buildingInformation.ChartInformation[
+                plotType + "Information"
+              ]["Last" + plotType]
             ),
             y: Object.values(
-              store.state.databaseStore.buildingInformation.ChartInformation
-                [plotType+"Information"]["Last"+plotType]
+              store.state.databaseStore.buildingInformation.ChartInformation[
+                plotType + "Information"
+              ]["Last" + plotType]
             ),
             type: "bar",
             name: "Last Week",
@@ -164,12 +142,14 @@ export default {
           },
           {
             x: Object.keys(
-              store.state.databaseStore.buildingInformation.ChartInformation
-                [plotType+"Information"]["Average"+plotType]
+              store.state.databaseStore.buildingInformation.ChartInformation[
+                plotType + "Information"
+              ]["Average" + plotType]
             ),
             y: Object.values(
-              store.state.databaseStore.buildingInformation.ChartInformation
-                [plotType+"Information"]["Average"+plotType]
+              store.state.databaseStore.buildingInformation.ChartInformation[
+                plotType + "Information"
+              ]["Average" + plotType]
             ),
             type: "bar",
             name: "Average Week",
@@ -180,10 +160,10 @@ export default {
           },
           {
             x: Object.keys(
-              store.state.databaseStore.campusInfo["AveragePast"+plotType]
+              store.state.databaseStore.campusInfo["AveragePast" + plotType]
             ),
             y: Object.values(
-              store.state.databaseStore.campusInfo["AveragePast"+plotType]
+              store.state.databaseStore.campusInfo["AveragePast" + plotType]
             ),
             type: "line",
             mode: "lines",
@@ -197,7 +177,7 @@ export default {
         ];
       });
       return returnedPlots;
-    },
+    }
   }
 };
 </script>
