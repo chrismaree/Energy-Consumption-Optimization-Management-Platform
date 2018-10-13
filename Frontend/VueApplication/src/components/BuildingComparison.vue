@@ -12,15 +12,17 @@
       <div class="md-layout-item md-size-20">
         <p>Charth Type
         <md-radio v-model="chartType" value="Area" style="padding-left:20px; margin-top:0px">
+          <md-tooltip md-direction="top">Cumulative, stacked plot</md-tooltip>
           Filled Area Plot</md-radio>
-        <md-radio v-model="chartType" value="Line" style="margin-top:0px">Line Plot</md-radio>  
+        <md-radio v-model="chartType" value="Line" style="margin-top:0px">
+          Line Plot
+          <md-tooltip md-direction="top">Relative, comparative line plot</md-tooltip>
+          </md-radio>  
         </p>
       </div>
       
       <div class="md-layout-item md-size-40">
-              
-    
-        <md-chip v-for="building in buildingNameChips" @click="removeChip(building['buildingIndex'])" class="md-primary">
+        <md-chip v-for="building in buildingNameChips" @click="removeChip(building['buildingIndex'])" :class="building['buildingColour']">
                       <md-tooltip md-direction="top">Click to remove</md-tooltip>
                 {{building['buildingName']}}
                 </md-chip>
@@ -70,18 +72,25 @@ export default {
   },
   computed: {
     buildingNameChips() {
+      let colours = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
+      let colourClass = ["md-primary", "md-accent"];
       let buildingNameChips = [];
-      store.state.databaseStore.comparisonArray.forEach(function(
-        buildingIndex
+      for (
+        let index = 0;
+        index < store.state.databaseStore.comparisonArray.length;
+        index++
       ) {
+        let buildingIndex = store.state.databaseStore.comparisonArray[index];
+
         buildingNameChips.push({
           buildingIndex: buildingIndex,
           buildingName:
             store.state.databaseStore.buildingInformation[buildingIndex][
               "BuildingName"
-            ]
+            ],
+          buildingColour: "graph" + index
         });
-      });
+      }
       console.log("CHIPS");
       console.log(buildingNameChips);
       return buildingNameChips;
@@ -105,19 +114,28 @@ export default {
   background: #eee;
 }
 
-.success {
-  color: green;
+.graph0 {
+  background-color: #673AB7 !important;
+  color: white!important;
 }
-.info {
-  color: dodgerblue;
+
+.graph1 {
+  background: #F44336 !important;
+  color: whti!important;
 }
-.warning {
-  color: orange;
+
+.graph2 {
+  background: #8bC43A !important;
+  color: black!important;
 }
-.danger {
-  color: red;
+
+.graph3 {
+  background: #03A9F4 !important;
+  color: white!important;
 }
-.default {
-  color: black;
+
+.graph4 {
+  background: #009688 !important;
+  color: white!important;
 }
 </style>

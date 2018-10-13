@@ -54,12 +54,16 @@ export default {
     data2() {
       // let plotsToDraw = ["Day", "Week", "Year"];
       let returnedPlots = { Day: [], Week: [], Year: [] };
+      let colourArray = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"]
       let chartType = this.chartType;
       let chartRange = this.chartRange;
       Object.keys(returnedPlots).forEach(function(plotType) {
-        store.state.databaseStore.comparisonArray.forEach(function(
-          buildingIndex
-        ) {
+        for (
+        let index = 0;
+        index < store.state.databaseStore.comparisonArray.length;
+        index++
+      ) {
+        let buildingIndex = store.state.databaseStore.comparisonArray[index];
           let baseChartEntity = {
             x: Object.keys(
               store.state.databaseStore.buildingInformation[buildingIndex]
@@ -78,7 +82,7 @@ export default {
                 "BuildingName"
               ],
             marker: {
-              color: "rgb(49,130,189)",
+              color: colourArray[index],
               opacity: 0.7
             }
           };
@@ -86,7 +90,7 @@ export default {
             baseChartEntity["stackgroup"] = "one";
           }
           returnedPlots[plotType].push(baseChartEntity);
-        });
+        };
       });
       return returnedPlots;
     },
@@ -100,7 +104,7 @@ export default {
         let chartLayout = {
           legend: {
             x: 0,
-            y: 0,
+            y: 1,
             traceorder: "normal",
             font: {
               family: "sans-serif",
