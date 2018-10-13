@@ -18,11 +18,12 @@
       </div>
       
       <div class="md-layout-item md-size-40">
-              <md-chip @click="removeChip" class="md-primary">
+              
+    
+        <md-chip v-for="building in buildingNameChips" @click="removeChip(building['buildingIndex'])" class="md-primary">
                       <md-tooltip md-direction="top">Click to remove</md-tooltip>
-                Deletable</md-chip>
-              <md-chip class="md-primary">Deletable</md-chip>
-               <md-chip class="md-primary">Deletable</md-chip>
+                {{building['buildingName']}}
+                </md-chip>
       </div>
       <div class="md-layout-item md-size-20" style="padding-right:50px">
         <md-field>
@@ -56,17 +57,36 @@ export default {
   props: {},
   data: function() {
     return {
-      movie: 'godfather',
+      movie: "godfather",
       chartType: "Area",
       chartRange: "Average"
     };
   },
   methods: {
-    removeChip() {
-      console.log("CHIPREMOVED");
+    removeChip(buildingId) {
+      console.log("CHIPREMOVED", buildingId);
+      store.dispatch("removeComparisonBuilding", buildingId);
     }
   },
-  computed: {}
+  computed: {
+    buildingNameChips() {
+      let buildingNameChips = [];
+      store.state.databaseStore.comparisonArray.forEach(function(
+        buildingIndex
+      ) {
+        buildingNameChips.push({
+          buildingIndex: buildingIndex,
+          buildingName:
+            store.state.databaseStore.buildingInformation[buildingIndex][
+              "BuildingName"
+            ]
+        });
+      });
+      console.log("CHIPS");
+      console.log(buildingNameChips);
+      return buildingNameChips;
+    }
+  }
 };
 </script>
 

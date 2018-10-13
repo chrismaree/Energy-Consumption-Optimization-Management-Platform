@@ -60,7 +60,6 @@ export default {
         store.state.databaseStore.comparisonArray.forEach(function(
           buildingIndex
         ) {
-          console.log("TOP", buildingIndex, chartType, plotType, chartRange);
           let baseChartEntity = {
             x: Object.keys(
               store.state.databaseStore.buildingInformation[buildingIndex]
@@ -84,11 +83,8 @@ export default {
             }
           };
           if (chartType == "Area") {
-            console.log("XXXX")
             baseChartEntity["stackgroup"] = "one";
           }
-          console.log("BASE ENTRY");
-          console.log(baseChartEntity);
           returnedPlots[plotType].push(baseChartEntity);
         });
       });
@@ -98,10 +94,9 @@ export default {
       let chartType = this.chartType;
       // layout.title = "Past " + this.chartRange + " " + this.chartType;
       let returnedLayouts = { Day: "", Week: "", Year: "" };
-      console.log(returnedLayouts);
+      let chartRange = this.chartRange;
       Object.keys(returnedLayouts).forEach(function(plotType) {
-        console.log(plotType);
-        let chartTitle = "Past " + plotType + " " + chartType;
+        let chartTitle = chartRange+ " " + plotType + " " + chartType + " Plot";
         let chartLayout = {
           legend: {
             x: 0,
@@ -129,10 +124,7 @@ export default {
           barmode: "group"
         };
         returnedLayouts[plotType] = chartLayout;
-        console.log(chartLayout);
       });
-      console.log("LayoutSSS");
-      console.log(returnedLayouts);
       return returnedLayouts;
     }
   }
