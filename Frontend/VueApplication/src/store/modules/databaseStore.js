@@ -33,12 +33,15 @@ const mutations = {
         // console.log(state.buildingInformation)
     },
 
-    setBuildingNames(state,buildingNames){
+    setBuildingNames(state, buildingNames) {
         state.buildingNames = buildingNames
     },
 
     addComparisonBuilding(state, buildingId) {
-        state.comparisonArray.push(buildingId)
+        var index = state.comparisonArray.indexOf(buildingId);
+        if (index = -1) {
+            state.comparisonArray.push(buildingId)
+        }
     },
 
     removeComparisonBuilding(state, buildingId) {
@@ -81,16 +84,27 @@ const actions = {
     },
 
     addComparisonBuilding({
+        dispatch,
         commit,
+        state,
     }, buildingId) {
-        commit('addComparisonBuilding', buildingId)
+        if (state.comparisonArray.indexOf(buildingId) == -1) {
+            console.log("DETECTED NEED CALL")
+            console.log(state.buildingInformation)
+            if (state.buildingInformation[buildingId] == null) {
+                console.log("building dispatched but not loaded! loading")
+                dispatch('loadBuildingInformation', buildingId)
+            }
+            console.log("building loaded")
+            commit('addComparisonBuilding', buildingId)
+        }
     },
-    
+
     removeComparisonBuilding({
         commit,
     }, buildingId) {
         commit('removeComparisonBuilding', buildingId)
-    },    
+    },
 }
 
 export default {

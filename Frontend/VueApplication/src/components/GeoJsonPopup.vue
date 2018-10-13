@@ -81,6 +81,9 @@ export default {
     if (store.state.databaseStore.comparisonArray.includes(this.buildingId)){
     this.addSetToCompare = true
     }
+    if (!store.state.databaseStore.comparisonArray.includes(this.buildingId)){
+    this.addSetToCompare = false
+    }
   },
   computed: {
   }

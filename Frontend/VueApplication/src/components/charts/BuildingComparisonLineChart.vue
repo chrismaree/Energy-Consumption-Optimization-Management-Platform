@@ -63,42 +63,45 @@ export default {
       let colourArray = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
       let chartType = this.chartType;
       let chartRange = this.chartRange;
-      Object.keys(returnedPlots).forEach(function(plotType) {
-        for (
-          let index = 0;
-          index < store.state.databaseStore.comparisonArray.length;
-          index++
-        ) {
-          let buildingIndex = store.state.databaseStore.comparisonArray[index];
-          console.log(buildingIndex)
-          let baseChartEntity = {
-            x: Object.keys(
-              store.state.databaseStore.buildingInformation[buildingIndex]
-                .ChartInformation[plotType + "Information"][
-                chartRange + plotType
-              ]
-            ),
-            y: Object.values(
-              store.state.databaseStore.buildingInformation[buildingIndex]
-                .ChartInformation[plotType + "Information"][
-                chartRange + plotType
-              ]
-            ),
-            name:
-              store.state.databaseStore.buildingInformation[buildingIndex][
-                "BuildingName"
-              ],
-            marker: {
-              color: colourArray[index],
-              opacity: 0.7
+      try {
+        Object.keys(returnedPlots).forEach(function(plotType) {
+          for (
+            let index = 0;
+            index < store.state.databaseStore.comparisonArray.length;
+            index++
+          ) {
+            let buildingIndex =
+              store.state.databaseStore.comparisonArray[index];
+            console.log(buildingIndex);
+            let baseChartEntity = {
+              x: Object.keys(
+                store.state.databaseStore.buildingInformation[buildingIndex]
+                  .ChartInformation[plotType + "Information"][
+                  chartRange + plotType
+                ]
+              ),
+              y: Object.values(
+                store.state.databaseStore.buildingInformation[buildingIndex]
+                  .ChartInformation[plotType + "Information"][
+                  chartRange + plotType
+                ]
+              ),
+              name:
+                store.state.databaseStore.buildingInformation[buildingIndex][
+                  "BuildingName"
+                ],
+              marker: {
+                color: colourArray[index],
+                opacity: 0.7
+              }
+            };
+            if (chartType == "Area") {
+              baseChartEntity["stackgroup"] = "one";
             }
-          };
-          if (chartType == "Area") {
-            baseChartEntity["stackgroup"] = "one";
+            returnedPlots[plotType].push(baseChartEntity);
           }
-          returnedPlots[plotType].push(baseChartEntity);
-        }
-      });
+        });
+      } catch (e) {}
       return returnedPlots;
     },
     layout() {

@@ -20,14 +20,16 @@
           </md-radio>  
         </p>
       </div>
-      <div class="md-layout-item md-size-15" style="padding-right:30px">
+      <div class="md-layout-item md-size-15" style="padding-right:30px padding-top:0px; margin-top:0px">
         <md-tooltip md-direction="top">Add any building on campus</md-tooltip>
         <md-field>
-          <label for="movie">Add another building to compare</label>
-          <md-select v-model="addedBuilding" name="movie" id="movie">
+          <label for="addedBuilding">Add another building to compare</label>
+          <md-select v-model="addedBuilding" name="addedBuilding" id="addedBuilding">
             <md-option v-for="building in $store.state.databaseStore.buildingNames" :value="building['BuildingId']">{{building['buildingName']}}</md-option>
           </md-select>
         </md-field>
+              
+
       </div>
       
       <div class="md-layout-item md-size-45">
@@ -41,7 +43,7 @@
       
       </div>
     <BuildingComparisonLineChart :chartRange="chartRange" :chartType="chartType"/>
-    <!-- {{addBuildingToSet}} -->
+    {{addBuildingToSet}}
     </div>
 </template>
 
@@ -75,10 +77,13 @@ export default {
   },
   computed: {
     addBuildingToSet() {
+      console.log("state Changed!");
       console.log(this.addedBuilding);
-      if (this.addedBuilding != "undefined" && this.addedBuilding && this.addedBuilding!="") {
-        console.log("DISPATCHED")
+      if (this.addedBuilding != "") {
+        console.log("store dispatched!");
+        store.dispatch("loadBuildingInformation", this.buildingId)
         store.dispatch("addComparisonBuilding", this.addedBuilding);
+        this.addedBuilding = "";
       }
     },
     buildingNameChips() {
@@ -100,9 +105,10 @@ export default {
                 "BuildingName"
               ],
             buildingColour: "graph" + index,
-            buildingId: store.state.databaseStore.buildingInformation[buildingIndex][
+            buildingId:
+              store.state.databaseStore.buildingInformation[buildingIndex][
                 "BuildingId"
-              ],
+              ]
           });
         }
       } catch (e) {}
