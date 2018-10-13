@@ -11,7 +11,8 @@ const state = {
     campusInfo: {},
     buildingInformation: [],
     selectedBuildingInformation: [],
-    comparisonArray: []
+    comparisonArray: [],
+    buildingNames: []
 }
 
 const mutations = {
@@ -25,15 +26,21 @@ const mutations = {
 
     setBuildingInformation(state, buildingInformation) {
         console.log("INBUILDING")
-        // console.log(buildingInformation)
+        console.log(buildingInformation)
         // console.log(buildingInformation["BuildingId"])
         state.buildingInformation[buildingInformation["BuildingId"]] = buildingInformation;
         state.selectedBuildingInformation = buildingInformation
         // console.log(state.buildingInformation)
     },
+
+    setBuildingNames(state,buildingNames){
+        state.buildingNames = buildingNames
+    },
+
     addComparisonBuilding(state, buildingId) {
         state.comparisonArray.push(buildingId)
     },
+
     removeComparisonBuilding(state, buildingId) {
         var index = state.comparisonArray.indexOf(buildingId);
         if (index > -1) {
@@ -55,6 +62,11 @@ const actions = {
         databaseAccessor.getCampusInfo().then(campusInfo => {
             console.log(campusInfo)
             commit("setCampusInfo", campusInfo[0])
+        })
+
+        databaseAccessor.getAllBuildingNames().then(buildingNames => {
+            console.log(buildingNames)
+            commit("setBuildingNames", buildingNames)
         })
     },
 
@@ -78,7 +90,7 @@ const actions = {
         commit,
     }, buildingId) {
         commit('removeComparisonBuilding', buildingId)
-    },
+    },    
 }
 
 export default {

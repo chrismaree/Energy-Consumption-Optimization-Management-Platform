@@ -1,12 +1,12 @@
 <template>
   <div style="width:800px; height: 550px">
     <div class="md-layout">
-      <div class="md-layout-item md-size-65 md-alignment-top-right">
+      <div class="md-layout-item md-size-60 md-alignment-top-right">
         <div class="md-title"><h2 style="padding-top:0px; margin-top:0px;">{{buildingName}}</h2></div>
         </div>
-        <div class="md-layout-item md-size-35 md-alignment-top-right">
-          <p style="padding-top:0px; margin-top:10px; float:right;">Average Number of students: 10 <br>
-            This is the 5th biggest Consumer</p>
+        <div class="md-layout-item md-size-40 md-alignment-top-right">
+          <p style="padding-top:0px; margin-top:10px; float:right;">
+            This is the {{buildingId}}th biggest Consumer on average</p>
         </div>
     </div >
    
@@ -63,11 +63,12 @@ export default {
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
       if(this.isVisible==true){
+        console.log("loading building information for building", this.buildingId)
         store.dispatch("loadBuildingInformation", this.buildingId)
       }
     },
     compareBuilding(){
-      console.log("I SWITCHED")
+      console.log("I SWITCHED", this.buildingId)
       if (this.addSetToCompare){
         store.dispatch("addComparisonBuilding", this.buildingId)
       }

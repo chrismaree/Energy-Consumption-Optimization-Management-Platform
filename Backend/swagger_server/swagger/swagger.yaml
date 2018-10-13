@@ -94,7 +94,25 @@ paths:
         404:
           description: "Pet not found"
       x-swagger-router-controller: "swagger_server.controllers.campus_building_controller"
-    
+  /getAllBuildingNames:
+    get:
+      tags:
+        - "campus & building"
+      summary: "Return all building names"
+      description: "Return all buildings"
+      operationId: "get_campus_building_names"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Campus"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+      x-swagger-router-controller: "swagger_server.controllers.campus_building_controller"
 definitions:
   buildingInformation:
     type: "object"

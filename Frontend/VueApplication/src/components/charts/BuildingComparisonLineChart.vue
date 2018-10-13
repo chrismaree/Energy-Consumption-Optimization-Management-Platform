@@ -1,6 +1,15 @@
 <template>
     <div>
-    <div class="md-layout">
+    
+    <div v-if="$store.state.databaseStore.comparisonArray.length==0" class="md-layout">
+      <md-empty-state
+      md-icon="map"
+      md-label="No buildings selected"
+      md-description="Choose a building from the dropdown list or by clicking on a building in the heatmap then clicking compare">
+    </md-empty-state>
+    </div>
+    
+    <div v-if="$store.state.databaseStore.comparisonArray.length>0" class="md-layout">
       <div class="md-layout-item md-size-32 md-alignment-top-right">
       <vue-plotly :data="data2['Day']" :layout="layout['Day']" :options="options" :autoResize="true"/>
       </div>
@@ -13,9 +22,6 @@
     </div>
     <div class="md-layout">
       <div class="md-layout-item md-size-33 md-alignment-top-right">
-    
-    {{chartRange}}{{chartType}}
-    
     </div>
     </div>
     </div>
@@ -54,16 +60,17 @@ export default {
     data2() {
       // let plotsToDraw = ["Day", "Week", "Year"];
       let returnedPlots = { Day: [], Week: [], Year: [] };
-      let colourArray = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"]
+      let colourArray = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
       let chartType = this.chartType;
       let chartRange = this.chartRange;
       Object.keys(returnedPlots).forEach(function(plotType) {
         for (
-        let index = 0;
-        index < store.state.databaseStore.comparisonArray.length;
-        index++
-      ) {
-        let buildingIndex = store.state.databaseStore.comparisonArray[index];
+          let index = 0;
+          index < store.state.databaseStore.comparisonArray.length;
+          index++
+        ) {
+          let buildingIndex = store.state.databaseStore.comparisonArray[index];
+          console.log(buildingIndex)
           let baseChartEntity = {
             x: Object.keys(
               store.state.databaseStore.buildingInformation[buildingIndex]
@@ -90,7 +97,7 @@ export default {
             baseChartEntity["stackgroup"] = "one";
           }
           returnedPlots[plotType].push(baseChartEntity);
-        };
+        }
       });
       return returnedPlots;
     },
@@ -100,7 +107,8 @@ export default {
       let returnedLayouts = { Day: "", Week: "", Year: "" };
       let chartRange = this.chartRange;
       Object.keys(returnedLayouts).forEach(function(plotType) {
-        let chartTitle = chartRange+ " " + plotType + " " + chartType + " Plot";
+        let chartTitle =
+          chartRange + " " + plotType + " " + chartType + " Plot";
         let chartLayout = {
           legend: {
             x: 0,

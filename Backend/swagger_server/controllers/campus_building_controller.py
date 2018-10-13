@@ -34,6 +34,8 @@ def get_campus_information():  # noqa: E501
     return _stringify_object_id(ECOMP_DB.campusInfo.find({}))
 
 
+def get_campus_building_names():
+    return _stringify_object_id(ECOMP_DB.buildingNames.find({}))
 def _stringify_object_id(result):
     stringified_result = []
     for element in result:

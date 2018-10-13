@@ -34,8 +34,6 @@ export default class DatabaseAccessor {
     }
 
     getBuildingInformation(building_id) {
-        console.log("URL")
-        console.log(building_id)
         let url = `${this.BASE_URL}/buildingInformation/${building_id}`
 
         return axios.get(url, {
@@ -44,6 +42,20 @@ export default class DatabaseAccessor {
             // }
         }).then(response => {
             console.log("getBuildingInformation Responce")
+            console.log(response.data)
+            return response.data;
+        });
+    }
+
+    getAllBuildingNames(){
+        let url = `${this.BASE_URL}/getAllBuildingNames`
+
+        return axios.get(url, {
+            // headers: {
+            //     Authorization: "Bearer " + access_token
+            // }
+        }).then(response => {
+            console.log("Building Names Responce")
             console.log(response.data)
             return response.data;
         });
