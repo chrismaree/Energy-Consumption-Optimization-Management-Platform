@@ -1,6 +1,7 @@
 <template>
   <component :is="tag" class="badge" :class="`badge-${type}`">
-    <slot></slot>
+    <slot></slot><md-button style="margin:0px; padding:0px">X</md-button>
+
   </component>
 </template>
 <script>

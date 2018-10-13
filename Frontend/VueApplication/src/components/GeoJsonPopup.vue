@@ -77,7 +77,7 @@ export default {
     }
   },
   mounted() {
-    if (store.state.databaseStore.comparisonArray.included(this.buildingId)){
+    if (store.state.databaseStore.comparisonArray.includes(this.buildingId)){
     this.addSetToCompare = true
     }
   },

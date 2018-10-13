@@ -1,6 +1,6 @@
 <template>
     <div>
-    <div class="md-layout">c
+    <div class="md-layout">
       <div class="md-layout-item md-size-32 md-alignment-top-right">
       <vue-plotly :data="data2['Day']" :layout="layout" :options="options" :autoResize="true"/>
       </div>
@@ -82,23 +82,21 @@ export default {
     data2() {
       // let plotsToDraw = ["Day", "Week", "Year"];
       let returnedPlots = { Day: [], Week: [], Year: [] };
+      let chartType = this.chartType
+      let chartRange = this.chartRange
       Object.keys(returnedPlots).forEach(function(plotType) {
         store.state.databaseStore.comparisonArray.forEach(function(
           buildingIndex
         ) {
-          console.log(plotType);
-          console.log(buildingIndex);
-
-          console.log(plotType);
-          console.log()
+          console.log("TOP",buildingIndex, chartType, plotType, chartRange)
           let baseChartEntity = {
             x: Object.keys(
               store.state.databaseStore.buildingInformation[buildingIndex]
-                .ChartInformation[plotType + "Information"]["Last" + plotType]
+                .ChartInformation[plotType + "Information"][chartRange + plotType]
             ),
             y: Object.values(
               store.state.databaseStore.buildingInformation[buildingIndex]
-                .ChartInformation[plotType + "Information"]["Last" + plotType]
+                .ChartInformation[plotType + "Information"][chartRange + plotType]
             ),
             type: "line",
             name: store.state.databaseStore.buildingInformation[buildingIndex]["BuildingName"],
@@ -107,78 +105,82 @@ export default {
               opacity: 0.7
             }
           };
+          console.log("BASE ENTRY")
           console.log(baseChartEntity)
           returnedPlots[plotType].push(baseChartEntity);
         });
       });
       return returnedPlots;
     },
-    data() {
-      return 5
-      // let plotsToDraw = ["Day", "Week", "Year"];
-      let returnedPlots = { Day: [], Week: [], Year: [] };
-      Object.keys(returnedPlots).forEach(function(plotType) {
-        console.log(plotType);
-        console.log(store.state);
-        console.log(returnedPlots);
-        returnedPlots[plotType] = [
-          {
-            x: Object.keys(
-              store.state.databaseStore.buildingInformation.ChartInformation[
-                plotType + "Information"
-              ]["Last" + plotType]
-            ),
-            y: Object.values(
-              store.state.databaseStore.buildingInformation.ChartInformation[
-                plotType + "Information"
-              ]["Last" + plotType]
-            ),
-            type: "bar",
-            name: "Last Week",
-            marker: {
-              color: "rgb(49,130,189)",
-              opacity: 0.7
-            }
-          },
-          {
-            x: Object.keys(
-              store.state.databaseStore.buildingInformation.ChartInformation[
-                plotType + "Information"
-              ]["Average" + plotType]
-            ),
-            y: Object.values(
-              store.state.databaseStore.buildingInformation.ChartInformation[
-                plotType + "Information"
-              ]["Average" + plotType]
-            ),
-            type: "bar",
-            name: "Average Week",
-            marker: {
-              color: "rgb(204,204,204)",
-              opacity: 0.5
-            }
-          },
-          {
-            x: Object.keys(
-              store.state.databaseStore.campusInfo["AveragePast" + plotType]
-            ),
-            y: Object.values(
-              store.state.databaseStore.campusInfo["AveragePast" + plotType]
-            ),
-            type: "line",
-            mode: "lines",
-            name: "Campus Average",
-            visible: true,
-            line: {
-              dash: "dashdot",
-              width: 4
-            }
-          }
-        ];
-      });
-      return returnedPlots;
-    }
+    // data() {
+    //   return 5
+    //   // let plotsToDraw = ["Day", "Week", "Year"];
+    //   let returnedPlots = { Day: [], Week: [], Year: [] };
+    //   Object.keys(returnedPlots).forEach(function(plotType) {
+    //     console.log(plotType);
+    //     console.log(store.state);
+    //     console.log(returnedPlots);
+    //     returnedPlots[plotType] = [
+    //       {
+    //         x: Object.keys(
+    //           store.state.databaseStore.buildingInformation.ChartInformation[
+    //             plotType + "Information"
+    //           ]["Last" + plotType]
+    //         ),
+    //         y: Object.values(
+    //           store.state.databaseStore.buildingInformation.ChartInformation[
+    //             plotType + "Information"
+    //           ]["Last" + plotType]
+    //         ),
+    //         type: "bar",
+    //         name: "Last Week",
+    //         marker: {
+    //           color: "rgb(49,130,189)",
+    //           opacity: 0.7
+    //         }
+    //       },
+    //       {
+    //         x: Object.keys(
+    //           store.state.databaseStore.buildingInformation.ChartInformation[
+    //             plotType + "Information"
+    //           ]["Average" + plotType]
+    //         ),
+    //         y: Object.values(
+    //           store.state.databaseStore.buildingInformation.ChartInformation[
+    //             plotType + "Information"
+    //           ]["Average" + plotType]
+    //         ),
+    //         type: "bar",
+    //         name: "Average Week",
+    //         marker: {
+    //           color: "rgb(204,204,204)",
+    //           opacity: 0.5
+    //         }
+    //       },
+    //       {
+    //         x: Object.keys(
+    //           store.state.databaseStore.campusInfo["AveragePast" + plotType]
+    //         ),
+    //         y: Object.values(
+    //           store.state.databaseStore.campusInfo["AveragePast" + plotType]
+    //         ),
+    //         type: "line",
+    //         mode: "lines",
+    //         name: "Campus Average",
+    //         visible: true,
+    //         line: {
+    //           dash: "dashdot",
+    //           width: 4
+    //         }
+    //       }
+    //     ];
+    //   });
+    //   return returnedPlots;
+    // }
   }
 };
 </script>
 
+<style>
+
+</style>
