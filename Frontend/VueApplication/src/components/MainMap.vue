@@ -9,13 +9,24 @@
           Highest past day/week/year</md-tooltip>Maximum</md-radio>  
         </p>
       </div>
-      <div class="md-layout-item md-size-30">
+      <div class="md-layout-item md-size-25">
         <md-tooltip md-direction="top">Preiod of time</md-tooltip>
         <p>Heatmap Period
         <md-radio v-model="mode" value="Day" style="padding-left:20px; margin-top:0px">Day</md-radio>
         <md-radio v-model="mode" value="Week" style="margin-top:0px">Week</md-radio>  
         <md-radio v-model="mode" value="Year" style="margin-top:0px">Year</md-radio>  
         </p>
+      </div>
+      <div class="md-layout-item md-sise-50" style="padding-right:50px">
+        <div class="colourGrad" style="width:100%"/>
+        <div class="md-layout">    
+          <div class="md-layout-item md-size-50">
+        <p style="margin-bottom:0px">Min: <strong>0</strong></p>
+          </div>
+        <div class="md-layout-item md-size-50">
+          <p style="float:right; margin-bottom:0px">Min: <strong>{{heatMapMaximum}}</strong></p>
+          </div>
+        </div>
       </div>
   
       </div>
@@ -68,7 +79,7 @@ export default {
   components: {
     LMap,
     LTileLayer,
-    LGeoJson,
+    LGeoJson
   },
   methods: {},
   mounted() {
@@ -93,32 +104,22 @@ export default {
         scrollWheelZoom: false,
         attributionControl: false
       }
-      // bus: {
-      //   geojson: data.freeBus,
-      //   options: {
-      //     filter: function(feature, layer) {
-      //       if (feature.properties) {
-      //         return feature.properties.underConstruction !== undefined
-      //           ? !feature.properties.underConstruction
-      //           : true;
-      //       }
-      //       return false;
-      //     },
-      //     onEachFeature: onEachFeature
-      //   }
-      // },
-      // coors: {
-      //   geojson: data.coorsField,
-      //   options: {
-      //     pointToLayer: function (feature, latlng) {
-      //       return L.marker(latlng, {icon: baseballIcon});
-      //     },
-      //     onEachFeature: onEachFeature
-      //   }
-      // },
     };
   },
   computed: {
+    heatMapMaximum() {
+      if (this.range == "Average") {
+        return Math.floor(
+          this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage[
+            this.mode
+          ]
+        );
+      } else {
+        return Math.floor(
+          this.$store.state.databaseStore.campusInfo.Maximums[this.mode]
+        );
+      }
+    },
     campusData() {
       // console.log(this.mode)
       let chartMode = this.mode + "Style_" + this.range;
@@ -136,3 +137,17 @@ export default {
   }
 };
 </script>
+
+<style>
+.colourGrad {
+  height: 25px;
+  width: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to right,
+    blue,
+    green,
+    red
+  ); /* Standard syntax (must be last) */
+}
+</style>
