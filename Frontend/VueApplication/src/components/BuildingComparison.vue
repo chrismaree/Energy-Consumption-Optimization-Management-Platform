@@ -60,7 +60,7 @@ export default {
   props: {},
   data: function() {
     return {
-      addedBuilding: "",
+      addedBuilding: null,
       chartType: "Area",
       chartRange: "Average"
     };
@@ -79,7 +79,7 @@ export default {
     addBuildingToSet() {
       console.log("state Changed!");
       console.log(this.addedBuilding);
-      if (this.addedBuilding != "") {
+      if (this.addedBuilding != null) {
         let buildingAddress = this.addedBuilding;
         console.log("store dispatched!");
         store.dispatch("loadBuildingInformation", buildingAddress);
@@ -88,9 +88,9 @@ export default {
           500
         );
       }
-      this.addedBuilding = "";
+      this.addedBuilding = null;
     },
-    
+
     buildingNameChips() {
       let colours = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
       let colourClass = ["md-primary", "md-accent"];

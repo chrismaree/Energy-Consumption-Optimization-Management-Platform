@@ -39,7 +39,9 @@ const mutations = {
 
     addComparisonBuilding(state, buildingId) {
         console.log("ADDING BUILDING", buildingId)
-        if (buildingId != "") {
+        console.log(buildingId)
+        if (buildingId != null) {
+            console.log("INDEX NOT NULL")
             var index = state.comparisonArray.indexOf(buildingId);
             // Only add to the comparison array if there is no other
             // building of the same ID in the array
