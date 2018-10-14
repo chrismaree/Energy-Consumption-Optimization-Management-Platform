@@ -4,8 +4,8 @@
       <div class="container">
         <div class="md-layout">
     			<div class="md-layout-item md-size-45 md-small-size-70 md-xsmall-size-100">
-    				<h1 class="title">Wits University Energy Usage Vizualization</h1>
-              <h4>Visualize energy usage on campus to gain insight into behaviour, identify trends and reduce consumption. Save money in the long run and become a greener campus.</h4>
+    				<h1 class="title">Unlocking the power of campus energy data</h1>
+              <h4>Shedding light on Wits energy usage to gain insight into behaviour, identify trends and reduce consumption. Helping Wits save money and become a greener campus.</h4>
               <br>
               <md-button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="md-success md-lg" target="_blank"><i class="fas fa-play"></i> Watch video</md-button>
     			</div>

@@ -3,7 +3,7 @@
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
         <md-list-item href="#/landing">
-                 <strong>Wits Energy Usage Consumption optimization platform</strong>
+                 <strong>Wits University Energy Usage Vizualization</strong>
               </md-list-item>
       </div>
       <div class="md-toolbar-section-end">
