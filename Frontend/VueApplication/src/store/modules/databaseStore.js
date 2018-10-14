@@ -38,14 +38,22 @@ const mutations = {
     },
 
     addComparisonBuilding(state, buildingId) {
-        var index = state.comparisonArray.indexOf(buildingId);
-        if (index = -1) {
-            state.comparisonArray.push(buildingId)
+        console.log("ADDING BUILDING", buildingId)
+        if (buildingId != "") {
+            var index = state.comparisonArray.indexOf(buildingId);
+            // Only add to the comparison array if there is no other
+            // building of the same ID in the array
+            var newArray = state.comparisonArray
+            if (index = -1) {
+                // newArray.push(buildingId)
+                state.comparisonArray.splice(state.comparisonArray.length, 0, buildingId)
+            }
         }
     },
 
     removeComparisonBuilding(state, buildingId) {
         var index = state.comparisonArray.indexOf(buildingId);
+        // Find the index of the element within the array and remove it
         if (index > -1) {
             state.comparisonArray.splice(index, 1);
         }
@@ -95,9 +103,9 @@ const actions = {
                 console.log("building dispatched but not loaded! loading")
                 dispatch('loadBuildingInformation', buildingId)
             }
-            console.log("building loaded")
-            commit('addComparisonBuilding', buildingId)
         }
+        console.log("building loaded")
+        commit('addComparisonBuilding', buildingId)
     },
 
     removeComparisonBuilding({

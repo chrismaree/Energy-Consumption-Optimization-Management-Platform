@@ -80,12 +80,17 @@ export default {
       console.log("state Changed!");
       console.log(this.addedBuilding);
       if (this.addedBuilding != "") {
+        let buildingAddress = this.addedBuilding;
         console.log("store dispatched!");
-        store.dispatch("loadBuildingInformation", this.buildingId)
-        store.dispatch("addComparisonBuilding", this.addedBuilding);
-        this.addedBuilding = "";
+        store.dispatch("loadBuildingInformation", buildingAddress);
+        setTimeout(
+          () => store.dispatch("addComparisonBuilding", buildingAddress),
+          500
+        );
       }
+      this.addedBuilding = "";
     },
+    
     buildingNameChips() {
       let colours = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
       let colourClass = ["md-primary", "md-accent"];

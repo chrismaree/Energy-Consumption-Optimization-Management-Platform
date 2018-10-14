@@ -33,8 +33,8 @@
 <script>
 import RelativeBuildingBarChart from "./charts/RelativeBuildingBarChart";
 
-import store from './../store/'
-import Vue from "vue"
+import store from "./../store/";
+import Vue from "vue";
 
 export default {
   name: "GeoJson2Popup",
@@ -62,30 +62,37 @@ export default {
   methods: {
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
-      if(this.isVisible==true){
-        console.log("loading building information for building", this.buildingId)
-        store.dispatch("loadBuildingInformation", this.buildingId)
+      this.toggleSwitch()
+      if (this.isVisible == true) {
+        console.log(
+          "loading building information for building",
+          this.buildingId
+        );
+        store.dispatch("loadBuildingInformation", this.buildingId);
       }
     },
-    compareBuilding(){
-      console.log("I SWITCHED", this.buildingId)
-      if (this.addSetToCompare){
-        store.dispatch("addComparisonBuilding", this.buildingId)
+    compareBuilding() {
+      console.log("I SWITCHED", this.buildingId);
+      if (this.addSetToCompare) {
+        store.dispatch("addComparisonBuilding", this.buildingId);
+      } else {
+        store.dispatch("removeComparisonBuilding", this.buildingId);
       }
-      else{
-        store.dispatch("removeComparisonBuilding", this.buildingId)
+    },
+    toggleSwitch() {
+      if (store.state.databaseStore.comparisonArray.includes(this.buildingId)) {
+        this.addSetToCompare = true;
+      }
+      if (
+        !store.state.databaseStore.comparisonArray.includes(this.buildingId)
+      ) {
+        this.addSetToCompare = false;
       }
     }
   },
   mounted() {
-    if (store.state.databaseStore.comparisonArray.includes(this.buildingId)){
-    this.addSetToCompare = true
-    }
-    if (!store.state.databaseStore.comparisonArray.includes(this.buildingId)){
-    this.addSetToCompare = false
-    }
+    this.toggleSwitch();
   },
-  computed: {
-  }
+  computed: {}
 };
 </script>

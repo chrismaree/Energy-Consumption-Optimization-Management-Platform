@@ -11,13 +11,13 @@
     
     <div v-if="$store.state.databaseStore.comparisonArray.length>0" class="md-layout">
       <div class="md-layout-item md-size-32 md-alignment-top-right">
-      <vue-plotly :data="data2['Day']" :layout="layout['Day']" :options="options" :autoResize="true"/>
+      <vue-plotly :data="data['Day']" :layout="layout['Day']" :options="options" :autoResize="true"/>
       </div>
       <div class="md-layout-item md-size-32 md-alignment-top-right">
-      <vue-plotly :data="data2['Week']" :layout="layout['Week']" :options="options" :autoResize="true"/>
+      <vue-plotly :data="data['Week']" :layout="layout['Week']" :options="options" :autoResize="true"/>
       </div>
       <div class="md-layout-item md-size-32 md-alignment-top-right">
-      <vue-plotly :data="data2['Year']" :layout="layout['Year']" :options="options" :autoResize="true"/>
+      <vue-plotly :data="data['Year']" :layout="layout['Year']" :options="options" :autoResize="true"/>
       </div>
     </div>
     <div class="md-layout">
@@ -57,21 +57,22 @@ export default {
     };
   },
   computed: {
-    data2() {
+    data() {
       // let plotsToDraw = ["Day", "Week", "Year"];
       let returnedPlots = { Day: [], Week: [], Year: [] };
       let colourArray = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
       let chartType = this.chartType;
       let chartRange = this.chartRange;
+      let comparisonArray = store.state.databaseStore.comparisonArray
       try {
         Object.keys(returnedPlots).forEach(function(plotType) {
           for (
             let index = 0;
-            index < store.state.databaseStore.comparisonArray.length;
+            index < comparisonArray.length;
             index++
           ) {
             let buildingIndex =
-              store.state.databaseStore.comparisonArray[index];
+              comparisonArray[index];
             console.log(buildingIndex);
             let baseChartEntity = {
               x: Object.keys(
