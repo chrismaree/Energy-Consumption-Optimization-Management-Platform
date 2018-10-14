@@ -3,9 +3,9 @@
     <parallax class="section page-header header-filter" :style="headerStyle">
       <div class="container">
         <div class="md-layout">
-    			<div class="md-layout-item md-size-100 md-small-size-70 md-xsmall-size-100">
+    			<div class="md-layout-item md-size-45 md-small-size-70 md-xsmall-size-100">
     				<h1 class="title">Wits University Energy Usage Vizualization</h1>
-              <h4>Visualize energy usage on campus to gain insight into behaviour, identify trends and reduce consumption</h4>
+              <h4>Visualize energy usage on campus to gain insight into behaviour, identify trends and reduce consumption. Save money in the long run and become a greener campus.</h4>
               <br>
               <md-button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="md-success md-lg" target="_blank"><i class="fas fa-play"></i> Watch video</md-button>
     			</div>
@@ -16,39 +16,53 @@
       <div class="section" style="padding-top:50px">
         <div class="container">
           <div class="md-layout">
-            <div class="md-layout-item md-size-50 md-xsmall-size-100 mx-auto text-center">
-              <h2 class="title text-center">Let's talk product</h2>
-              <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+            <div class="md-layout-item md-size-85 md-xsmall-size-100 mx-auto text-center">
+              <h2 class="title text-center">You can't manage what you can't measure</h2>
+              <h5 class="description">
+                Until now there was no way to visualize live or historic energy consumption on campus. As a result, it is impossible to identify trends or reduce consumption. This makes wits very ungreen and expensive to run.
+                <br>
+                <br>
+                It is hard to react to unusually high consumption and compare to historic usages. This means that faulty system or human fault (like leaving machinery on over the holidays) can't be detected. Moreover, it is impossible to quantify any reduction in consumption after installing greener hardware such as LED light bulbs. 
+                <br>
+                <br>
+                Given that energy prices are only going to increase in the future, it is important to reduce our consumption as a campus to reduce the total spent on electricity. Additionally, it is likely that carbon taxes will be imposed on big consumers in the future.
+
+                  </h5>
             </div>
           </div>
           <div class="features text-center">
             <div class="md-layout">
+            <div class="md-layout-item">
+              <h2 class="title text-center text-center">Data visualization can change behaviour</h2>
+              </div>
+            </div>
+            <div class="md-layout">
               <div class="md-layout-item md-large-size-33 md-small-size-100">
                 <div class="info">
                   <div class="icon icon-info">
-                    <md-icon>chat</md-icon>
+                    <md-icon>compare</md-icon>
                   </div>
-                  <h4 class="info-title">Free Chat</h4>
-                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  <h4 class="info-title">Building comparison</h4>
+                  <p>Compare a building against its past consumption or against other buildings to gain insight into the past usage. </p>
                 </div>
               </div>
 
               <div class="md-layout-item md-large-size-33 md-small-size-100">
                   <div class="info">
                     <div class="icon icon-success">
-                      <md-icon>verified_user</md-icon>
+                      <md-icon>fingerprint</md-icon>
                     </div>
-                    <h4 class="info-title">Verified Users</h4>
-                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                    <h4 class="info-title">Load profiles</h4>
+                    <p>View the trend of a building over different time periods to identify inefficiencies and consumption patterns.</p>
                   </div>
               </div>
               <div class="md-layout-item md-large-size-33 md-small-size-100">
                   <div class="info">
                     <div class="icon icon-danger">
-                      <md-icon>fingerprint</md-icon>
+                      <md-icon>timeline</md-icon>
                     </div>
-                    <h4 class="info-title">Fingerprint</h4>
-                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                    <h4 class="info-title">Live data</h4>
+                    <p>View the current consumption of every building on campus and detect unexpected behaviour.</p>
                   </div>
               </div>
             </div>
@@ -56,11 +70,7 @@
         </div>
       </div>
     </div>
-    
-        <CampusOverview/>
-    
-
-  
+    <CampusOverview/>
   </div>
 </template>
 
