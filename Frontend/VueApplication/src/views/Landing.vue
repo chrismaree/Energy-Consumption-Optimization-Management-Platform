@@ -43,7 +43,7 @@
                     <md-icon>compare</md-icon>
                   </div>
                   <h4 class="info-title">Building comparison</h4>
-                  <p>Compare a building against its past consumption or against other buildings to gain insight into the past usage. </p>
+                  <p>Compare a building against its past consumption or against other buildings to gain insight into past usage. </p>
                 </div>
               </div>
 
