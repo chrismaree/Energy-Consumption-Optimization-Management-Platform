@@ -24,7 +24,7 @@
         <p style="margin-bottom:0px">Min: <strong>0</strong></p>
           </div>
         <div class="md-layout-item md-size-50">
-          <p style="float:right; margin-bottom:0px">Min: <strong>{{heatMapMaximum}}</strong></p>
+          <p style="float:right; margin-bottom:0px">Max: <strong>{{heatMapMaximum}}</strong></p>
           </div>
         </div>
       </div>
