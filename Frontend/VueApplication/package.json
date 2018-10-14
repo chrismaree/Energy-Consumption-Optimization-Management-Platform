@@ -33,7 +33,6 @@
     "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0",
     "@vue/cli-plugin-babel": "3.0.1",
     "@vue/cli-service": "3.0.1",
     "node-sass": "4.9.3",
