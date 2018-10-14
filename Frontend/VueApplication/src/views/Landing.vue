@@ -56,24 +56,22 @@
         </div>
       </div>
     </div>
-    <div class="main main-raised" style="margin-top:50px">
-      <md-card class="md-elevation-24">
+    
         <CampusOverview/>
-      </md-card>
-    </div>
+    
 
   
   </div>
 </template>
 
 <script>
-import MainMap from '@/components/MainMap'
-import CommitChart from '@/components/CommitChart'
-import CampusOverview from '@/views/sections/CampusOverview'
+import MainMap from "@/components/MainMap";
+import CommitChart from "@/components/CommitChart";
+import CampusOverview from "@/views/sections/CampusOverview";
 
 export default {
   bodyClass: "landing-page",
-  components:{
+  components: {
     MainMap,
     CommitChart,
     CampusOverview
@@ -82,12 +80,11 @@ export default {
     header: {
       type: String,
       default: require("@/assets/img/landingImage.jpg")
-      },
+    }
   },
-  
+
   data() {
-    return {
-    };
+    return {};
   },
   computed: {
     headerStyle() {
