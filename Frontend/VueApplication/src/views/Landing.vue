@@ -76,14 +76,12 @@
 
 <script>
 import MainMap from "@/components/MainMap";
-import CommitChart from "@/components/CommitChart";
 import CampusOverview from "@/views/sections/CampusOverview";
 
 export default {
   bodyClass: "landing-page",
   components: {
     MainMap,
-    CommitChart,
     CampusOverview
   },
   props: {

@@ -28,8 +28,6 @@
             <md-option v-for="building in $store.state.databaseStore.buildingNames" :value="building['BuildingId']">{{building['buildingName']}}</md-option>
           </md-select>
         </md-field>
-              
-
       </div>
       
       <div class="md-layout-item md-size-45">
@@ -39,8 +37,6 @@
                 </md-chip>
       </div>
 
-      
-      
       </div>
     <BuildingComparisonLineChart :chartRange="chartRange" :chartType="chartType"/>
     {{addBuildingToSet}}
@@ -49,7 +45,6 @@
 
 <script>
 import BuildingComparisonLineChart from "@/components/charts/BuildingComparisonLineChart";
-
 import store from "@/store/";
 
 export default {

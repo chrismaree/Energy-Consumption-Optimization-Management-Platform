@@ -6,7 +6,6 @@
 
 <script>
 import VuePlotly from "@statnett/vue-plotly";
-
 import store from "@/store/";
 
 export default {
@@ -31,8 +30,6 @@ export default {
         showLink: false,
         displayModeBar: false
       },
-      // data:
-
       layout: {
         legend: {
           x: 0,

@@ -108,16 +108,18 @@ export default {
   },
   computed: {
     heatMapMaximum() {
-      if (this.range == "Average") {
-        return Math.floor(
-          this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage[
-            this.mode
-          ]
-        );
-      } else {
-        return Math.floor(
-          this.$store.state.databaseStore.campusInfo.Maximums[this.mode]
-        );
+      if (this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage) {
+        if (this.range == "Average") {
+          return Math.floor(
+            this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage[
+              this.mode
+            ]
+          );
+        } else {
+          return Math.floor(
+            this.$store.state.databaseStore.campusInfo.Maximums[this.mode]
+          );
+        }
       }
     },
     campusData() {

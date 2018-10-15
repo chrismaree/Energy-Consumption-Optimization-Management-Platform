@@ -1,6 +1,5 @@
 <template>
-    <div>
-    
+    <div> 
     <div v-if="$store.state.databaseStore.comparisonArray.length==0" class="md-layout">
       <md-empty-state
       md-icon="map"
@@ -63,16 +62,11 @@ export default {
       let colourArray = ["#673AB7", "#F44336", "#8bC43A", "#03A9F4", "#009688"];
       let chartType = this.chartType;
       let chartRange = this.chartRange;
-      let comparisonArray = store.state.databaseStore.comparisonArray
+      let comparisonArray = store.state.databaseStore.comparisonArray;
       try {
         Object.keys(returnedPlots).forEach(function(plotType) {
-          for (
-            let index = 0;
-            index < comparisonArray.length;
-            index++
-          ) {
-            let buildingIndex =
-              comparisonArray[index];
+          for (let index = 0; index < comparisonArray.length; index++) {
+            let buildingIndex = comparisonArray[index];
             console.log(buildingIndex);
             let baseChartEntity = {
               x: Object.keys(
