@@ -20,21 +20,27 @@
             </mobile-menu>
             <md-list>
           
-              <md-list-item href="https://twitter.com/CreativeTim" target="_blank">
-                <i class="fab fa-twitter"></i>
-                <p class="hidden-lg">Twitter</p> Twitter
-                <md-tooltip md-direction="bottom">Follow us on Twitter</md-tooltip>
+              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+                <i class="fas fa-question"></i>
+                <p class="hidden-lg">About</p> About
               </md-list-item>
-              <md-list-item href="https://www.facebook.com/CreativeTim" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-                <p class="hidden-lg">Facebook</p>
-                <md-tooltip md-direction="bottom">Like us on Facebook</md-tooltip>
+
+              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+                <i class="fas fa-map"></i>
+                <p class="hidden-lg">Heat Map</p> Heat Map
               </md-list-item>
-              <md-list-item href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                <i class="fab fa-instagram"></i>
-                <p class="hidden-lg">Instagram</p>
-                <md-tooltip md-direction="bottom">Follow us on Instagram</md-tooltip>
+
+              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+                <i class="fas fa-chart-pie"></i>
+                <p class="hidden-lg">Compare Buildings</p> Compare
               </md-list-item>
+
+              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+                <i class="fab fa-github"></i>
+                <p class="hidden-lg">Github</p> Github
+                <md-tooltip md-direction="bottom">Star on Github!</md-tooltip>
+              </md-list-item>
+        
             </md-list>
           </div>
         </div>
