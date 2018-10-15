@@ -2,7 +2,7 @@
   <md-toolbar id="toolbar" md-elevation="0" class="md-transparent md-absolute" :class="extraNavClasses" :color-on-scroll="colorOnScroll">
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <md-list-item href="#/landing">
+        <md-list-item v-scroll-to="'#top'" style="cursor: pointer;">
                  <strong>Wits University Energy Usage Vizualization</strong>
               </md-list-item>
       </div>
@@ -20,17 +20,17 @@
             </mobile-menu>
             <md-list>
           
-              <md-list-item v-scroll-to="'#about'">
+              <md-list-item v-scroll-to="'#about'" style="cursor: pointer;">
                 <i class="fas fa-question"></i>
                 <p class="hidden-lg">About</p> About
               </md-list-item>
 
-              <md-list-item v-scroll-to="'#map'">
+              <md-list-item v-scroll-to="'#map'" style="cursor: pointer;">
                 <i class="fas fa-map"></i>
                 <p class="hidden-lg">Heat Map</p> Heat Map
               </md-list-item>
 
-              <md-list-item v-scroll-to="'#compare'">
+              <md-list-item v-scroll-to="'#compare'" style="cursor: pointer;">
                 <i class="fas fa-chart-pie"></i>
                 <p class="hidden-lg">Compare Buildings</p> Compare Buildings
               </md-list-item>

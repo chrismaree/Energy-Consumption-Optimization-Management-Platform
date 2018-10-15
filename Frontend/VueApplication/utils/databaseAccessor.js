@@ -4,7 +4,7 @@ import axios from 'axios';
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 export default class DatabaseAccessor {
     constructor() {
-        this.BASE_URL = 'http://0.0.0.0:8080/v2';
+        this.BASE_URL = 'http://witsecop.co.za:8080/v2';
     }
 
     getGeoJson(university_id) {
