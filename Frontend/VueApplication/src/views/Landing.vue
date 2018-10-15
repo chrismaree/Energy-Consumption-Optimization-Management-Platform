@@ -7,13 +7,13 @@
     				<h1 class="title">Unlocking the power of campus energy data</h1>
               <h4>Shedding light on Wits energy usage to gain insight into behaviour, identify trends and reduce consumption. Helping Wits save money and become a greener campus.</h4>
               <br>
-              <md-button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="md-success md-lg" target="_blank"><i class="fas fa-play"></i> Watch video</md-button>
+              <md-button class="md-success md-lg" v-scroll-to="'#about'"><i class="fas fa-play"></i> Learn More</md-button>
     			</div>
         </div>
       </div>
     </parallax>
     <div class="main main-raised">
-      <div class="section" style="padding-top:50px">
+      <div class="section" style="padding-top:50px" id="about">
         <div class="container">
           <div class="md-layout">
             <div class="md-layout-item md-size-85 md-xsmall-size-100 mx-auto text-center">

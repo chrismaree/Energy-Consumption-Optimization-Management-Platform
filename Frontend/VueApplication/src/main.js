@@ -11,6 +11,10 @@ import {
 import MaterialKit from "./plugins/material-kit";
 import VueObserveVisibility from 'vue-observe-visibility'
 
+var VueScrollTo = require('vue-scrollto');
+
+Vue.use(VueScrollTo)
+
 Vue.use(VueObserveVisibility)
 
 Vue.config.productionTip = false;

@@ -20,19 +20,19 @@
             </mobile-menu>
             <md-list>
           
-              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+              <md-list-item v-scroll-to="'#about'">
                 <i class="fas fa-question"></i>
                 <p class="hidden-lg">About</p> About
               </md-list-item>
 
-              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+              <md-list-item v-scroll-to="'#map'">
                 <i class="fas fa-map"></i>
                 <p class="hidden-lg">Heat Map</p> Heat Map
               </md-list-item>
 
-              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
+              <md-list-item v-scroll-to="'#compare'">
                 <i class="fas fa-chart-pie"></i>
-                <p class="hidden-lg">Compare Buildings</p> Compare
+                <p class="hidden-lg">Compare Buildings</p> Compare Buildings
               </md-list-item>
 
               <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">

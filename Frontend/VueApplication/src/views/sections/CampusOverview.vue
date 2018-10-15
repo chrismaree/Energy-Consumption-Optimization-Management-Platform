@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="map">
      <div class="main main-raised" style="margin-top:50px">
       <md-card class="md-elevation-24" style="margin-bottom:0">
      <div class="md-layout" style="padding-top:0">
@@ -11,7 +11,7 @@
             <MainMap/>
       </md-card>
      </div>
-     <div class="main main-raised" style="margin-top:50px">
+     <div class="main main-raised" style="margin-top:50px" id="compare">
       <md-card class="md-elevation-24" style="margin-bottom:0px">
       <div class="md-layout" style="padding-top:0">
             <div class="md-layout-item md-size-45 md-xsmall-size-100 mx-auto text-center">
