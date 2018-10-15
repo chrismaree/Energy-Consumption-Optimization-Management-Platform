@@ -1,7 +1,7 @@
 // import Authenticator from '../../../utils/Authenticator';
 
 import jwt_decode from 'jwt-decode';
-import DatabaseAccessor from '../../../../utils/databaseAccessor'
+import DatabaseAccessor from '../../../utils/databaseAccessor'
 
 const databaseAccessor = new DatabaseAccessor()
 // const auth = new Authenticator()
