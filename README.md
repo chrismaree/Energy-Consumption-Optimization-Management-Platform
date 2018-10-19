@@ -24,5 +24,5 @@ A high level overview of the project can be seen in the diagram below.
 </p>
 
 ## Project Report
-The Report outlining the design and implementation for this project can be found [here](https://www.google.com)
+The Report outlining the design and implementation for this project can be found [here](https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf)
 .
