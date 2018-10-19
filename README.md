@@ -20,5 +20,9 @@ A high level overview of the project can be seen in the diagram below.
   <img
    src="https://raw.githubusercontent.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/master/Images/System%20architecture-Backend%20Diagram.png" alt="Date Picker"/>
   <br>
-  <i>Date Picker</i>. Select the start and end date/time for the campaign.
+  <i>Date Picker</i>. High level overview of all system components.
 </p>
+
+## Project Report
+The Report outlining the design and implementation for this project can be found [here](https://www.google.com)
+.
