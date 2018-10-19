@@ -15,3 +15,10 @@ There are four main directories in the repository.
 4) `Experimentation` stores a play ground used when trying out different technologies during the course of the project.
 
 A high level overview of the project can be seen in the diagram below.
+
+<p align="center">  
+  <img
+   src="https://raw.githubusercontent.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/master/Images/System%20architecture-Backend%20Diagram.png" alt="Date Picker"/>
+  <br>
+  <i>Date Picker</i>. Select the start and end date/time for the campaign.
+</p>
