@@ -75,13 +75,11 @@
 </template>
 
 <script>
-import MainMap from "@/components/MainMap";
 import CampusOverview from "@/views/sections/CampusOverview";
 
 export default {
   bodyClass: "landing-page",
   components: {
-    MainMap,
     CampusOverview
   },
   props: {

@@ -108,33 +108,40 @@ export default {
   },
   computed: {
     heatMapMaximum() {
-      if (this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage) {
-        if (this.range == "Average") {
-          return Math.floor(
-            this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage[
-              this.mode
-            ]
-          );
-        } else {
-          return Math.floor(
-            this.$store.state.databaseStore.campusInfo.Maximums[this.mode]
-          );
+      try {
+        if (
+          this.$store.state.databaseStore.campusInfo.MaximumLastPeriodAverage
+        ) {
+          if (this.range == "Average") {
+            return Math.floor(
+              this.$store.state.databaseStore.campusInfo
+                .MaximumLastPeriodAverage[this.mode]
+            );
+          } else {
+            return Math.floor(
+              this.$store.state.databaseStore.campusInfo.Maximums[this.mode]
+            );
+          }
         }
-      }
+      } catch (e) {}
     },
     campusData() {
-      // console.log(this.mode)
-      let chartMode = this.mode + "Style_" + this.range;
-      console.log(chartMode);
-      return {
-        geojson: [this.$store.state.databaseStore.mapGeoJson],
-        options: {
-          style: function(feature) {
-            return feature.properties && feature.properties[chartMode];
-          },
-          onEachFeature: onEachFeature
-        }
-      };
+      let campusDataObject = {};
+      try {
+        // console.log(this.mode)
+        let chartMode = this.mode + "Style_" + this.range;
+        console.log(chartMode);
+        campusDataObject = {
+          geojson: [this.$store.state.databaseStore.mapGeoJson],
+          options: {
+            style: function(feature) {
+              return feature.properties && feature.properties[chartMode];
+            },
+            onEachFeature: onEachFeature
+          }
+        };
+      } catch (e) {}
+      return campusDataObject;
     }
   }
 };
