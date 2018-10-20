@@ -51,3 +51,20 @@ docker-compose run -d
 # viewing the status of the docker containers
 docker ps -a
 ```
+
+## API architecture
+The basic configuration for the architecture is as follows.
+<p align="center">  
+  <img
+   src="https://raw.githubusercontent.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/master/Images/System%20architecture-Server%20Perspective%20of%20API%20request.png" alt="Date Picker"/>
+  <br>
+  <i>Date Picker</i>. High level overview of backend logic
+</p>
+
+## Data structure for the entity relational diagram
+<p align="center">  
+  <img
+   src="https://raw.githubusercontent.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/master/Images/System%20architecture-Entity%20Relational%20Diagram.png" alt="Date Picker"/>
+  <br>
+  <i>Date Picker</i>. High level overview of backend logic
+</p>
