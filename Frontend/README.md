@@ -24,6 +24,26 @@ To lint the code run:
 npm run lint
 ```
 
-### Production
-Requirements:
-1) docker
+## Production
+
+To run the server in production mode run:
+
+```bash
+# building the image
+docker-compose build
+
+# starting up the container in detached mode
+docker-compose run -d
+
+# viewing the status of the docker containers
+docker ps -a
+```
+Every time the source code is updated for the underlying API you must rebuild the container. This will be added to a CI pipeline at a later point.
+
+### High level overview of interconnection with other layers
+<p align="center">  
+  <img
+   src="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/blob/master/Images/System%20architecture-Client%20Perspective%20of%20API%20request.png?raw=true" alt="Date Picker"/>
+  <br>
+  <i>Date Picker</i>. High level overview of backend logic
+</p>

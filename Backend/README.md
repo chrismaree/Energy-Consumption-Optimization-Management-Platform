@@ -39,7 +39,7 @@ tox
 
 ## Production
 
-To run the server in production mode run
+To run the server in production mode run:
 
 ```bash
 # building the image
@@ -51,6 +51,7 @@ docker-compose run -d
 # viewing the status of the docker containers
 docker ps -a
 ```
+Every time the source code is updated for the underlying API you must rebuild the container. This will be added to a CI pipeline at a later point.
 
 ## API architecture
 The basic configuration for the architecture is as follows.
