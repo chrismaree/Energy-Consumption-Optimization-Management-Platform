@@ -38,9 +38,12 @@
               <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
                 <i class="fab fa-github"></i>
                 <p class="hidden-lg">Github</p> Github
-                <md-tooltip md-direction="bottom">Star on Github!</md-tooltip>
               </md-list-item>
-        
+
+              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf" target="_blank">
+                <i class="fab fa-book"></i>
+                <p class="hidden-lg">Project Report</p> Github
+              </md-list-item>
             </md-list>
           </div>
         </div>
