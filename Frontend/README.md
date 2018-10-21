@@ -45,5 +45,4 @@ Every time the source code is updated for the underlying API you must rebuild th
   <img
    src="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/blob/master/Images/System%20architecture-Client%20Perspective%20of%20API%20request.png?raw=true" alt="Date Picker"/>
   <br>
-  <i>Date Picker</i>. High level overview of backend logic
 </p>

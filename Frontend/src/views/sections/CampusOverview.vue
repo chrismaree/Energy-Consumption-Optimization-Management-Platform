@@ -16,7 +16,7 @@
       <div class="md-layout" style="padding-top:0">
             <div class="md-layout-item md-size-45 md-xsmall-size-100 mx-auto text-center">
               <h2 class="title text-center">Building comparison</h2>
-              <h5 class="description">Compare and contrast different buildings over time to gauge their relative comparisons and load profiles. Switch between an area and line plot to view cumulative or relative consumption.</h5>
+              <h5 class="description">Compare and contrast different buildings over time to gauge their relative consumptions and load profiles. Switch between an area and line plot to view cumulative or relative consumption.</h5>
             </div>
           </div>
         <BuildingComparison/>

@@ -19,10 +19,10 @@
             <div class="md-layout-item md-size-85 md-xsmall-size-100 mx-auto text-center">
               <h2 class="title text-center">You can't manage what you can't measure</h2>
               <h5 class="description">
-                Until now there was no way to visualize live or historic energy consumption on campus. As a result, it is impossible to identify trends or reduce consumption. This makes wits very ungreen and expensive to run.
+                Until now there was no way to visualize live or historic energy consumption on campus. As a result, it is impossible to identify trends or reduce consumption. This makes Wits very ungreen and expensive to run.
                 <br>
                 <br>
-                It is hard to react to unusually high consumption and compare to historic usages. This means that faulty system or human fault (like leaving machinery on over the holidays) can't be detected. Moreover, it is impossible to quantify any reduction in consumption after installing greener hardware such as LED light bulbs. 
+                It is hard to react to unusually high consumption as there is no way to compare a building to its historic usage. This means that a faulty system or human (like leaving machinery on over the holidays) can't be detected. Moreover, it is impossible to quantify any reduction in consumption after installing greener hardware such as LED light bulbs. 
                 <br>
                 <br>
                 Given that energy prices are only going to increase in the future, it is important to reduce our consumption as a campus to reduce the total spent on electricity. Additionally, it is likely that carbon taxes will be imposed on big consumers in the future.
@@ -43,7 +43,7 @@
                     <md-icon>compare</md-icon>
                   </div>
                   <h4 class="info-title">Building comparison</h4>
-                  <p>Compare a building against its past consumption or against other buildings to gain insight into past usage. </p>
+                  <p>Compare a building against its past consumption or against other buildings to gain insight into usage. </p>
                 </div>
               </div>
 
