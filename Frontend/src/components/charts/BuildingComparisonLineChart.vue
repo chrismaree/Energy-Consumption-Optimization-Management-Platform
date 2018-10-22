@@ -51,7 +51,7 @@ export default {
       options: {
         responsive: true,
         showLink: false,
-        displayModeBar: false
+        // displayModeBar: false
       }
     };
   },

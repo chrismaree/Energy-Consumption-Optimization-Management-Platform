@@ -28,7 +28,7 @@ export default {
       options: {
         responsive: true,
         showLink: false,
-        displayModeBar: false
+        // displayModeBar: false
       },
       layout: {
         legend: {
@@ -48,7 +48,7 @@ export default {
           t: 50,
           pad: 5
         },
-        title: "Week Consumption Vs Normalized Average",
+        title: "Electricity Consumption Vs Campus Average",
         // xaxis: { title: "Week Day" },
         yaxis: { title: "Energy Consumed (kW)" },
         xaxis: {
@@ -79,7 +79,7 @@ export default {
                 ]
               ),
               type: "bar",
-              name: "Last Week",
+              name: "Last " + plotType,
               marker: {
                 color: "rgb(49,130,189)",
                 opacity: 0.7
@@ -97,7 +97,7 @@ export default {
                 ]
               ),
               type: "bar",
-              name: "Average Week",
+              name: "Average " + plotType,
               marker: {
                 color: "rgb(204,204,204)",
                 opacity: 0.5
@@ -112,7 +112,7 @@ export default {
               ),
               type: "line",
               mode: "lines",
-              name: "Campus Average",
+              name: "Campus Average " + plotType,
               visible: true,
               line: {
                 dash: "dashdot",
