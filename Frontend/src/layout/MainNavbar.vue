@@ -35,14 +35,14 @@
                 <p class="hidden-lg">Compare Buildings</p> Compare Buildings
               </md-list-item>
 
+              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf" target="_blank">
+                <i class="fas fa-paperclip"></i>
+                <p class="hidden-lg">Design Report</p> Project Report
+              </md-list-item>
+              
               <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform" target="_blank">
                 <i class="fab fa-github"></i>
                 <p class="hidden-lg">Github</p> Github
-              </md-list-item>
-
-              <md-list-item href="https://github.com/SoIidarity/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf" target="_blank">
-                <i class="fab fa-book"></i>
-                <p class="hidden-lg">Project Report</p> Github
               </md-list-item>
             </md-list>
           </div>
