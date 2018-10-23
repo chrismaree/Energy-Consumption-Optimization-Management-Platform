@@ -37,6 +37,18 @@ sudo pip install tox
 tox
 ```
 
+## Development
+To run the Jupyter notebook used to populate the database you require to have Jupyter notebook installed on your machine.
+
+To run the notebook execute:
+```
+cd notebook
+juypter notebook
+```
+
+You can then open the notebook file from your browser.
+
+
 ## Production
 
 To run the server in production mode run:
